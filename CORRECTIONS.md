@@ -1,96 +1,39 @@
 # Name corrections and photo status
 
-This file lists how the app cleans up names from your sheet. Your Google Sheet is never edited. Per-perfume corrections and Fragrantica links live in `matches.json`. House-name spelling fixes live in the `HOUSE_FIXES` list at the top of `app.js`.
+This file lists how the app cleans up names from your sheet. Your Google Sheet is never edited. Per-perfume corrections and photo sources live in `matches.json`. House-name spelling fixes live in the `HOUSE_FIXES` list at the top of `app.js`.
 
 - Perfumes in the sheet: 775
-- Matched to Fragrantica (bottle photo): 727
-- Looked up, not on Fragrantica: 40
-- Rows that name a whole line or a discovery set: 8
+- With a bottle photo: 755
+- Photo source found, waiting for the Find bottle photos action: 9
+- No photo found anywhere: 2
+- Rows that name a whole line or a discovery set: 9
 
-## Guesses worth checking
+## Waiting for the Find bottle photos action
 
-If one of these is the wrong version, tell Claude which one you meant.
+These aren't on Fragrantica. `matches.json` names a product page or shop for each, and the Find bottle photos GitHub Action copies the photo's address from there. If one still shows a letter tile after the action has run, the page may have moved.
 
-- Arko | Ink: read as Akro Ink
-- Bolton and Rolf | Metallic Musk: read as Viktor & Rolf Spicebomb Metallic Musk
-- Chanel | Bleu: guessed the Eau de Parfum version
-- Chanel | No 19: used the Eau de Parfum
-- Creed | Vetiver: could also be the older 1948 Vetiver
-- Czech & Speake | No. 88: could be the 1980 cologne instead of the Eau de Parfum
-- Dior | Du Cap: guessed that "Du Cap" means Eden-Roc (named for the Hôtel du Cap)
-- Dolce and Gabbana | The One: could be the women's The One instead
-- DSH | Something Capri: guessed; only DSH scent with Capri in the name
-- Guerlain | Eau de Cashmire: used the 2026 Les Eaux version (an older 2014 Eau de Cashmere also exists)
-- Guerlain | Jasmine extract: guessed Jasmin Grandiflorum Extrait 30
-- Guerlain | Oud Essential: used the 2024 Oud Essentiel; could be the 2017 Les Absolus d'Orient Oud Essentiel
-- Henrik Vibskov | Lotus Root Red: guessed Lotus Dust Red, the only Vibskov scent with Lotus and Red in the name
-- Hilde Soliani | Pranzo something: guessed Buon Pranzo
-- Hiram Green | Shangri La: used the 2014 original; could be the 2022 edition
-- Houbigant | Fougere Royale: used the 2010 reissue
-- Imaginary Authors | Explosions in the Sky: guessed Slow Explosions
-- Kim Kardashian | Honey: guessed Pure Honey
-- L'Occitane | Magnolia: guessed Eau du Val (Magnolia)
-- Lacoste | Blanc: used L.12.12 Blanc (2011); several Blanc flankers exist
-- Lacoste | Rose: used L.12.12 Rose Eau de Parfum (2021)
-- Lancôme | Le Parfum: guessed Absolue Le Parfum (2024)
-- Le Labo | In Jardin Sur La Legune: this is Hermès Un Jardin Sur La Lagune, so the app shows it under Hermès
-- Loewe | Ella: guessed Agua de Loewe Ella
-- Nasomotto | Black Affogato: guessed Black Afgano
-- Perfumes Quartana | Leofarte: read as Ierofante
-- Phlur | Sweet Spot: guessed Soft Spot
-- Tom Ford | Cafe Rose: used the 2012 original; a 2023 relaunch also exists
-- Trena | Graffiti: read as Xyrena Graffiti
-- YSL | Velours (rose): guessed Rouge Velours
-
-## Looked up, but not on Fragrantica
-
-These show a letter tile. To give one a photo, add a column headed **Fragrantica** to your sheet and paste the perfume's page link into it.
-
-- American Perfumer: Rushlight
-- Andrea Maack: Zing
-- D&Scent Studios: Verdant Halo
 - DSH Perfumes: Au Crépuscule de Lavande
-- DSH Perfumes: Balls...Said The Queen
 - DSH Perfumes: Eclipse
-- DSH Perfumes: Highland Idyll
 - DSH Perfumes: In the Jungle Groove
-- DSH Perfumes: L'Or(ris)
-- DSH Perfumes: La Casa Azul
 - DSH Perfumes: Le Jade
-- DSH Perfumes: Partners In Crime
 - DSH Perfumes: Potager de Bergamot
 - DSH Perfumes: Soho Cuir
 - DSH Perfumes: Vachi
 - DSH Perfumes: Warrior Queen
-- Ensar Oud: Japanese Red Rose oil
-- Fischersund: The Whole House
-- Jenny Glow: French Lime Leaves
-- Laurel Bath House: Not Vanilla
-- Laurel Bath House: Nudi
-- Loewe: Angus
-- Malka Sima: Beyond the Veil
-- Malka Sima: Lineage of Advice
-- Malka Sima: Thread the Light
-- Malka Sima: Tomato
-- Nose of Gatsby: Naive
-- Pearfat: 2030 Park Avenue
-- Pearfat: I'll Never Learn
-- Pearfat: Stomped on a Bed of Lettuce
-- September 28th: Bun
 - September 28th: Lake Tahoe Air
-- September 28th: Little Rosie
-- September 28th: Mono
-- September 28th: Nothing Dramatic
-- September 28th: Silken Tofu
-- The Different Company: Crazy Tuberose
-- Tommy Bahama: Set Sail Martinique
-- Versace: Roses des sables
-- Vilhelm Parfumerie: Morning Chess
+
+## No photo found
+
+These show a letter tile. To give one a photo, add a column headed **Fragrantica** to your sheet and paste the perfume's Fragrantica page link into it.
+
+- D&Scent Studios: Verdant Halo
+- Loewe: Angus
 
 ## Rows that aren't a single perfume
 
 These show a letter tile. They name a whole line or a discovery set, so there is no one bottle to show.
 
+- Fischersund: The whole house
 - Initio: The whole line
 - Kenzo: The whole line
 - Parfums de Marly: The whole line
@@ -270,7 +213,6 @@ These show a letter tile. They name a whole line or a discovery set, so there is
 | Eris Parfums · Belle du Jour | Eris Parfums · Belle de Jour |
 | Eris · Green Spell | Eris Parfums · Green Spell |
 | Fenty · Fenty | Fenty · Fenty Eau de Parfum |
-| Fischersund · The whole house | Fischersund · The Whole House |
 | Floraiku | Floraïku |
 | Floraiku · Between 2 Trees | Floraïku · Between Two Trees |
 | Frederic Malle · Bigarade Concentree | Frédéric Malle · Bigarade Concentrée |
@@ -528,6 +470,7 @@ These show a letter tile. They name a whole line or a discovery set, so there is
 | Une Nuite Nomade · Jardins de Misfah Extrait | Une Nuit Nomade · Jardins de Misfah Extrait |
 | UNN · Chemin d'Amande | Une Nuit Nomade · Chemin d'Amande |
 | Van Cleef & Arpels · Bois d’Amande | Van Cleef & Arpels · Bois d'Amande |
+| Versace · Roses des sables | Louis Vuitton · Les Sables Roses |
 | Viktor and Rolf · Spicebomb | Viktor & Rolf · Spicebomb |
 | Villa Urbatium · Mossy Glen | Villa Erbatium · Mossy Glen |
 | Xerjoff · Naxos | Xerjoff · XJ 1861 Naxos |

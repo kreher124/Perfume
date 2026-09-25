@@ -52,7 +52,10 @@
 "american perfumer|black walnut": {
 "p": "American-Perfumer/Black-Walnut-77266"
 },
-"american perfumer|rushlight": {},
+"american perfumer|rushlight": {
+"i": "https://cdn.shopify.com/s/files/1/2191/1215/files/b686d209-a9ea-4574-a200-4f28f3b5f337.jpg?v=1785602291",
+"shop": "https://american-perfumer.com"
+},
 "amouage|beach hut man": {
 "p": "Amouage/Beach-Hut-Man-46336"
 },
@@ -245,6 +248,9 @@
 "bon parfumer|801 0": {
 "h": "Bon Parfumeur",
 "n": "801",
+"p": "Bon-Parfumeur/801-sea-spray-cedar-grapefruit-51012"
+},
+"bon parfumeur|801 0": {
 "p": "Bon-Parfumeur/801-sea-spray-cedar-grapefruit-51012"
 },
 "borntostandout|dirty rice": {
@@ -806,10 +812,16 @@
 "p": "DSH-Perfumes/OUD-in-Chiaroscuro-Aoud-Blanc-55211"
 },
 "dsh|au crepuscule de lavande": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/au-crepuscule-de-lavande-in-the-lavender-twilight-launch-april-2/"
 },
 "dsh|balls said the queen": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/3a/3a5886-balls-said-the-queen-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": [
+"https://www.dshperfumes.com/shop/balls-said-the-queen/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/balls-said-the-queen-eau-de-parfum"
+]
 },
 "dsh|become the shaman": {
 "h": "DSH Perfumes",
@@ -829,7 +841,8 @@
 "p": "DSH-Perfumes/Dirty-Rose-6549"
 },
 "dsh|eclipse": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/eclipse-a-limited-edition-modern-patchouli/"
 },
 "dsh|electric summer": {
 "h": "DSH Perfumes",
@@ -846,10 +859,13 @@
 "p": "DSH-Perfumes/Green-Rhubarb-and-Cane-Sugar-76152"
 },
 "dsh|highland idyll": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/41/416e61-highland-idyll-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/heirloom-elixir-highland-idyll-eau-de-parfum"
 },
 "dsh|in the jungle groove": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://dshperfumes.com/shop/in-the-jungle-groove-limited-edition"
 },
 "dsh|joshua tree": {
 "h": "DSH Perfumes",
@@ -860,13 +876,18 @@
 "p": "DSH-Perfumes/Kale-76149"
 },
 "dsh|l or ris": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/66/66335d-l-or-ris-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/l-or-ris-eau-de-parfum"
 },
 "dsh|la casa azul": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"i": "https://www.cafleurebon.com/wp-content/uploads/2020/02/DSH-Perfumes-La-Casa-Azul-review.jpg",
+"src": "https://cafleurebon.com/dsh-perfumes-la-casa-azul-frida-stories-1-1-review-dawn-spencer-hurwitz-frida-kahlos-tango-draw/"
 },
 "dsh|le jade": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/le-jade/"
 },
 "dsh|manroot": {
 "h": "DSH Perfumes",
@@ -877,10 +898,16 @@
 "p": "DSH-Perfumes/Matsu-18762"
 },
 "dsh|partners in crime": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/fa/facb72_partners-in-crime-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": [
+"https://www.dshperfumes.com/shop/partners-in-crime-a-honeyed-labdanum-perfume/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/partners-in-crime-eau-de-parfum"
+]
 },
 "dsh|potager de bergamot": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/potager-de-bergamot-les-fauves-des-bergamotes-collection/"
 },
 "dsh|raisin d etre": {
 "h": "DSH Perfumes",
@@ -894,7 +921,8 @@
 "p": "DSH-Perfumes/Rubis-Rose-29129"
 },
 "dsh|soho cuir": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/soho-cuir/"
 },
 "dsh|something capri": {
 "h": "DSH Perfumes",
@@ -910,14 +938,16 @@
 "p": "DSH-Perfumes/Tournesol-Noir-133048"
 },
 "dsh|vachi": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/vachi-a-limited-edition-sandalwood-perfume/"
 },
 "dsh|viridian": {
 "h": "DSH Perfumes",
 "p": "DSH-Perfumes/Viridian-8455"
 },
 "dsh|warrior queen": {
-"h": "DSH Perfumes"
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/warrior-queen-dsh-perfumes-x-cafleurebon/"
 },
 "dsh|wasabi shiso": {
 "h": "DSH Perfumes",
@@ -999,7 +1029,10 @@
 "elizabeth taylor|gardenia": {
 "p": "Elizabeth-Taylor/Gardenia-1708"
 },
-"ensar oud|japanese red rose oil": {},
+"ensar oud|japanese red rose oil": {
+"i": "https://www.ensaroud.com/wp-content/uploads/2023/12/Rosa-Rugosa-Japan.jpg",
+"src": "https://www.ensaroud.com/product/japanese-red-rose/"
+},
 "eris parfums|belle du jour": {
 "n": "Belle de Jour",
 "p": "Eris-Parfums/Belle-de-Jour-35814"
@@ -1016,9 +1049,6 @@
 "fenty|fenty": {
 "n": "Fenty Eau de Parfum",
 "p": "Fenty/Fenty-68677"
-},
-"fischersund|the whole house": {
-"n": "The Whole House"
 },
 "floraiku|between 2 trees": {
 "h": "Floraïku",
@@ -1428,7 +1458,10 @@
 "jean paul gaultier|le male": {
 "p": "Jean-Paul-Gaultier/Le-Male-430"
 },
-"jenny glow|french lime leaves": {},
+"jenny glow|french lime leaves": {
+"i": "https://media.parfumo.com/perfume_social/4b/4bf5e0_french-lime-leaves-jenny-glow_1200.jpg?format=jpg&quality=90",
+"src": "https://www.parfumo.com/Perfumes/jenny-glow/french-lime-leaves"
+},
 "jo malone|cypress grapevine cologne intense": {
 "p": "Jo-Malone-London/Cypress-Grapevine-Cologne-Intense-61928"
 },
@@ -1571,8 +1604,14 @@
 "n": "E-Mochi",
 "p": "Laurel-Bath-House/E-Mochi-124079"
 },
-"laurel bathhouse|not vanilla": {},
-"laurel bathhouse|nudi": {},
+"laurel bathhouse|not vanilla": {
+"i": "https://cdn.shopify.com/s/files/1/0861/9432/3765/files/NVCOVER.jpg?v=1763597414",
+"src": "https://www.laurelbathhouse.com/products/not-vanilla-edp"
+},
+"laurel bathhouse|nudi": {
+"i": "https://cdn.shopify.com/s/files/1/0861/9432/3765/files/Artboard31_0c050931-7c28-40b6-bd54-83b624c1a8d0.png?v=1771018913",
+"src": "https://www.laurelbathhouse.com/products/nudie-eau-de-parfum"
+},
 "le labo|baie 19": {
 "p": "Le-Labo/Baie-19-57513"
 },
@@ -1720,10 +1759,22 @@
 "n": "Fusion Sacrée Clair",
 "p": "Majda-Bekkali/Fusion-Sacree-Clair-16289"
 },
-"malka sina|beyond the veil": {},
-"malka sina|lineage of advice": {},
-"malka sina|thread the light": {},
-"malka sina|tomato": {},
+"malka sina|beyond the veil": {
+"i": "https://malkasima.co/cdn/shop/files/MS_July_1.png?v=1785284430",
+"src": "https://malkasima.co/products/beyond-the-veil"
+},
+"malka sina|lineage of advice": {
+"i": "https://malkasima.co/cdn/shop/files/Lineage_Mirror.png?v=1781749321",
+"src": "https://malkasima.co/products/a-lineage-of-advice"
+},
+"malka sina|thread the light": {
+"i": "https://cdn.shopify.com/s/files/1/0978/6988/9856/files/MS_July_3.png?v=1786630655",
+"shop": "https://malkasima.co"
+},
+"malka sina|tomato": {
+"i": "https://malkasima.co/cdn/shop/files/MS_July_4.png?v=1785284363",
+"src": "https://malkasima.co/products/tomato"
+},
 "marc antoine barrois|encelade": {
 "p": "Marc-Antoine-Barrois/Encelade-74121"
 },
@@ -1839,7 +1890,8 @@
 },
 "morning chess|vilhelm": {
 "h": "Vilhelm Parfumerie",
-"n": "Morning Chess"
+"n": "Morning Chess",
+"p": "Vilhelm-Parfumerie/Morning-Chess-30930"
 },
 "moscino|toy boy": {
 "p": "Moschino/Toy-Boy-55858"
@@ -1949,7 +2001,10 @@
 "nonfiction|young memories": {
 "p": "Nonfiction/Young-Memories-105937"
 },
-"nose of gatsby|naive": {},
+"nose of gatsby|naive": {
+"i": "https://media.parfumo.com/perfume_social/14/141955-naive-eau-de-parfum-nose-of-gatsby_1200.jpg?format=jpg&quality=90",
+"src": "https://www.parfumo.com/Perfumes/nose-of-gatsby/naive-eau-de-parfum"
+},
 "obvious|scoville": {
 "p": "Obvious/Scoville-90577"
 },
@@ -2084,9 +2139,15 @@
 "particuliere|type writer": {
 "p": "Parfumerie-Particuliere/Type-Writer-43936"
 },
-"pearfat|2030 park avenue": {},
-"pearfat|i ll never learn": {},
-"pearfat|stomped on a bed of lettuce": {},
+"pearfat|2030 park avenue": {
+"p": "Pearfat-Parfum/2030-Park-Ave-79992"
+},
+"pearfat|i ll never learn": {
+"p": "Pearfat-Parfum/I-ll-Never-Learn-94215"
+},
+"pearfat|stomped on a bed of lettuce": {
+"p": "Pearfat-Parfum/Stomped-on-Bed-of-Lettuce-79994"
+},
 "penhaligons|blenheim bouquet": {
 "p": "Penhaligon-s/Blenheim-Bouquet-3940"
 },
@@ -2228,12 +2289,29 @@
 "senyoko|kujira densetsu": {
 "p": "Senyoko/Kujira-Densetsu-121080"
 },
-"sept 28|bun": {},
-"sept 28|lake tahoe air": {},
-"sept 28|little rosie": {},
-"sept 28|mono": {},
-"sept 28|nothing dramatic": {},
-"sept 28|silken tofu": {},
+"sept 28|bun": {
+"i": "https://sep28thperfumeries.com/cdn/shop/files/BUN_0aa7b7fa-51c0-41e8-a137-6c73c579f123.png?v=1778192577",
+"src": "https://sep28thperfumeries.com/products/bun"
+},
+"sept 28|lake tahoe air": {
+"shop": "https://sep28thperfumeries.com"
+},
+"sept 28|little rosie": {
+"i": "https://cdn.shopify.com/s/files/1/0694/1953/2465/files/littlerosiefullsize2.png?v=1779147079",
+"shop": "https://sep28thperfumeries.com"
+},
+"sept 28|mono": {
+"i": "https://cdn.shopify.com/s/files/1/0694/1953/2465/files/MONOFULLSIZE1.png?v=1779150558",
+"shop": "https://sep28thperfumeries.com"
+},
+"sept 28|nothing dramatic": {
+"i": "https://cdn.shopify.com/s/files/1/0694/1953/2465/files/NOTHING_DRAMATIC_FULL_SIZE_2.png?v=1778215348",
+"shop": "https://sep28thperfumeries.com"
+},
+"sept 28|silken tofu": {
+"i": "https://sep28thperfumeries.com/cdn/shop/files/SILKENTOFU2.png?v=1778197375",
+"src": "https://sep28thperfumeries.com/products/silken-tofu"
+},
 "serge lutens|ambre sultan": {
 "p": "Serge-Lutens/Ambre-Sultan-2760"
 },
@@ -2263,7 +2341,8 @@
 },
 "set sail martinique|tommy bahama": {
 "h": "Tommy Bahama",
-"n": "Set Sail Martinique"
+"n": "Set Sail Martinique",
+"p": "Tommy-Bahama/Set-Sail-Martinique-10565"
 },
 "setchu|2am tatami mat": {
 "n": "Friday 2 AM: Tatami",
@@ -2325,7 +2404,10 @@
 "the 7 virtues|vetiver elemi": {
 "p": "The-7-Virtues/Vetiver-Elemi-52557"
 },
-"the different company|crazy tuberose": {},
+"the different company|crazy tuberose": {
+"i": "https://www.thedifferentcompany.com/cdn/shop/files/CRAZYT_REFLECTION_1500x1500_72_DPI_RVB_0d4e3111-fd31-4f06-9b3a-f550f25f641c_1200x1200.jpg?v=1787756477",
+"src": "https://www.thedifferentcompany.com/en-en/products/crazy-tubereuse"
+},
 "the different company|white zagora": {
 "p": "The-Different-Company/White-Zagora-18596"
 },
@@ -2514,7 +2596,11 @@
 "n": "Bois d'Amande",
 "p": "Van-Cleef-Arpels/Bois-d-Amande-60167"
 },
-"versace|roses des sables": {},
+"versace|roses des sables": {
+"h": "Louis Vuitton",
+"n": "Les Sables Roses",
+"p": "Louis-Vuitton/Les-Sables-Roses-55040"
+},
 "viktor and rolf|spicebomb": {
 "p": "Viktor-Rolf/Spicebomb-13857"
 },
@@ -2587,6 +2673,9 @@
 "ysl|rive gauche pour homme": {
 "p": "Yves-Saint-Laurent/Rive-Gauche-pour-Homme-1032"
 },
+"ysl|rouge velours rose": {
+"p": "Yves-Saint-Laurent/Rouge-Velours-68213"
+},
 "ysl|tuxedo patchouli": {
 "n": "Tuxedo",
 "p": "Yves-Saint-Laurent/Tuxedo-32269"
@@ -2602,7 +2691,8 @@
 },
 "zing|andrea maack": {
 "h": "Andrea Maack",
-"n": "Zing"
+"n": "Zing",
+"p": "Andrea-Maack/Zing-96144"
 },
 "zoologist|bee": {
 "p": "Zoologist-Perfumes/Bee-58140"

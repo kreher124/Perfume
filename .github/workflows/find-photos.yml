@@ -1,0 +1,24 @@
+# Looks up bottle photos for perfumes that aren't on Fragrantica, using the
+# "src" and "shop" hints in matches.json. Runs when matches.json changes and on demand.
+name: Find bottle photos
+on:
+  push:
+    paths:
+      - matches.json
+      - scripts/find_photos.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Look up photos
+        run: python3 scripts/find_photos.py
+      - name: Commit if changed
+        run: |
+          git config user.name "photo-finder"
+          git config user.email "actions@users.noreply.github.com"
+          git add matches.json
+          git diff --cached --quiet || (git commit -m "Add bottle photos from product pages" && git push)
