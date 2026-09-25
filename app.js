@@ -99,7 +99,7 @@ const sheetId = params.get("sheet") || DEFAULT_SHEET;
 const ownerName = params.get("name") || (params.get("sheet") ? "" : DEFAULT_NAME);
 const isDefault = sheetId === DEFAULT_SHEET;
 
-const state = { items: [], view: "ranked", sort: "score-desc", query: "", queueFilter: "all" };
+const state = { items: [], view: "ranked", sort: "house", query: "" };
 let matches = {};
 
 // matches.json is keyed by the names as first typed in the sheet. Also file each
@@ -252,13 +252,11 @@ async function load() {
   }
   try { state.items = workbookToItems(await readXlsx(buf)); }
   catch (e) { return showError(e); }
-  document.getElementById("status").textContent =
-    source === "live" ? "" : "Showing the last saved copy. The live sheet could not be reached.";
   render();
 }
 
 function showError(e) {
-  document.getElementById("grid").innerHTML = `<div class="empty">
+  document.getElementById("grid").innerHTML = `<div class="empty error">
     <p><strong>Couldn't read this Google Sheet.</strong></p>
     <p>In Google Sheets, tap Share and set General access to “Anyone with the link” (Viewer).</p>
     <p class="muted">${esc(e.message)}</p></div>`;
@@ -279,7 +277,6 @@ function visible() {
     if (state.view === "owned" && !it.owned) return false;
     if (state.view === "queue") {
       if (it.list === "ranked") return false;
-      if (state.queueFilter !== "all" && it.list !== state.queueFilter) return false;
     }
     return q.every((w) => it.search.includes(w));
   });
@@ -287,19 +284,52 @@ function visible() {
   return list.sort(sorters[sort]);
 }
 
+// Letter tiles take one of the accent colors, picked by letter so a house keeps its color.
+const tint = (letter) => `c${(letter.charCodeAt(0) || 0) % 3}`;
 function placeholder(it) {
-  return `<div class="ph"><span>${esc((it.house || it.name).slice(0, 1).toUpperCase())}</span></div>`;
+  const letter = (it.house || it.name).slice(0, 1).toUpperCase();
+  return `<div class="ph ${tint(letter)}"><span>${esc(letter)}</span></div>`;
 }
 
+// A card fills columns B–D of one column set and 11 rows (see style.css), then one blank row.
+const CARD_ROWS = 11;
 function card(it, i) {
-  const score = it.rating !== null
-    ? `<div class="score${it.rating >= 90 ? " top" : ""}">${it.rating}</div>`
-    : `<div class="tag">${it.list === "wish" ? "Want to try" : "Untried"}</div>`;
-  return `<button class="card" data-i="${i}">
-    <div class="bottle">${it.img ? `<img src="${it.img}" alt="" loading="lazy" referrerpolicy="no-referrer" data-letter="${esc((it.house || "?").slice(0, 1).toUpperCase())}">` : placeholder(it)}
-      ${score}${it.owned ? `<div class="owned">Full bottle</div>` : ""}</div>
-    <div class="meta"><div class="house">${esc(it.house)}</div><div class="name">${esc(it.name)}</div>
-    ${it.notes ? `<p class="note">${esc(firstLine(it.notes))}</p>` : ""}</div></button>`;
+  const n = cardsPerRow;
+  const col = 2 + (i % n) * 4, row = 1 + Math.floor(i / n) * (CARD_ROWS + 1);
+  const letter = esc((it.house || "?").slice(0, 1).toUpperCase());
+  const foot = it.owned ? `<div class="foot owned">Full bottle</div>`
+    : it.rating === null ? `<div class="foot tag">Queue</div>` : "";
+  return `<button class="card" data-i="${i}" style="grid-column:${col}/span 3;grid-row:${row}/span ${CARD_ROWS}">
+    ${it.rating !== null ? `<div class="score${it.rating >= 90 ? " top" : ""}">${it.rating}</div>` : ""}
+    <div class="head"><div class="house">${esc(it.house)}</div><div class="name">${esc(it.name)}</div></div>
+    <div class="bottle">${it.img ? `<img src="${it.img}" alt="" loading="lazy" referrerpolicy="no-referrer" data-letter="${letter}">` : placeholder(it)}</div>
+    ${foot}</button>`;
+}
+
+// Cards per row by screen width. The gridlines are drawn from the columns the browser
+// actually laid out, so every block of text or color sits on a gridline.
+let cardsPerRow = 0;
+function layout() {
+  const w = Math.min(document.documentElement.clientWidth, 1100);
+  const n = w < 600 ? 2 : w < 900 ? 3 : 4;
+  const changed = n !== cardsPerRow;
+  cardsPerRow = n;
+  document.documentElement.style.setProperty("--n", n);
+  const sheet = document.getElementById("grid");
+  const cols = getComputedStyle(sheet).gridTemplateColumns.split(" ").map(parseFloat);
+  const h = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--H"));
+  const width = cols.reduce((a, b) => a + b, 0);
+  let x = 0, lines = "";
+  for (const c of cols) { x += c; lines += `M${(x - 0.5).toFixed(1)} 0V${h}`; }
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${h}"><path d="M0.5 0V${h}${lines}M0 ${h - 0.5}H${width}" stroke="#dadce0" stroke-width="1" fill="none"/></svg>`;
+  document.documentElement.style.setProperty("--gridlines", `url("data:image/svg+xml,${encodeURIComponent(svg)}")`);
+  // The card area repeats every card-and-blank-row band, where the name row is 1.5 rows tall.
+  const rows = [h, 1.5 * h, ...Array(10).fill(h)];
+  let y = 0, across = "";
+  for (const r of rows) { y += r; across += `M0 ${(y - 0.5).toFixed(1)}H${width}`; }
+  const band = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${y}"><path d="M0.5 0V${y}${lines.replaceAll(`V${h}`, `V${y}`)}${across}" stroke="#dadce0" stroke-width="1" fill="none"/></svg>`;
+  document.documentElement.style.setProperty("--gridlines-cards", `url("data:image/svg+xml,${encodeURIComponent(band)}")`);
+  return changed;
 }
 
 let current = [];
@@ -310,11 +340,9 @@ function render() {
     b.classList.toggle("on", b.dataset.view === state.view);
     b.querySelector("small").textContent = counts[b.dataset.view];
   });
-  document.getElementById("queue-filter").hidden = state.view !== "queue";
-  document.querySelectorAll("[data-qf]").forEach((b) => b.classList.toggle("on", b.dataset.qf === state.queueFilter));
   current = visible();
   const grid = document.getElementById("grid");
-  grid.innerHTML = current.length ? current.map(card).join("") : `<div class="empty"><p>Nothing matches.</p></div>`;
+  grid.innerHTML = current.length ? current.map(card).join("") : `<p class="empty">Nothing matches.</p>`;
 }
 
 function openDetail(it) {
@@ -325,7 +353,7 @@ function openDetail(it) {
   d.querySelector(".sheet-body").innerHTML = `
     <div class="d-bottle">${it.img ? `<img src="${it.img}" alt="" referrerpolicy="no-referrer" data-letter="${esc((it.house || "?").slice(0, 1).toUpperCase())}">` : placeholder(it)}</div>
     <div class="d-head">
-      ${it.rating !== null ? `<div class="d-score">${it.rating}</div>` : `<div class="tag static">${it.list === "wish" ? "Want to try" : "Untried"}</div>`}
+      ${it.rating !== null ? `<div class="d-score${it.rating >= 90 ? " top" : ""}">${it.rating}</div>` : `<div class="tag static">Queue</div>`}
       <div><div class="house">${esc(it.house)}</div><h2>${esc(it.name)}</h2>${it.owned ? `<div class="owned static">Full bottle</div>` : ""}</div>
     </div>
     ${it.notes ? `<p class="d-notes">${esc(it.notes)}</p>` : ""}
@@ -348,11 +376,14 @@ function buildLink(sheetUrl, name) {
 }
 
 function init() {
-  document.getElementById("title").textContent = ownerName ? `${ownerName}’s Fragrances` : "Fragrances";
-  document.title = ownerName ? `${ownerName}’s Fragrances` : "Fragrances";
+  const title = isDefault ? "SMELLS" : ownerName ? `${ownerName}’s Smells` : "Smells";
+  document.getElementById("title").textContent = title;
+  document.title = title;
 
-  document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => { state.view = b.dataset.view; render(); scrollTo(0, 0); }));
-  document.querySelectorAll("[data-qf]").forEach((b) => b.addEventListener("click", () => { state.queueFilter = b.dataset.qf; render(); }));
+  const menu = document.getElementById("menu"), menuBtn = document.getElementById("menu-btn");
+  const showMenu = (open) => { menu.hidden = !open; menuBtn.setAttribute("aria-expanded", open); };
+  menuBtn.addEventListener("click", () => showMenu(menu.hidden));
+  document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => { state.view = b.dataset.view; showMenu(false); render(); scrollTo(0, 0); }));
   const search = document.getElementById("search");
   search.addEventListener("input", () => { state.query = search.value; render(); });
   const sort = document.getElementById("sort");
@@ -364,18 +395,13 @@ function init() {
     const img = e.target;
     if (img.tagName !== "IMG") return;
     const ph = document.createElement("div");
-    ph.className = "ph";
+    ph.className = `ph ${tint(img.dataset.letter || "")}`;
     ph.innerHTML = `<span>${esc(img.dataset.letter || "")}</span>`;
     img.replaceWith(ph);
   }, true);
 
   document.querySelectorAll("dialog").forEach((d) => d.addEventListener("click", (e) => { if (e.target === d || e.target.closest(".close")) d.close(); }));
 
-  document.getElementById("share").addEventListener("click", async () => {
-    const url = location.href;
-    if (navigator.share) { try { await navigator.share({ title: document.title, url }); } catch {} }
-    else { await navigator.clipboard.writeText(url); alert("Link copied."); }
-  });
   document.getElementById("own").addEventListener("click", () => document.getElementById("setup").showModal());
   document.getElementById("setup-form").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -386,6 +412,8 @@ function init() {
     out.innerHTML = `<p>Your page is ready. Bookmark it or add it to your home screen.</p><a class="btn" href="${esc(link)}">Open my collection</a>`;
   });
 
+  layout();
+  addEventListener("resize", () => { if (layout() && state.items.length) render(); });
   load();
 }
 

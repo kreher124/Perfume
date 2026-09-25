@@ -3,59 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Fragrances</title>
-  <meta name="theme-color" content="#f5f1ea" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#16140f" media="(prefers-color-scheme: dark)">
+  <title>SMELLS</title>
+  <meta name="theme-color" content="#ffffff">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Fragrances">
+  <meta name="apple-mobile-web-app-title" content="SMELLS">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="top">
-      <h1 id="title">Fragrances</h1>
-      <button id="share" class="icon-btn" aria-label="Share this collection">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
-      </button>
-    </div>
-    <nav class="tabs">
-      <button data-view="ranked" class="on">Ranked <small></small></button>
-      <button data-view="owned">Owned <small></small></button>
-      <button data-view="queue">Queue <small></small></button>
-    </nav>
-    <div class="controls">
-      <input id="search" type="search" placeholder="Search house, name, notes" autocomplete="off">
-      <select id="sort" aria-label="Sort">
-        <option value="score-desc">Score ↓</option>
-        <option value="score-asc">Score ↑</option>
-        <option value="house">House A–Z</option>
-        <option value="name">Name A–Z</option>
-      </select>
-    </div>
-    <div id="queue-filter" class="chips" hidden>
-      <button data-qf="all" class="on">All</button>
-      <button data-qf="untried">On hand, untried</button>
-      <button data-qf="wish">Want to try</button>
-    </div>
+  <!-- Every block below sits on one shared spreadsheet grid: fixed-height rows and the columns
+       G B C D G B C D … G (G = gutter). A card fills B–D of one set and 11 rows, like merged cells. -->
+  <header id="top" class="sheet">
+    <div class="band"></div>
+    <h1 id="title">SMELLS</h1>
+    <button id="menu-btn" class="cell-btn" aria-label="Lists" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
   </header>
 
-  <p id="status" class="muted status"></p>
-  <main id="grid" class="grid"><div class="empty"><p class="muted">Loading…</p></div></main>
+  <nav id="menu" class="sheet menu" hidden>
+    <div class="m-band" data-for="ranked"></div><button data-view="ranked" class="on">Ranked <small></small></button>
+    <div class="m-band" data-for="owned"></div><button data-view="owned">Owned <small></small></button>
+    <div class="m-band" data-for="queue"></div><button data-view="queue">Queue <small></small></button>
+  </nav>
 
-  <footer><button id="own" class="link-btn">Make your own collection page</button></footer>
+  <section class="sheet controls">
+    <input id="search" type="search" placeholder="Search" autocomplete="off">
+    <select id="sort" aria-label="Sort">
+      <option value="house" selected>House A–Z</option>
+      <option value="name">Name A–Z</option>
+      <option value="score-desc">Score high–low</option>
+      <option value="score-asc">Score low–high</option>
+    </select>
+  </section>
 
-  <dialog id="detail" class="sheet">
+  <main id="grid" class="sheet cards"><p class="empty">Loading…</p></main>
+
+  <footer class="sheet"><button id="own" class="link-btn">Make your own</button></footer>
+
+  <dialog id="detail" class="panel">
     <button class="close" aria-label="Close">×</button>
     <div class="sheet-body"></div>
   </dialog>
 
-  <dialog id="setup" class="sheet">
+  <dialog id="setup" class="panel">
     <button class="close" aria-label="Close">×</button>
     <div class="sheet-body setup">
       <h2>Make your own</h2>
