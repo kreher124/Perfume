@@ -814,7 +814,10 @@
 },
 "dsh|balls said the queen": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/balls-said-the-queen/"
+"src": [
+"https://www.dshperfumes.com/shop/balls-said-the-queen/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/balls-said-the-queen-eau-de-parfum"
+]
 },
 "dsh|become the shaman": {
 "h": "DSH Perfumes",
@@ -892,7 +895,10 @@
 },
 "dsh|partners in crime": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/partners-in-crime-a-honeyed-labdanum-perfume/"
+"src": [
+"https://www.dshperfumes.com/shop/partners-in-crime-a-honeyed-labdanum-perfume/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/partners-in-crime-eau-de-parfum"
+]
 },
 "dsh|potager de bergamot": {
 "h": "DSH Perfumes",

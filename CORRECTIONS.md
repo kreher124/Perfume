@@ -3,8 +3,8 @@
 This file lists how the app cleans up names from your sheet. Your Google Sheet is never edited. Per-perfume corrections and photo sources live in `matches.json`. House-name spelling fixes live in the `HOUSE_FIXES` list at the top of `app.js`.
 
 - Perfumes in the sheet: 775
-- With a bottle photo: 733
-- Photo source found, waiting for the Find bottle photos action: 30
+- With a bottle photo: 752
+- Photo source found, waiting for the Find bottle photos action: 11
 - No photo found anywhere: 3
 - Rows that name a whole line or a discovery set: 9
 
@@ -47,36 +47,17 @@ If one of these is the wrong version, tell Claude which one you meant.
 
 These aren't on Fragrantica. `matches.json` names a product page or shop for each, and the Find bottle photos GitHub Action copies the photo's address from there. If one still shows a letter tile after the action has run, the page may have moved.
 
-- American Perfumer: Rushlight
 - DSH Perfumes: Au Crépuscule de Lavande
 - DSH Perfumes: Balls...Said The Queen
 - DSH Perfumes: Eclipse
-- DSH Perfumes: Highland Idyll
 - DSH Perfumes: In the Jungle Groove
-- DSH Perfumes: L'Or(ris)
-- DSH Perfumes: La Casa Azul
 - DSH Perfumes: Le Jade
 - DSH Perfumes: Partners In Crime
 - DSH Perfumes: Potager de Bergamot
 - DSH Perfumes: Soho Cuir
 - DSH Perfumes: Vachi
 - DSH Perfumes: Warrior Queen
-- Ensar Oud: Japanese Red Rose oil
-- Jenny Glow: French Lime Leaves
-- Laurel Bath House: Not Vanilla
-- Laurel Bath House: Nudi
-- Malka Sima: Beyond the Veil
-- Malka Sima: Lineage of Advice
-- Malka Sima: Thread the Light
-- Malka Sima: Tomato
-- Nose of Gatsby: Naive
-- September 28th: Bun
 - September 28th: Lake Tahoe Air
-- September 28th: Little Rosie
-- September 28th: Mono
-- September 28th: Nothing Dramatic
-- September 28th: Silken Tofu
-- The Different Company: Crazy Tuberose
 
 ## No photo found
 
