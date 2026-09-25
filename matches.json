@@ -250,6 +250,9 @@
 "n": "801",
 "p": "Bon-Parfumeur/801-sea-spray-cedar-grapefruit-51012"
 },
+"bon parfumeur|801 0": {
+"p": "Bon-Parfumeur/801-sea-spray-cedar-grapefruit-51012"
+},
 "borntostandout|dirty rice": {
 "h": "BORNTOSTANDOUT",
 "n": "Dirty Rice",
@@ -2669,6 +2672,9 @@
 },
 "ysl|rive gauche pour homme": {
 "p": "Yves-Saint-Laurent/Rive-Gauche-pour-Homme-1032"
+},
+"ysl|rouge velours rose": {
+"p": "Yves-Saint-Laurent/Rouge-Velours-68213"
 },
 "ysl|tuxedo patchouli": {
 "n": "Tuxedo",

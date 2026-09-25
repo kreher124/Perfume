@@ -102,6 +102,16 @@ const isDefault = sheetId === DEFAULT_SHEET;
 const state = { items: [], view: "ranked", sort: "score-desc", query: "", queueFilter: "all" };
 let matches = {};
 
+// matches.json is keyed by the names as first typed in the sheet. Also file each
+// entry under its corrected names, so rows fixed in the sheet keep their photo.
+function addCorrectedNames() {
+  for (const [key, m] of Object.entries(matches)) {
+    const [house, name] = key.split("|");
+    const fixed = norm(m.h || houseFix[house] || house) + "|" + norm(m.n || name);
+    if (!(fixed in matches)) matches[fixed] = m;
+  }
+}
+
 // ---------- text helpers ----------
 const norm = (s) =>
   String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -232,6 +242,7 @@ async function fetchBuf(url) {
 
 async function load() {
   try { matches = await (await fetch("matches.json", { cache: "no-store" })).json(); } catch { matches = {}; }
+  addCorrectedNames();
   const live = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=xlsx`;
   let buf, source = "live";
   try { buf = await fetchBuf(live); }
