@@ -55,18 +55,19 @@ h1 {
 }
 #menu-btn { grid-column: -3; }
 
-/* ---------- menu: three color blocks, like the home page ---------- */
+/* ---------- menu: four blocks, magenta, cyan, yellow, white ---------- */
 .menu {
   position: fixed; left: 0; right: 0; z-index: 6;
   top: calc(env(safe-area-inset-top) + 5 * var(--H));
-  grid-template-rows: repeat(13, var(--H));
+  grid-template-rows: repeat(17, var(--H));
   border-bottom: var(--line);
 }
 .menu[hidden] { display: none; }
 .m-band { grid-column: 2 / -2; outline: var(--line); outline-offset: -1px; }
-.m-band[data-for="ranked"] { grid-row: 2 / 5; background: var(--yellow); }
-.m-band[data-for="owned"] { grid-row: 6 / 9; background: var(--magenta); }
-.m-band[data-for="queue"] { grid-row: 10 / 13; background: var(--cyan); }
+.m-band[data-for="ranked"] { grid-row: 2 / 5; background: var(--magenta); }
+.m-band[data-for="owned"] { grid-row: 6 / 9; background: var(--cyan); }
+.m-band[data-for="queue"] { grid-row: 10 / 13; background: var(--yellow); }
+.m-band[data-for="own"] { grid-row: 14 / 17; background: var(--paper); }
 .menu button {
   grid-column: 3 / -3; z-index: 1; border: 0; background: var(--paper); outline: var(--line); outline-offset: -1px;
   font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase;
@@ -74,6 +75,7 @@ h1 {
 .menu button[data-view="ranked"] { grid-row: 3; }
 .menu button[data-view="owned"] { grid-row: 7; }
 .menu button[data-view="queue"] { grid-row: 11; }
+.menu #own { grid-row: 15; }
 .menu button.on { background: var(--ink); color: var(--paper); }
 .menu small { font-weight: 400; margin-left: 6px; letter-spacing: .04em; }
 
@@ -143,13 +145,6 @@ h1 {
 
 .empty.error { grid-row: 1 / 7; align-self: start; text-transform: none; letter-spacing: 0; font-size: 13px; }
 .empty { grid-column: 2 / -2; grid-row: 1; align-self: center; padding: 0 6px; text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
-
-/* ---------- footer ---------- */
-footer.sheet { grid-template-rows: repeat(2, var(--H)); }
-.link-btn {
-  grid-column: 2 / 5; grid-row: 1; border: 0; border-radius: 0; background: var(--paper); outline: var(--line); outline-offset: -1px;
-  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
-}
 
 /* ---------- detail and setup panels ---------- */
 dialog.panel {
