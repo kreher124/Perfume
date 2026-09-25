@@ -7,6 +7,71 @@ const DEFAULT_NAME = "Jason";
 const SNAPSHOT = "data/FRAGRANCES.xlsx";
 const IMG = (id) => `https://fimgs.net/mdimg/perfume/375x500.${id}.jpg`;
 
+// Obvious house-name misspellings, applied when a perfume has no Fragrantica match.
+const HOUSE_FIXES = {
+  "Andy Tauer": "Tauer Perfumes",
+  "Aqua di Parma": "Acqua di Parma",
+  "Armani Priv\u0113": "Armani Priv\u00e9",
+  "Beaufort": "BeauFort London",
+  "BOHOBOCO": "Bohoboco",
+  "Bon Parfumer": "Bon Parfumeur",
+  "Borntostandout": "BORNTOSTANDOUT",
+  "BORNTOSTANDOUT\u00ae": "BORNTOSTANDOUT",
+  "bvlgari": "Bvlgari",
+  "By Kilian": "Kilian",
+  "By Killian": "Kilian",
+  "Chloe": "Chlo\u00e9",
+  "Clue": "Clue Perfumery",
+  "Comme des Garcons": "Comme des Gar\u00e7ons",
+  "Comme des Gar\u00e7on": "Comme des Gar\u00e7ons",
+  "Commes des Garcons": "Comme des Gar\u00e7ons",
+  "Commes des Gar\u00e7on": "Comme des Gar\u00e7ons",
+  "Commes des Gar\u00e7ons": "Comme des Gar\u00e7ons",
+  "Dolce and Gabbana": "Dolce & Gabbana",
+  "DSH": "DSH Perfumes",
+  "Ecscentric Molecules": "Escentric Molecules",
+  "EDLO": "Etat Libre d'Orange",
+  "ELDO": "Etat Libre d'Orange",
+  "Eris": "Eris Parfums",
+  "Floraiku": "Flora\u00efku",
+  "Frederic Malle": "Fr\u00e9d\u00e9ric Malle",
+  "Fzotic": "FZOTIC",
+  "Hermes": "Herm\u00e8s",
+  "Histories des Parfums": "Histoires de Parfums",
+  "Killian": "Kilian",
+  "L'Artisan Perfumier": "L'Artisan Parfumeur",
+  "L'occetaine": "L'Occitane",
+  "Lancome": "Lanc\u00f4me",
+  "Les Liquides Imaginaires": "Liquides Imaginaires",
+  "Maison Francis K": "Maison Francis Kurkdjian",
+  "Margiela": "Maison Margiela",
+  "Matiere Premier": "Mati\u00e8re Premi\u00e8re",
+  "MFK": "Maison Francis Kurkdjian",
+  "Molecule": "Escentric Molecules",
+  "Moscino": "Moschino",
+  "Nasomotto": "Nasomatto",
+  "Olfactive Studios": "Olfactive Studio",
+  "ONE DAY": "One Day",
+  "Paco Rabonne": "Paco Rabanne",
+  "Parfumeur d'Empire": "Parfum d'Empire",
+  "Parfums de Marley": "Parfums de Marly",
+  "Penhaligons": "Penhaligon's",
+  "Penihaligons": "Penhaligon's",
+  "Penilaligons": "Penhaligon's",
+  "Regime des Fleurs": "R\u00e9gime des Fleurs",
+  "Rogue": "Rogue Perfumery",
+  "Senyoko": "Senyok\u00f4",
+  "Serge lutens": "Serge Lutens",
+  "Stora Stuggan": "Stora Skuggan",
+  "Une Nuite Nomade": "Une Nuit Nomade",
+  "UNN": "Une Nuit Nomade",
+  "Viktor and Rolf": "Viktor & Rolf",
+  "Xinu": "Xin\u00fa",
+  "Zyrena": "Xyrena",
+};
+const houseFix = {};
+for (const [k, v] of Object.entries(HOUSE_FIXES)) houseFix[k.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()] = v;
+
 const params = new URLSearchParams(location.search);
 const sheetId = params.get("sheet") || DEFAULT_SHEET;
 const ownerName = params.get("name") || (params.get("sheet") ? "" : DEFAULT_NAME);
@@ -97,6 +162,7 @@ function sheetToItems(sheet, kind) {
   rows.forEach((r, idx) => {
     const house = get(r, col.house), name = get(r, col.name);
     if (!house && !name) return;
+    if (!name && house.startsWith("(")) return; // a note, not a perfume
     const ratingText = get(r, col.rating);
     const rating = ratingText !== "" && !isNaN(+ratingText) ? Math.round(+ratingText) : null;
     const colors = [r[col.house], r[col.name]].map((c) => c && c.color);
@@ -115,6 +181,7 @@ function sheetToItems(sheet, kind) {
     if (fromCol) item.path = fromCol[1];
     else if (m) item.path = m.p;
     if (m && m.h) item.house = m.h;
+    else if (houseFix[norm(house)]) item.house = houseFix[norm(house)];
     if (m && m.n) item.name = m.n;
     const id = item.path && item.path.match(/-(\d+)$/);
     if (id) item.img = IMG(id[1]);
