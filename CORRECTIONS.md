@@ -3,9 +3,9 @@
 This file lists how the app cleans up names from your sheet. Your Google Sheet is never edited. Per-perfume corrections and photo sources live in `matches.json`. House-name spelling fixes live in the `HOUSE_FIXES` list at the top of `app.js`.
 
 - Perfumes in the sheet: 775
-- With a bottle photo: 752
-- Photo source found, waiting for the Find bottle photos action: 11
-- No photo found anywhere: 3
+- With a bottle photo: 755
+- Photo source found, waiting for the Find bottle photos action: 9
+- No photo found anywhere: 2
 - Rows that name a whole line or a discovery set: 9
 
 ## Guesses worth checking
@@ -48,11 +48,9 @@ If one of these is the wrong version, tell Claude which one you meant.
 These aren't on Fragrantica. `matches.json` names a product page or shop for each, and the Find bottle photos GitHub Action copies the photo's address from there. If one still shows a letter tile after the action has run, the page may have moved.
 
 - DSH Perfumes: Au Crépuscule de Lavande
-- DSH Perfumes: Balls...Said The Queen
 - DSH Perfumes: Eclipse
 - DSH Perfumes: In the Jungle Groove
 - DSH Perfumes: Le Jade
-- DSH Perfumes: Partners In Crime
 - DSH Perfumes: Potager de Bergamot
 - DSH Perfumes: Soho Cuir
 - DSH Perfumes: Vachi
@@ -65,7 +63,6 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 
 - D&Scent Studios: Verdant Halo
 - Loewe: Angus
-- Versace: Roses des sables
 
 ## Rows that aren't a single perfume
 
@@ -508,6 +505,7 @@ These show a letter tile. They name a whole line or a discovery set, so there is
 | Une Nuite Nomade · Jardins de Misfah Extrait | Une Nuit Nomade · Jardins de Misfah Extrait |
 | UNN · Chemin d'Amande | Une Nuit Nomade · Chemin d'Amande |
 | Van Cleef & Arpels · Bois d’Amande | Van Cleef & Arpels · Bois d'Amande |
+| Versace · Roses des sables | Louis Vuitton · Les Sables Roses |
 | Viktor and Rolf · Spicebomb | Viktor & Rolf · Spicebomb |
 | Villa Urbatium · Mossy Glen | Villa Erbatium · Mossy Glen |
 | Xerjoff · Naxos | Xerjoff · XJ 1861 Naxos |

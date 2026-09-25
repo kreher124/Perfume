@@ -2593,7 +2593,11 @@
 "n": "Bois d'Amande",
 "p": "Van-Cleef-Arpels/Bois-d-Amande-60167"
 },
-"versace|roses des sables": {},
+"versace|roses des sables": {
+"h": "Louis Vuitton",
+"n": "Les Sables Roses",
+"p": "Louis-Vuitton/Les-Sables-Roses-55040"
+},
 "viktor and rolf|spicebomb": {
 "p": "Viktor-Rolf/Spicebomb-13857"
 },
