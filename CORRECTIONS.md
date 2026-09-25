@@ -3,20 +3,44 @@
 This file lists how the app cleans up names from your sheet. Your Google Sheet is never edited. Per-perfume corrections and Fragrantica links live in `matches.json`. House-name spelling fixes live in the `HOUSE_FIXES` list at the top of `app.js`.
 
 - Perfumes in the sheet: 775
-- Matched to Fragrantica (bottle photo): 262
-- Looked up, not on Fragrantica: 20
-- Not looked up yet: 493
+- Matched to Fragrantica (bottle photo): 727
+- Looked up, not on Fragrantica: 40
+- Rows that name a whole line or a discovery set: 8
 
 ## Guesses worth checking
 
 If one of these is the wrong version, tell Claude which one you meant.
 
+- Arko | Ink: read as Akro Ink
+- Bolton and Rolf | Metallic Musk: read as Viktor & Rolf Spicebomb Metallic Musk
 - Chanel | Bleu: guessed the Eau de Parfum version
+- Chanel | No 19: used the Eau de Parfum
 - Creed | Vetiver: could also be the older 1948 Vetiver
 - Czech & Speake | No. 88: could be the 1980 cologne instead of the Eau de Parfum
 - Dior | Du Cap: guessed that "Du Cap" means Eden-Roc (named for the Hôtel du Cap)
 - Dolce and Gabbana | The One: could be the women's The One instead
 - DSH | Something Capri: guessed; only DSH scent with Capri in the name
+- Guerlain | Eau de Cashmire: used the 2026 Les Eaux version (an older 2014 Eau de Cashmere also exists)
+- Guerlain | Jasmine extract: guessed Jasmin Grandiflorum Extrait 30
+- Guerlain | Oud Essential: used the 2024 Oud Essentiel; could be the 2017 Les Absolus d'Orient Oud Essentiel
+- Henrik Vibskov | Lotus Root Red: guessed Lotus Dust Red, the only Vibskov scent with Lotus and Red in the name
+- Hilde Soliani | Pranzo something: guessed Buon Pranzo
+- Hiram Green | Shangri La: used the 2014 original; could be the 2022 edition
+- Houbigant | Fougere Royale: used the 2010 reissue
+- Imaginary Authors | Explosions in the Sky: guessed Slow Explosions
+- Kim Kardashian | Honey: guessed Pure Honey
+- L'Occitane | Magnolia: guessed Eau du Val (Magnolia)
+- Lacoste | Blanc: used L.12.12 Blanc (2011); several Blanc flankers exist
+- Lacoste | Rose: used L.12.12 Rose Eau de Parfum (2021)
+- Lancôme | Le Parfum: guessed Absolue Le Parfum (2024)
+- Le Labo | In Jardin Sur La Legune: this is Hermès Un Jardin Sur La Lagune, so the app shows it under Hermès
+- Loewe | Ella: guessed Agua de Loewe Ella
+- Nasomotto | Black Affogato: guessed Black Afgano
+- Perfumes Quartana | Leofarte: read as Ierofante
+- Phlur | Sweet Spot: guessed Soft Spot
+- Tom Ford | Cafe Rose: used the 2012 original; a 2023 relaunch also exists
+- Trena | Graffiti: read as Xyrena Graffiti
+- YSL | Velours (rose): guessed Rouge Velours
 
 ## Looked up, but not on Fragrantica
 
@@ -38,10 +62,43 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 - DSH Perfumes: Soho Cuir
 - DSH Perfumes: Vachi
 - DSH Perfumes: Warrior Queen
+- Ensar Oud: Japanese Red Rose oil
 - Fischersund: The Whole House
 - Jenny Glow: French Lime Leaves
+- Laurel Bath House: Not Vanilla
+- Laurel Bath House: Nudi
+- Loewe: Angus
+- Malka Sima: Beyond the Veil
+- Malka Sima: Lineage of Advice
+- Malka Sima: Thread the Light
+- Malka Sima: Tomato
+- Nose of Gatsby: Naive
+- Pearfat: 2030 Park Avenue
+- Pearfat: I'll Never Learn
+- Pearfat: Stomped on a Bed of Lettuce
+- September 28th: Bun
+- September 28th: Lake Tahoe Air
+- September 28th: Little Rosie
+- September 28th: Mono
+- September 28th: Nothing Dramatic
+- September 28th: Silken Tofu
+- The Different Company: Crazy Tuberose
 - Tommy Bahama: Set Sail Martinique
+- Versace: Roses des sables
 - Vilhelm Parfumerie: Morning Chess
+
+## Rows that aren't a single perfume
+
+These show a letter tile. They name a whole line or a discovery set, so there is no one bottle to show.
+
+- Initio: The whole line
+- Kenzo: The whole line
+- Parfums de Marly: The whole line
+- Penhaligon's: The whole line
+- Perfumehead: The whole line
+- Rogue Perfumery: (discovery set)
+- Senyokô: (discovery set)
+- Toskovat': The whole line
 
 ## Rows with a house but no perfume name
 
@@ -53,6 +110,7 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 
 | In your sheet | Shown in the app |
 |---|---|
+| 100 Bon · Rose and Black Pepper | 100 Bon · Rose & Black Pepper |
 | Acqua di Parma · Oud and Spice | Acqua di Parma · Oud & Spice |
 | Aedes de Venustas · Cafe Tabac | Aedes de Venustas · Café Tabac |
 | Aedes de Venustas · Sueno Latino | Aedes de Venustas · Sueño Latino |
@@ -66,6 +124,7 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 | Aqua di Parma · Buongiorno | Acqua di Parma · Buongiorno |
 | Aqua di Parma · Sandolo | Acqua di Parma · Sandalo |
 | Argos · Palas Athena | Argos · Pallas Athene |
+| Arko · Ink | Akro · Ink |
 | Armani Privē · Blue Lazuli | Armani Privé · Bleu Lazuli |
 | Armani Privē · Bois D'ences | Armani Privé · Bois d'Encens |
 | Armani Privē · Cuir Nu | Armani Privé · Cuir Nu |
@@ -85,13 +144,14 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 | Billie Eilish · No. 2 | Billie Eilish · Eilish No. 2 |
 | BOHOBOCO · Mango Yuzu Gasoline | Bohoboco · Mango Yuzu Gasoline |
 | Boka · Ziveli | Boka · Živeli |
+| Bolton and Rolf · Metallic Musk | Viktor & Rolf · Spicebomb Metallic Musk |
 | Bon Parfumer · 801.0 | Bon Parfumeur · 801 |
 | Borntostandout · Dirty rice | BORNTOSTANDOUT · Dirty Rice |
 | Borntostandout · Naked Laundry | BORNTOSTANDOUT · Naked Laundry |
 | Borntostandout · Warm Air | BORNTOSTANDOUT · Warm Air |
 | BORNTOSTANDOUT® · Nanatopia | BORNTOSTANDOUT · Nanatopia |
-| bvlgari · blossom delight | Bvlgari · blossom delight |
 | Bvlgari (Le Gemme) · Tygar | Bvlgari · Le Gemme Tygar |
+| bvlgari · blossom delight | Bvlgari · Rose Goldea Blossom Delight |
 | By Kilian · Imperial Tea | Kilian · Imperial Tea |
 | By Kilian · Kolone Shield of Protection | Kilian · Kologne, Shield of Protection |
 | By Kilian · L'Heur Vert | Kilian · L'Heure Verte |
@@ -103,6 +163,7 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 | Caron · Tabac Blonde EDP | Caron · Tabac Blond |
 | Chanel · 1957 Parfum | Chanel · 1957 |
 | Chanel · Bleu | Chanel · Bleu de Chanel |
+| Chanel · No 19 | Chanel · No. 19 |
 | Chanel · Paris Paris | Chanel · Paris – Paris |
 | Chanel · Rue de 31 Cambon | Chanel · 31 Rue Cambon |
 | Chloe · Chloe EDP | Chloé · Chloé Eau de Parfum |
@@ -112,7 +173,8 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 | Clue · Morel Map | Clue Perfumery · Morel Map |
 | Clue · Warm Bulb | Clue Perfumery · Warm Bulb |
 | Clue · With the Candlestick | Clue Perfumery · With the Candlestick |
-| Comme des Garcons · Carnation | Comme des Gar\u00e7ons · Carnation |
+| Coach · Green | Coach · Coach Green |
+| Comme des Garcons · Carnation | Comme des Garçons · Series 2 Red: Carnation |
 | Comme des Garcons · Lily | Comme des Garçons · Series 1 Leaves: Lily |
 | Comme des Garcons · Serpentine | Comme des Garçons · Serpentine |
 | Comme des Garçon · Monocle Scent 3: Sugi | Comme des Garçons · Monocle Scent Three: Sugi |
@@ -154,6 +216,7 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 | Dior · The Cachemire | Dior · Thé Cachemire |
 | Diptyque · Lilyphea | Diptyque · Lilyphéa |
 | Dirty Rice · Borntostandout | BORNTOSTANDOUT · Dirty Rice |
+| Dolce & Gabbana · L'Amoureux 6 | Dolce & Gabbana · D&G Anthology L'Amoureux 6 |
 | Dolce and Gabbana · The One | Dolce&Gabbana · The One for Men |
 | DS&Durga · Atlantic Rose | DS&Durga · Rose Atlantic |
 | DS&Durga · Cypress Ruin | DS&Durga · Roman Ruin Cypress |
@@ -204,618 +267,285 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 | ELDO · Sous le Pont Mirabeau | Etat Libre d'Orange · Sous le Pont Mirabeau |
 | ELDO · Spice Must Flow | Etat Libre d'Orange · Spice Must Flow |
 | ELDO · You or Someone Like You | Etat Libre d'Orange · You or Someone Like You |
-| Eris · Green Spell | Eris Parfums · Green Spell |
 | Eris Parfums · Belle du Jour | Eris Parfums · Belle de Jour |
+| Eris · Green Spell | Eris Parfums · Green Spell |
 | Fenty · Fenty | Fenty · Fenty Eau de Parfum |
 | Fischersund · The whole house | Fischersund · The Whole House |
+| Floraiku | Floraïku |
 | Floraiku · Between 2 Trees | Floraïku · Between Two Trees |
-| Frederic Malle · Bigarade Concentree | Fr\u00e9d\u00e9ric Malle · Bigarade Concentree |
-| Frederic Malle · Carnal Flower | Fr\u00e9d\u00e9ric Malle · Carnal Flower |
-| Frederic Malle · Cuir Rose | Fr\u00e9d\u00e9ric Malle · Cuir Rose |
-| Frederic Malle · En Passant | Fr\u00e9d\u00e9ric Malle · En Passant |
-| Frederic Malle · French Lover | Fr\u00e9d\u00e9ric Malle · French Lover |
-| Frederic Malle · Geranium Pour Monsieur | Fr\u00e9d\u00e9ric Malle · Geranium Pour Monsieur |
-| Frederic Malle · Heaven Can Wait | Fr\u00e9d\u00e9ric Malle · Heaven Can Wait |
-| Frederic Malle · L'eau d'Hiver | Fr\u00e9d\u00e9ric Malle · L'eau d'Hiver |
+| Frederic Malle · Bigarade Concentree | Frédéric Malle · Bigarade Concentrée |
+| Frederic Malle · Carnal Flower | Frédéric Malle · Carnal Flower |
+| Frederic Malle · Cuir Rose | Frédéric Malle · Rose & Cuir |
+| Frederic Malle · En Passant | Frédéric Malle · En Passant |
+| Frederic Malle · French Lover | Frédéric Malle · French Lover |
+| Frederic Malle · Geranium Pour Monsieur | Frédéric Malle · Geranium Pour Monsieur |
+| Frederic Malle · Heaven Can Wait | Frédéric Malle · Heaven Can Wait |
+| Frederic Malle · L'eau d'Hiver | Frédéric Malle · L'Eau d'Hiver |
 | Frederic Malle · Lipstick Rose | Frédéric Malle · Lipstick Rose |
-| Frederic Malle · Musc Ravageur | Fr\u00e9d\u00e9ric Malle · Musc Ravageur |
-| Frederic Malle · Portrait of a Lady | Fr\u00e9d\u00e9ric Malle · Portrait of a Lady |
+| Frederic Malle · Musc Ravageur | Frédéric Malle · Musc Ravageur |
+| Frederic Malle · Portrait of a Lady | Frédéric Malle · Portrait of a Lady |
 | Frederic Malle · Rose Tonnare (or Une Rose) | Frédéric Malle · Rose Tonnerre (Une Rose) |
-| Frederic Malle · Synthetic Jungle | Fr\u00e9d\u00e9ric Malle · Synthetic Jungle |
-| Frederic Malle · Vetiver Extrordinaire | Fr\u00e9d\u00e9ric Malle · Vetiver Extrordinaire |
-| Fzotic · Au Dela Narcisse | FZOTIC · Au Dela Narcisse |
+| Frederic Malle · Synthetic Jungle | Frédéric Malle · Synthetic Jungle |
+| Frederic Malle · Vetiver Extrordinaire | Frédéric Malle · Vétiver Extraordinaire |
+| Fueguia · Cactus Azul | Fueguia 1833 · Cactus Azul |
+| Fueguia · Chamber | Fueguia 1833 · Chamber |
+| Fueguia · Komorebi | Fueguia 1833 · Komorebi |
+| Fueguia · Milonga Verde | Fueguia 1833 · Milonga Verde |
+| Fueguia · Muskara Rosa | Fueguia 1833 · Muskara Rosa |
+| Fzotic · Au Dela Narcisse | FZOTIC · Au Delà Narcisse |
 | Fzotic · Lampblack | FZOTIC · Lampblack |
 | Fzotic · Monserrat | FZOTIC · Monserrat |
-| Hermes · Concentret de Pamplemousse Rose | Herm\u00e8s · Concentret de Pamplemousse Rose |
-| Hermes · H24 Herbes Vives | Herm\u00e8s · H24 Herbes Vives |
-| Hermes · Hermessence Osmanthe Yunnan | Herm\u00e8s · Hermessence Osmanthe Yunnan |
-| Hermes · Hermessence Vetiver Tonka - 2ml | Herm\u00e8s · Hermessence Vetiver Tonka - 2ml |
-| Hermes · Le Jardin de Monsieur Li | Herm\u00e8s · Le Jardin de Monsieur Li |
-| Hermes · Poivre Samarcande | Herm\u00e8s · Poivre Samarcande |
-| Hermes · Rhubarb d'escarlet | Herm\u00e8s · Rhubarb d'escarlet |
-| Hermes · Rose Ikebana | Herm\u00e8s · Rose Ikebana |
-| Hermes · Terre d'Hermes | Herm\u00e8s · Terre d'Hermes |
+| Guerlain · Aqua Allegoria Forte Rossa Rossa | Guerlain · Aqua Allegoria Forte Rosa Rossa |
+| Guerlain · Aqua Allegoria Mandarine Basilica Forte | Guerlain · Aqua Allegoria Forte Mandarine Basilic |
+| Guerlain · Aqua Allegoria Neroli Vetiver | Guerlain · Aqua Allegoria Nerolia Vetiver |
+| Guerlain · Aqua Allegoria Rossa Rossa | Guerlain · Aqua Allegoria Rosa Rossa |
+| Guerlain · Chamade EDT | Guerlain · Chamade Eau de Toilette |
+| Guerlain · Cruel Gardenia | Guerlain · Cruel Gardénia |
+| Guerlain · Eau de Cashmire | Guerlain · Eau de Cashmere |
+| Guerlain · Epices Volees | Guerlain · Épices Volées |
+| Guerlain · Habit Rouge EDT | Guerlain · Habit Rouge Eau de Toilette |
+| Guerlain · Jasmin Greandeflorum | Guerlain · Jasmin Grandiflorum Extrait 30 |
+| Guerlain · Jasmine extract | Guerlain · Jasmin Grandiflorum Extrait 30 |
+| Guerlain · Jicky EDP | Guerlain · Jicky Eau de Parfum |
+| Guerlain · L'Homme Ideal L'intense | Guerlain · L'Homme Idéal L'Intense |
+| Guerlain · Les Absolus D'Orient Musc Noble | Guerlain · Les Absolus d'Orient Musc Noble |
+| Guerlain · Neroli Outrenoir | Guerlain · Néroli Outrenoir |
+| Guerlain · Oud Essential | Guerlain · Oud Essentiel |
+| Guerlain · Rossa Verde | Guerlain · Aqua Allegoria Rosa Verde |
+| Guerlain · Santal pao rosa | Guerlain · Santal Pao Rosa |
+| Guerlain · Tonka Imperiale | Guerlain · Tonka Impériale |
+| Guerlain · Vetiver Fauve | Guerlain · Vétiver Fauve |
+| Henrik Vibskov · Lotus Root Red | Henrik Vibskov · Lotus Dust Red |
+| Heretic · Black Salt | Heretic Parfum · Black Salt |
+| Heretic · Jasmine Smoke | Heretic Parfum · Jasmine Smoke |
+| Heretic · Poltergeist | Heretic Parfum · Poltergeist |
+| Heretic · Rhubarb Thief | Heretic Parfum · Rhubarb Thief |
+| Heretic · Spectral Grace | Heretic Parfum · Spectral Grace |
+| Hermes · Concentret de Pamplemousse Rose | Hermès · Concentré de Pamplemousse Rose |
+| Hermes · H24 Herbes Vives | Hermès · H24 Herbes Vives |
+| Hermes · Hermessence Osmanthe Yunnan | Hermès · Hermessence Osmanthe Yunnan |
+| Hermes · Hermessence Vetiver Tonka - 2ml | Hermès · Hermessence Vétiver Tonka |
+| Hermes · Le Jardin de Monsieur Li | Hermès · Le Jardin de Monsieur Li |
+| Hermes · Poivre Samarcande | Hermès · Hermessence Poivre Samarcande |
+| Hermes · Rhubarb d'escarlet | Hermès · Eau de Rhubarbe Écarlate |
+| Hermes · Rose Ikebana | Hermès · Hermessence Rose Ikebana |
+| Hermes · Terre d'Hermes | Hermès · Terre d'Hermès |
 | Hermes · Terre d'Hermes Eau Givree | Hermès · Terre d'Hermès Eau Givrée |
-| Hermes · Terre d'Hermes Eau Tres Fraiche | Herm\u00e8s · Terre d'Hermes Eau Tres Fraiche |
-| Hermes · Un Jardin Sur Le Nil | Herm\u00e8s · Un Jardin Sur Le Nil |
-| Hermes · Un Jardin Sur Le Toit | Herm\u00e8s · Un Jardin Sur Le Toit |
-| Hermes · Un Jardin à Cythère | Herm\u00e8s · Un Jardin à Cythère |
-| Histories des Parfums · Hemingway 1899 | Histoires de Parfums · Hemingway 1899 |
-| Killian · Angel's Share | Kilian · Angel's Share |
+| Hermes · Terre d'Hermes Eau Tres Fraiche | Hermès · Terre d'Hermès Eau Très Fraîche |
+| Hermes · Un Jardin Sur Le Nil | Hermès · Un Jardin Sur Le Nil |
+| Hermes · Un Jardin Sur Le Toit | Hermès · Un Jardin Sur Le Toit |
+| Hermes · Un Jardin à Cythère | Hermès · Un Jardin à Cythère |
+| Hilde Soliani · Bell Antonio | Hilde Soliani · Bell'Antonio |
+| Hilde Soliani · Castaaagna Saaaalata | Hilde Soliani · Caaastagna Saalaaata |
+| Hilde Soliani · Miss Trenchant | Hilde Soliani · Miss Tranchant |
+| Hilde Soliani · Pranzo something | Hilde Soliani · Buon Pranzo |
+| Hiram Green · Arbole | Hiram Green · Arbolé Arbolé |
+| Histories des Parfums · Hemingway 1899 | Histoires de Parfums · 1899 Hemingway |
+| Holy Hell · Universal Flowering | Universal Flowering · Holy Hell |
+| Houbigant · Fougere Royale | Houbigant · Fougère Royale |
+| Imaginary Authors · Explosions in the Sky | Imaginary Authors · Slow Explosions |
+| Issey Miyake · A drop d'Issey | Issey Miyake · A Drop d'Issey |
+| Issey Miyake · L'eau d'issey pour homme | Issey Miyake · L'Eau d'Issey Pour Homme |
+| J.F. SCHWARZLOSE · Trance | J.F. Schwarzlose Berlin · Trance |
+| Jo Malone · Dark Amber and Ginger Lily | Jo Malone · Dark Amber & Ginger Lily |
+| Jo Malone · English Pear and Freesia | Jo Malone · English Pear & Freesia |
+| Jo Malone · Wood Sage Sea Salt | Jo Malone · Wood Sage & Sea Salt |
+| Joop · Homme absolute | Joop · Homme Absolute |
+| Jorum Studios · Fantosmia | Jorum Studio · Fantosmia |
+| Jorum Studios · Gorseland | Jorum Studio · Gorseland |
+| Jorum Studios · Nectary | Jorum Studio · Nectary |
+| Jorum Studios · Paradisi | Jorum Studio · Paradisi |
+| Jorum Studios · Pony Boy | Jorum Studio · Pony Boy |
+| Killian · Angel's Share | Kilian · Angels' Share |
 | Killian · Love Don't Be Shy | Kilian · Love Don't Be Shy |
-| L'Artisan Perfumier · Cedrat Ceruse | L'Artisan Parfumeur · Cedrat Ceruse |
-| L'occetaine · Mélilot EDP | L'Occitane · Mélilot EDP |
-| Lancome · Lancome Cuir | Lanc\u00f4me · Lancome Cuir |
-| Lancôme · Le Parfum | Lanc\u00f4me · Le Parfum |
-| Lancôme · Poeme | Lanc\u00f4me · Poeme |
-| Lancôme · Rose or Die | Lanc\u00f4me · Rose or Die |
+| Kim Kardashian · Honey | Kim Kardashian · Pure Honey |
+| Kosui · Sabako | Kosui · Sabaku |
+| L'Artisan Parfumeur · Vetiver Ecarlate | L'Artisan Parfumeur · Vétiver Écarlate |
+| L'Artisan Perfumier · Cedrat Ceruse | L'Artisan Parfumeur · Cédrat Céruse |
+| L'occetaine · Mélilot EDP | L'Occitane · Mélilot Eau de Parfum |
+| L'Occitane · Magnolia | L'Occitane · Eau du Val (Magnolia) |
+| L'Occitane · Rose EDT | L'Occitane · Rose Eau de Toilette |
+| Lacoste · Blanc | Lacoste · L.12.12 Blanc |
+| Lacoste · Rose | Lacoste · L.12.12 Rose |
+| Lancome · Lancome Cuir | Lancôme · Cuir de Lancôme |
+| Lancôme · Le Parfum | Lancôme · Absolue Le Parfum |
+| Lancôme · Poeme | Lancôme · Poême |
+| Lancôme · Rose or Die | Lancôme · Absolue Rose or Die |
+| Laurel Bathhouse · Cannoli | Laurel Bath House · Cannoli |
+| Laurel Bathhouse · E-mochi | Laurel Bath House · E-Mochi |
+| Laurel Bathhouse · Not Vanilla | Laurel Bath House · Not Vanilla |
+| Laurel Bathhouse · Nudi | Laurel Bath House · Nudi |
+| Le Labo · Fleur d'orangier | Le Labo · Fleur d'Oranger 27 |
+| Le Labo · In Jardin Sur La Legune | Hermès · Un Jardin Sur La Lagune |
+| Le Labo · Musc 25 | Le Labo · Musc 25 Los Angeles |
+| Le Labo · The Noir | Le Labo · Thé Noir 29 |
+| Les Indemodables · Ambre Supreme | Les Indemodables · Ambre Suprême |
+| Les Indemodables · Escale En Haiti | Les Indemodables · Escale en Haïti |
+| Les Indemodables · Escale En Indonesie | Les Indemodables · Escale en Indonésie |
+| Les Indemodables · Fougere Emeraude | Les Indemodables · Fougère Émeraude |
+| Les Indemodables · Musc de Sables | Les Indemodables · Musc des Sables |
 | Les Liquides Imaginaires · Blanche Bête | Liquides Imaginaires · Blanche Bête |
+| Liis · Rose Stuck | Liis · Rose Struck |
+| Liquides Imaginaires · Beaute Du Diable | Liquides Imaginaires · Beauté du Diable |
+| Loewe · 7.0 | Loewe · 7 |
+| Loewe · Ella | Loewe · Agua de Loewe Ella |
+| Louis Vuitton · L'Immensitie | Louis Vuitton · L'Immensité |
+| Maison Crivelli · Iris Malikhan | Maison Crivelli · Iris Malikhân |
+| Maison Crivelli · Papyrus Moleculaire | Maison Crivelli · Papyrus Moléculaire |
+| Maison Crivelli · Tubereuse Astrale | Maison Crivelli · Tubéreuse Astrale |
 | Maison Francis K · Gentle Fluidity Silver | Maison Francis Kurkdjian · Gentle Fluidity Silver |
-| Margiela · After the rain stops | Maison Margiela · After the rain stops |
+| Maison Margiela · Untitled | Maison Margiela · (untitled) |
+| Majda Bekkali · Fusion Sacree Claire | Majda Bekkali · Fusion Sacrée Clair |
+| Malka Sina · Beyond the Veil | Malka Sima · Beyond the Veil |
+| Malka Sina · Lineage of Advice | Malka Sima · Lineage of Advice |
+| Malka Sina · Thread the Light | Malka Sima · Thread the Light |
+| Malka Sina · Tomato | Malka Sima · Tomato |
+| Margiela · After the rain stops | Maison Margiela · When the Rain Stops |
 | Margiela · At the Barber's | Maison Margiela · At the Barber's |
-| Margiela · At the Jazz Club | Maison Margiela · At the Jazz Club |
+| Margiela · At the Jazz Club | Maison Margiela · Jazz Club |
 | Margiela · Flower Market | Maison Margiela · Flower Market |
-| Margiela · From the garden | Maison Margiela · From the garden |
+| Margiela · From the garden | Maison Margiela · From the Garden |
 | Margiela · Lazy Sunday Morning | Maison Margiela · Lazy Sunday Morning |
-| Margiela · Promenade in the Garden | Maison Margiela · Promenade in the Garden |
-| Margiela · Sailing day | Maison Margiela · Sailing day |
-| Margiela · Whispers at the Library | Maison Margiela · Whispers at the Library |
-| Matiere Premier · Radical rose | Mati\u00e8re Premi\u00e8re · Radical rose |
+| Margiela · Promenade in the Garden | Maison Margiela · Promenade in the Gardens |
+| Margiela · Sailing day | Maison Margiela · Sailing Day |
+| Margiela · Whispers at the Library | Maison Margiela · Whispers in the Library |
+| Marlou · Heliodose | Marlou · Héliodose |
+| Matiere Premier · Radical rose | Matière Première · Radical Rose |
+| Maya Nije · Nordic Cedar | Maya Njie · Nordic Cedar |
+| Memo · African Leather | Memo Paris · African Leather |
+| Memo · Capcamarat | Memo Paris · Cap Camarat |
+| Memo · Irish Leather | Memo Paris · Irish Leather |
 | MFK · Grand Soir | Maison Francis Kurkdjian · Grand Soir |
-| Molecule · Black tea | Escentric Molecules · Black tea |
-| Molecule · Molecile 01 + Champaca | Escentric Molecules · Molecile 01 + Champaca |
+| Miller Harris · Le Cedre | Miller Harris · Le Cèdre |
+| Molecule · Black tea | Escentric Molecules · Molecule 01 + Black Tea |
+| Molecule · Molecile 01 + Champaca | Escentric Molecules · Molecule 01 + Champaca |
+| Montblanc · Black Meisterstuck | Montblanc · Black Meisterstück |
 | Morning Chess · Vilhelm | Vilhelm Parfumerie · Morning Chess |
 | Moscino · Toy Boy | Moschino · Toy Boy |
+| Moth and Rabbit · A Single Man | Moth and Rabbit · Single Man |
 | Muse · Andrea Maack | Andrea Maack · Muse |
-| Nasomotto · Black Affogato | Nasomatto · Black Affogato |
+| Nasomotto · Black Affogato | Nasomatto · Black Afgano |
 | Nasomotto · Blamage | Nasomatto · Blamage |
 | Nasomotto · Duro | Nasomatto · Duro |
 | Nasomotto · Nudiflorum | Nasomatto · Nudiflorum |
 | Nasomotto · Pardon | Nasomatto · Pardon |
 | Nasomotto · Sadonaso | Nasomatto · Sadonaso |
+| Neanderthal · Dark | Neandertal · Dark |
+| Neanderthal · Us | Neandertal · Neandertal Us |
+| Nefer · Prissana | Prissana · Nefer |
+| Nobile 1942 · 1001.0 | Nobile 1942 · 1001 |
 | Nonfiction · Beige | Nonfiction · The Beige |
+| Nonfiction · Dew and Light | Nonfiction · Dew & Light |
+| Nonfiction · For rest | Nonfiction · For Rest |
+| Nonfiction · The Gray | Nonfiction · The Grey |
+| Olfactive Studio · Flashback | Olfactive Studio · Flash Back |
 | Olfactive Studios · Iris Shot | Olfactive Studio · Iris Shot |
-| Olfactive Studios · Still life | Olfactive Studio · Still life |
+| Olfactive Studios · Still life | Olfactive Studio · Still Life |
+| Olympic Orchids · Dev 3 | Olympic Orchids · DEV #3: The Inevitable |
+| Olympic Orchids · Woodcut Parfum | Olympic Orchids · Woodcut |
 | ONE DAY · Jasmine Tea | One Day · Jasmine Tea |
 | ONE DAY · Oolong Tea | One Day · Oolong Tea |
 | ONE DAY · Osmanthus Tea | One Day · Osmanthus Tea |
 | ONE DAY · Pu'er Tea | One Day · Pu'er Tea |
-| ONE DAY · Salm | One Day · Salm |
+| ONE DAY · Salm | One Day · SALM |
+| One Day · Taipei EdP | One Day · Taipei |
 | ONE DAY · Thailand | One Day · Thailand |
-| Paco Rabonne · Paco Rabonne Pour Homme | Paco Rabanne · Paco Rabonne Pour Homme |
-| Parfumeur d'Empire · Mal Amie | Parfum d'Empire · Mal Amie |
+| Paco Rabonne · Paco Rabonne Pour Homme | Paco Rabanne · Pour Homme |
+| Parfumeur d'Empire · Mal Amie | Parfum d'Empire · Mal-Aimé |
 | Parfums de Marley · Kuhuyan | Parfums de Marly · Kuhuyan |
 | Parfums de Marley · Palatine | Parfums de Marly · Palatine |
 | Parfums de Marley · The whole line | Parfums de Marly · The whole line |
+| Particuliere · Black Tar | Parfumerie Particulière · Black Tar |
+| Particuliere · Type Writer | Parfumerie Particulière · Type Writer |
 | Penhaligons · Blenheim Bouquet | Penhaligon's · Blenheim Bouquet |
 | Penihaligons · The whole line | Penhaligon's · The whole line |
-| Penihaligons · Tragedy of Lord George | Penhaligon's · Tragedy of Lord George |
+| Penihaligons · Tragedy of Lord George | Penhaligon's · The Tragedy of Lord George |
 | Penilaligons · Liquid Love | Penhaligon's · Liquid Love |
-| Regime des Fleurs · Falling Trees | R\u00e9gime des Fleurs · Falling Trees |
-| Regime des Fleurs · Glass Blooms | R\u00e9gime des Fleurs · Glass Blooms |
-| Regime des Fleurs · Leather Petals | R\u00e9gime des Fleurs · Leather Petals |
-| Regime des Fleurs · Tears | R\u00e9gime des Fleurs · Tears |
-| Regime des Fleurs · Toor Toor | R\u00e9gime des Fleurs · Toor Toor |
+| Perfumes Quartana · Forest of the Golden Dreams | Parfums Quartana · Forest of the Golden Dream |
+| Perfumes Quartana · Leofarte | Parfums Quartana · Ierofante |
+| Perris · VETIVER JAVA | Perris Monte Carlo · Vetiver Java |
+| Phlur · Sweet Spot | Phlur · Soft Spot |
+| Pineward · Binderbole | Pineward · Bindebole |
+| Polo · Ralph Lauren | Ralph Lauren · Polo |
+| Precious Liquids · Salt and Pepper | Precious Liquid · Salt & Pepper |
+| Raconteur · Cloud 9 Juice | The Raconteur · Cloud 9 Juice |
+| Raconteur · No-Tell Motel | The Raconteur · No-Tell Motel |
+| Ranger's Station · Oakmoss | Ranger Station · Oakmoss |
+| Regime des Fleurs · Falling Trees | Régime des Fleurs · Falling Trees |
+| Regime des Fleurs · Glass Blooms | Régime des Fleurs · Glass Blooms |
+| Regime des Fleurs · Leather Petals | Régime des Fleurs · Leather Petals |
+| Regime des Fleurs · Tears | Régime des Fleurs · Tears |
+| Regime des Fleurs · Toor Toor | Régime des Fleurs · Tóor Tóor |
+| Rising Sun · Rite of Way | Rite of Way · Rising Sun |
+| Roger & Gallet · Lavende Royale | Roger & Gallet · Lavande Royale |
 | Rogue · Absolue de Mousse | Rogue Perfumery · Absolue de Mousse |
 | Rogue · Bon Monsieur | Rogue Perfumery · Bon Monsieur |
-| Rogue · Chypre Siam | Rogue Perfumery · Chypre Siam |
-| Rogue · Mousse Illuminee | Rogue Perfumery · Mousse Illuminee |
-| Régime des Fleurs · Jade Vines | R\u00e9gime des Fleurs · Jade Vines |
-| Senyoko · (discovery set) | Senyok\u00f4 · (discovery set) |
-| Senyokô · Kujira Densetsu | Senyok\u00f4 · Kujira Densetsu |
-| Serge lutens · fils de joie | Serge Lutens · fils de joie |
+| Rogue · Chypre Siam | Rogue Perfumery · Chypre-Siam |
+| Rogue · Mousse Illuminee | Rogue Perfumery · Mousse Illuminée |
+| Senyoko · (discovery set) | Senyokô · (discovery set) |
+| Sept 28 · Bun | September 28th · Bun |
+| Sept 28 · Lake Tahoe Air | September 28th · Lake Tahoe Air |
+| Sept 28 · Little Rosie | September 28th · Little Rosie |
+| Sept 28 · Mono | September 28th · Mono |
+| Sept 28 · Nothing Dramatic | September 28th · Nothing Dramatic |
+| Sept 28 · Silken Tofu | September 28th · Silken Tofu |
+| Serge lutens · fils de joie | Serge Lutens · Fils de Joie |
+| Serge Lutens · Fleur l'oranger | Serge Lutens · Fleurs d'Oranger |
+| Serge Lutens · Vitriol d'Oeillet | Serge Lutens · Vitriol d'Œillet |
 | Set Sail Martinique · Tommy Bahama | Tommy Bahama · Set Sail Martinique |
 | Setchu · 2am Tatami Mat | Setchu · Friday 2 AM: Tatami |
+| Setchu · Thursday 1pm Ayu | Setchu · Thursday 1 PM \| Ayu |
+| SJP · Stash | SJP · Stash SJP |
 | Soft Tension · Andrea Maack | Andrea Maack · Soft Tension |
+| Stephanie Humbert Lucas 777 · Black Gemstone | Stéphane Humbert Lucas 777 · Black Gemstone |
+| Stercus · Orto Parisi | Orto Parisi · Stercus |
+| Stora Skuggan · Fantome de Maules | Stora Skuggan · Fantôme de Maules |
 | Stora Stuggan · Pine | Stora Skuggan · Pine |
-| Stora Stuggan · Silphim | Stora Skuggan · Silphim |
+| Stora Stuggan · Silphim | Stora Skuggan · Silphium |
 | Stora Stuggan · Thumbsucker | Stora Skuggan · Thumbsucker |
+| Strangers · Tokiwa | Strangers Parfumerie · Tokiwa |
+| to Summer · Nude | To Summer · Nude |
+| to Summer · Rambler Rose | To Summer · Rambler Rose |
+| to Summer · Triple Tea | To Summer · Triple Tea |
+| Tom Ford · Bitter peach | Tom Ford · Bitter Peach |
+| Tom Ford · Cafe Rose | Tom Ford · Café Rose |
+| Tom Ford · Ebene Fume | Tom Ford · Ébène Fumé |
+| Tom Ford · Fogere d'Argent | Tom Ford · Fougère d'Argent |
+| Tom Ford · Fougere Platine | Tom Ford · Fougère Platine |
+| Tom Ford · Gray Vetiver | Tom Ford · Grey Vetiver |
+| Tom Ford · Jasmine Rouge | Tom Ford · Jasmin Rouge |
+| Tom Ford · Myhrre Mystere | Tom Ford · Myrrhe Mystère |
+| Tom Ford · Ombre leather | Tom Ford · Ombré Leather |
+| Tom Ford · Oud Wood (EDT & Parfum) | Tom Ford · Oud Wood |
+| Tom Ford · Patchouli Absolute | Tom Ford · Patchouli Absolu |
+| Tom Ford · Tabacco Vanille | Tom Ford · Tobacco Vanille |
+| Tom Ford · Tubereuse Nue | Tom Ford · Tubéreuse Nue |
+| Tom Ford · Vert Boheme | Tom Ford · Vert Bohème |
+| Tom Ford · Vert Fleur | Tom Ford · Vert de Fleur |
+| Toskovot · Inexcusable Evil | Toskovat' · Inexcusable Evil |
+| Toskovot · The whole line | Toskovat' · The whole line |
+| Trena · Graffiti | Xyrena · Graffiti |
 | Une Nuite Nomade · Jardins de Misfah Extrait | Une Nuit Nomade · Jardins de Misfah Extrait |
 | UNN · Chemin d'Amande | Une Nuit Nomade · Chemin d'Amande |
+| Van Cleef & Arpels · Bois d’Amande | Van Cleef & Arpels · Bois d'Amande |
 | Viktor and Rolf · Spicebomb | Viktor & Rolf · Spicebomb |
+| Villa Urbatium · Mossy Glen | Villa Erbatium · Mossy Glen |
+| Xerjoff · Naxos | Xerjoff · XJ 1861 Naxos |
 | Xinu · Aguamadera | Xinú · Aguamadera |
-| Xinu · Monstera | Xin\u00fa · Monstera |
+| Xinu · Monstera | Xinú · Monstera |
+| YSL · Babycat (bourbon) | YSL · Babycat |
+| YSL · Blouse (rose) | YSL · Blouse |
+| YSL · Capeline (Lily) | YSL · Capeline |
+| YSL · Jumpsuit (oud or leather) | YSL · Jumpsuit |
+| YSL · Lavalliere (fig) | YSL · Lavallière |
+| YSL · Muse (ink) | YSL · Muse |
+| YSL · Tuxedo (patchouli) | YSL · Tuxedo |
+| YSL · Velours (rose) | YSL · Rouge Velours |
+| Yuma · Pernoire | Pernoire · Yuma |
 | Zing · Andrea Maack | Andrea Maack · Zing |
+| Zoologist · Portuguese Man of War | Zoologist · Portuguese Man O' War |
 | Zyrena · American Psycho | Xyrena · American Psycho |
 | Zyrena · Dark Ride | Xyrena · Dark Ride |
 | Zyrena · Graffiti | Xyrena · Graffiti |
 | Zyrena · Sleepaway Camp | Xyrena · Sleepaway Camp |
 | Zyrena · Y2K | Xyrena · Y2K |
-
-## Not looked up yet
-
-The session hit its web search limit before reaching these. A future session can continue from this list.
-
-- 100 Bon | Rose and Black Pepper
-- Acqua di Parma | Buongiorno
-- Ajmal | Verde
-- American Perfumer | Black Walnut
-- Angelos Creations Olfactives | Pothos
-- Arko | Ink
-- Astier de Villatte | Mantes La Jolie
-- Azzaro | Azzaro pour Homme
-- Bohoboco | Vanilla Black Pepper
-- Bolton and Rolf | Metallic Musk
-- Bortnikoff | Moss Cologne
-- Bvlgari | blossom delight
-- Caron | Coup de Fouet
-- Caron | Poivre
-- CBCB Fragrances | Comrade
-- Chanel | No 19
-- Coach | Green
-- Comme des Gar\u00e7ons | Carnation
-- Dolce & Gabbana | L'Amoureux 6
-- DSH Perfumes | Rubis Rose
-- Ensar Oud | Japanese Red Rose oil
-- Eris Parfums | Green Spell
-- Escentric Molecules | Black tea
-- Escentric Molecules | Molecile 01 + Champaca
-- Floris | Elite
-- Fr\u00e9d\u00e9ric Malle | Bigarade Concentree
-- Fr\u00e9d\u00e9ric Malle | Carnal Flower
-- Fr\u00e9d\u00e9ric Malle | Cuir Rose
-- Fr\u00e9d\u00e9ric Malle | En Passant
-- Fr\u00e9d\u00e9ric Malle | French Lover
-- Fr\u00e9d\u00e9ric Malle | Geranium Pour Monsieur
-- Fr\u00e9d\u00e9ric Malle | Heaven Can Wait
-- Fr\u00e9d\u00e9ric Malle | L'eau d'Hiver
-- Fr\u00e9d\u00e9ric Malle | Musc Ravageur
-- Fr\u00e9d\u00e9ric Malle | Portrait of a Lady
-- Fr\u00e9d\u00e9ric Malle | Synthetic Jungle
-- Fr\u00e9d\u00e9ric Malle | Vetiver Extrordinaire
-- Fueguia | Cactus Azul
-- Fueguia | Chamber
-- Fueguia | Komorebi
-- Fueguia | Milonga Verde
-- Fueguia | Muskara Rosa
-- FZOTIC | Au Dela Narcisse
-- FZOTIC | Monserrat
-- Goutal | Gardenia Passion
-- Goutal | Un Matin d'Orage
-- Granado | Jardim Real
-- Granado | Nostalgia
-- Gucci | Bloom
-- Gucci | The Heart of Leo
-- Guerlain | Aqua Allegoria Forte Rossa Rossa
-- Guerlain | Aqua Allegoria Mandarine Basilica Forte
-- Guerlain | Aqua Allegoria Neroli Vetiver
-- Guerlain | Aqua Allegoria Pera Granita
-- Guerlain | Aqua Allegoria Rossa Rossa
-- Guerlain | Chamade EDT
-- Guerlain | Cruel Gardenia
-- Guerlain | Cuir Intense
-- Guerlain | Eau de Cashmire
-- Guerlain | Eau de Coton
-- Guerlain | Eau de Guerlain
-- Guerlain | Eau de Lingerie
-- Guerlain | Eau de Tulle
-- Guerlain | Epices Volees
-- Guerlain | Habit Rouge EDT
-- Guerlain | Jasmin Greandeflorum
-- Guerlain | Jasmine extract
-- Guerlain | Jicky EDP
-- Guerlain | Joyeuse Tubéreuse
-- Guerlain | L'Homme Ideal L'intense
-- Guerlain | L'Instant de Guerlain pour Homme
-- Guerlain | Les Absolus D'Orient Musc Noble
-- Guerlain | Mon Guerlain Eau de Parfum Intense
-- Guerlain | Neroli Outrenoir
-- Guerlain | Oud Essential
-- Guerlain | Rossa Verde
-- Guerlain | Santal pao rosa
-- Guerlain | Tobacco Honey
-- Guerlain | Tonka Imperiale
-- Guerlain | Vetiver Fauve
-- Guerlain | Vetiver Parfum
-- Henrik Vibskov | Ambient Glare 5 O'Clock
-- Henrik Vibskov | Cedar Root Black
-- Henrik Vibskov | L'Eau Rouge Heirloom
-- Henrik Vibskov | L'Eau Rouge Nature
-- Henrik Vibskov | Lotus Root Red
-- Heretic | Black Salt
-- Heretic | Jasmine Smoke
-- Heretic | Poltergeist
-- Heretic | Rhubarb Thief
-- Heretic | Spectral Grace
-- Herm\u00e8s | Concentret de Pamplemousse Rose
-- Herm\u00e8s | H24 Herbes Vives
-- Herm\u00e8s | Hermessence Osmanthe Yunnan
-- Herm\u00e8s | Hermessence Vetiver Tonka - 2ml
-- Herm\u00e8s | Le Jardin de Monsieur Li
-- Herm\u00e8s | Poivre Samarcande
-- Herm\u00e8s | Rhubarb d'escarlet
-- Herm\u00e8s | Rose Ikebana
-- Herm\u00e8s | Terre d'Hermes
-- Herm\u00e8s | Terre d'Hermes Eau Tres Fraiche
-- Herm\u00e8s | Un Jardin Sur Le Nil
-- Herm\u00e8s | Un Jardin Sur Le Toit
-- Herm\u00e8s | Un Jardin à Cythère
-- Hilde Soliani | Bell Antonio
-- Hilde Soliani | Castaaagna Saaaalata
-- Hilde Soliani | Hot Milk
-- Hilde Soliani | Il Tuo Tulipano Giallo
-- Hilde Soliani | Miss Trenchant
-- Hilde Soliani | Orgasmo
-- Hilde Soliani | Pranzo something
-- Hiram Green | Arbole
-- Hiram Green | Arcadia
-- Hiram Green | Hyde
-- Hiram Green | Moon Bloom
-- Hiram Green | Philtre
-- Hiram Green | Shangri La
-- Hiram Green | Slowdive
-- Hiram Green | Tryst
-- Hiram Green | Ultra
-- Histoires de Parfums | Hemingway 1899
-- Holy Hell | Universal Flowering
-- Houbigant | Duc de Vervins
-- Houbigant | Fougere Royale
-- Hugo Boss | Hugo
-- Imaginary Authors | A Little Secret
-- Imaginary Authors | Explosions in the Sky
-- Imaginary Authors | Yesterday Haze
-- Initio | Atomic Rose
-- Initio | The whole line
-- Isabelle Larignon | Le Flocon de Johann K
-- Issey Miyake | A drop d'Issey
-- Issey Miyake | L'eau d'issey pour homme
-- J.F. SCHWARZLOSE | Trance
-- James Heeley | Note de Yuzu
-- Jean Paul Gaultier | Le Male
-- Jo Malone | Cypress & Grapevine Cologne Intense
-- Jo Malone | Dark Amber and Ginger Lily
-- Jo Malone | English Pear and Freesia
-- Jo Malone | Tuberose Angelica
-- Jo Malone | Velvet Rose & Oud
-- Jo Malone | Wood Sage Sea Salt
-- Joop | Homme absolute
-- Jorum Studios | Fantosmia
-- Jorum Studios | Gorseland
-- Jorum Studios | Nectary
-- Jorum Studios | Paradisi
-- Jorum Studios | Pony Boy
-- Juliette Has a Gun | Not a Perfume
-- Juliette Has a Gun | Pear Inc
-- Jusbox | Visionary Eye
-- Kenzo | Flower Ikebana Indigo
-- Kenzo | The whole line
-- Kerosene | Copper Skies
-- Kerosene | Summer of 84
-- Kerosene | Walk the Sea
-- Kilian | Angel's Share
-- Kilian | Love Don't Be Shy
-- Kim Kardashian | Honey
-- Kintsugi Perfumes | Hanzo
-- Kosui | Sabako
-- L'Artisan Parfumeur | Cedrat Ceruse
-- L'Artisan Parfumeur | Venenum 32
-- L'Artisan Parfumeur | Vetiver Ecarlate
-- L'Entropiste | White Blood
-- L'Epoque | Dreams and Nightmares
-- L'Occitane | Magnolia
-- L'Occitane | Mélilot EDP
-- L'Occitane | Rose EDT
-- Lacoste | Blanc
-- Lacoste | Rose
-- Lalique | Encre Noire
-- Lanc\u00f4me | Lancome Cuir
-- Lanc\u00f4me | Le Parfum
-- Lanc\u00f4me | Poeme
-- Lanc\u00f4me | Rose or Die
-- Laurel Bathhouse | Cannoli
-- Laurel Bathhouse | E-mochi
-- Laurel Bathhouse | Not Vanilla
-- Laurel Bathhouse | Nudi
-- Le Labo | Baie 19
-- Le Labo | Fleur d'orangier
-- Le Labo | In Jardin Sur La Legune
-- Le Labo | Musc 25
-- Le Labo | Rose 31
-- Le Labo | The Noir
-- Les Bains Guerbois | Rose Graffiti
-- Les Indemodables | Ambre Supreme
-- Les Indemodables | Chypre Azural
-- Les Indemodables | Cuir de Chine
-- Les Indemodables | Escale En Haiti
-- Les Indemodables | Escale En Indonesie
-- Les Indemodables | Fougere Emeraude
-- Les Indemodables | Immortelle Solaire
-- Les Indemodables | Iris Perle
-- Les Indemodables | Musc de Sables
-- Les Indemodables | Oranger Sirocco
-- Les Indemodables | Patchouli Noisette
-- Les Indemodables | Rose de Jamal
-- Les Indemodables | Vanille Havane
-- Liis | Celestial Object
-- Liis | Flower Glyph
-- Liis | Rose Stuck
-- Liis | Studied
-- Liquides Imaginaires | Beaute Du Diable
-- Liquides Imaginaires | Blanche Bête
-- Loewe | 7.0
-- Loewe | Angus
-- Loewe | Ella
-- Loewe | Pour Homme
-- Louis Vuitton | Afternoon Swim
-- Louis Vuitton | Imagination
-- Louis Vuitton | L'Immensitie
-- Louis Vuitton | Spell on You
-- Lvnea | Ghost Pine
-- Mad et Len | Apocalypstick
-- Maison Crivelli | Iris Malikhan
-- Maison Crivelli | Papyrus Moleculaire
-- Maison Crivelli | Tubereuse Astrale
-- Maison Francis Kurkdjian | Gentle Fluidity Silver
-- Maison Francis Kurkdjian | Grand Soir
-- Maison Margiela | After the rain stops
-- Maison Margiela | At the Barber's
-- Maison Margiela | At the Jazz Club
-- Maison Margiela | By the Fireplace
-- Maison Margiela | Flower Market
-- Maison Margiela | From the garden
-- Maison Margiela | Lazy Sunday Morning
-- Maison Margiela | Promenade in the Garden
-- Maison Margiela | Sailing day
-- Maison Margiela | Untitled
-- Maison Margiela | Whispers at the Library
-- Majda Bekkali | Fusion Sacree Claire
-- Malka Sina | Beyond the Veil
-- Malka Sina | Lineage of Advice
-- Malka Sina | Thread the Light
-- Malka Sina | Tomato
-- Marc Jacobs | Bang
-- Marc-Antoine Barrois | Encelade
-- Marc-Antoine Barrois | Ganymede
-- Marlou | Heliodose
-- Mati\u00e8re Premi\u00e8re | Radical rose
-- Maya Nije | Nordic Cedar
-- Memo | African Leather
-- Memo | Capcamarat
-- Memo | Irish Leather
-- Meo Fusciuni | Sogni
-- Mes Bisous | A Wondrous Flight
-- Mes Bisous | Balle Rouge
-- Miller Harris | Feuilles de Tabac
-- Miller Harris | Le Cedre
-- Miller Harris | Wander Through the Parks
-- Molton Brown | Fiery Pink Pepper
-- Molton Brown | Re-charge Black Pepper
-- Montale | Honey Aoud
-- Montale | Intense Pepper
-- Montblanc | Black Meisterstuck
-- Montblanc | Extreme Leather
-- Moschino | Toy Boy
-- Moth and Rabbit | A Single Man
-- Moth and Rabbit | La Haine
-- Moth and Rabbit | Melancholia
-- Nasomatto | Black Affogato
-- Nasomatto | Blamage
-- Nasomatto | Duro
-- Nasomatto | Narcotic Venus
-- Nasomatto | Nudiflorum
-- Nasomatto | Pardon
-- Nasomatto | Sadonaso
-- Nasomatto | Silver Musk
-- Neanderthal | Dark
-- Neanderthal | Us
-- Nefer | Prissana
-- Nest | Black Tulip
-- Nissaba | Provence
-- Nobile 1942 | 1001.0
-- Nonfiction | Bois d'Ylang
-- Nonfiction | Dew and Light
-- Nonfiction | For rest
-- Nonfiction | Forget Me Not
-- Nonfiction | Gaiac Flower
-- Nonfiction | Gentle Night
-- Nonfiction | In the Shower
-- Nonfiction | Simple Garden
-- Nonfiction | Tears in Rain
-- Nonfiction | The Gray
-- Nonfiction | The Rose
-- Nonfiction | Young Memories
-- Nose of Gatsby | Naive
-- Obvious | Scoville
-- Oddity | Delulu
-- Officine Universelle Buly | Andean Verbena and Ulu Basil
-- Officine Universelle Buly | Caribbean Sweet Potato and Afghan Carrot
-- Officine Universelle Buly | Indian Cucumber and Syrian Mint
-- Officine Universelle Buly | Iraqi Beetroot and Egyptian Rhubarb
-- Officine Universelle Buly | Oriental Watercress and Sardinian Parsley
-- Officine Universelle Buly | Scandinavian Redcurrant and Peruvian Tomato
-- Olfactive Studio | Flashback
-- Olfactive Studio | Iris Shot
-- Olfactive Studio | Still life
-- Olympic Orchids | Dev 3
-- Olympic Orchids | Night Flyer
-- Olympic Orchids | Olympic Rainforest
-- Olympic Orchids | Woodcut Parfum
-- One Day | Jasmine Tea
-- One Day | Oolong Tea
-- One Day | Osmanthus Tea
-- One Day | Pu'er Tea
-- One Day | Salm
-- One Day | Taipei EdP
-- One Day | Thailand
-- Ormonde Jayne | Evernia
-- Ormonde Jayne | Montabaco Intensivo
-- Ormonde Jayne | Ormonde Woman
-- Ormonde Jayne | Verano
-- Orto Parisi | Stercus
-- Orto Parisi | Viride
-- Paco Rabanne | Paco Rabonne Pour Homme
-- Paco Rabanne | Pour Homme
-- Papillon Artisan | Dryad
-- Papillon Artisan | Tobacco Rose
-- Parfum d'Empire | Mal Amie
-- Parfumeurs du Monde | Les Fleurs de la Pluie
-- Parfums de Marly | Delina
-- Parfums de Marly | Kuhuyan
-- Parfums de Marly | Palatine
-- Parfums de Marly | The whole line
-- Particuliere | Black Tar
-- Particuliere | Type Writer
-- Pearfat | 2030 Park Avenue
-- Pearfat | I'll Never Learn
-- Pearfat | Stomped on a Bed of Lettuce
-- Penhaligon's | Blenheim Bouquet
-- Penhaligon's | Liquid Love
-- Penhaligon's | The whole line
-- Penhaligon's | Tragedy of Lord George
-- Perfumehead | The whole line
-- Perfumer H | Rain Wood
-- Perfumes Quartana | Forest of the Golden Dreams
-- Perfumes Quartana | Leofarte
-- Pernoire | Vitias
-- Perris | VETIVER JAVA
-- Phlur | Missing Person
-- Phlur | Sweet Spot
-- Pineward | Binderbole
-- Pineward | Boreal
-- Pineward | Fanghorn II
-- Polo | Ralph Lauren
-- Precious Liquids | Salt and Pepper
-- Profumum Roma | Ichnusa
-- R\u00e9gime des Fleurs | Falling Trees
-- R\u00e9gime des Fleurs | Glass Blooms
-- R\u00e9gime des Fleurs | Jade Vines
-- R\u00e9gime des Fleurs | Leather Petals
-- R\u00e9gime des Fleurs | Tears
-- R\u00e9gime des Fleurs | Toor Toor
-- Raconteur | Cloud 9 Juice
-- Raconteur | No-Tell Motel
-- Ranger's Station | Oakmoss
-- Raw Contrast | Hanji
-- Rising Sun | Rite of Way
-- Rivendare | Death by Vanity
-- Robert Piguet | Bandit
-- Roger & Gallet | Lavende Royale
-- Rogue Perfumery | (discovery set)
-- Rogue Perfumery | Absolue de Mousse
-- Rogue Perfumery | Chypre Siam
-- Rogue Perfumery | Mousse Illuminee
-- Romeo Gigli | Romeo di Romeo Gigli
-- Room 1015 | Cherry Punk
-- Room 1015 | Love-O-Matic
-- Sanctuary | Javan Rhino
-- Scents of Wood | Hinoki in Hinoki
-- Senyok\u00f4 | (discovery set)
-- Senyok\u00f4 | Kujira Densetsu
-- Sept 28 | Bun
-- Sept 28 | Lake Tahoe Air
-- Sept 28 | Little Rosie
-- Sept 28 | Mono
-- Sept 28 | Nothing Dramatic
-- Sept 28 | Silken Tofu
-- Serge Lutens | Ambre Sultan
-- Serge Lutens | fils de joie
-- Serge Lutens | Five O'Clock Au Gingembre
-- Serge Lutens | Fleur l'oranger
-- Serge Lutens | La Fille de Berlin
-- Serge Lutens | Poivre Noir
-- Serge Lutens | Santal Majuscule
-- Serge Lutens | Vitriol d'Oeillet
-- Setchu | Thursday 1pm Ayu
-- SJP | Lovely
-- SJP | Stash
-- Sorce | English Major
-- Stardust & Stems | Book Fair
-- Stephanie Humbert Lucas 777 | Black Gemstone
-- Stercus | Orto Parisi
-- Stora Skuggan | Fantome de Maules
-- Stora Skuggan | Pine
-- Stora Skuggan | Silphim
-- Stora Skuggan | Thumbsucker
-- Strangers | Tokiwa
-- SYD Botanica | Suspended Water Lily
-- SYD Botanica | Wavey Tulip
-- The 7 Virtues | Vetiver Elemi
-- The Different Company | Crazy Tuberose
-- The Different Company | White Zagora
-- The House of Oud | Almond Harmony
-- to Summer | Nude
-- to Summer | Rambler Rose
-- to Summer | Triple Tea
-- Tom Ford | Bitter peach
-- Tom Ford | Black Orchid
-- Tom Ford | Cafe Rose
-- Tom Ford | Ebene Fume
-- Tom Ford | Fleur de Portofino
-- Tom Ford | Fogere d'Argent
-- Tom Ford | Fougere Platine
-- Tom Ford | Fucking Fabulous
-- Tom Ford | Gray Vetiver
-- Tom Ford | Italian Cypress
-- Tom Ford | Jasmine Rouge
-- Tom Ford | Jonquille de Nuit
-- Tom Ford | Lavender Palm
-- Tom Ford | Lost Cherry
-- Tom Ford | Myhrre Mystere
-- Tom Ford | Neroli Portofino
-- Tom Ford | Noir de Noir
-- Tom Ford | Noir Extreme
-- Tom Ford | Ombre leather
-- Tom Ford | Orchid Soleil
-- Tom Ford | Oud Fleur
-- Tom Ford | Oud Wood (EDT & Parfum)
-- Tom Ford | Patchouli Absolute
-- Tom Ford | Plum Japonais
-- Tom Ford | Rose Prick
-- Tom Ford | Santal Blush
-- Tom Ford | Soleil de Feu
-- Tom Ford | Soleil Neige
-- Tom Ford | Tabacco Vanille
-- Tom Ford | Taormina Orange
-- Tom Ford | Tobacco Oud
-- Tom Ford | Tubereuse Nue
-- Tom Ford | Tuscan Leather
-- Tom Ford | Vanilla Sex
-- Tom Ford | Velvet Gardenia
-- Tom Ford | Velvet Orchid
-- Tom Ford | Vert Boheme
-- Tom Ford | Vert Fleur
-- Tom Ford | Violet Blonde
-- Tom Ford | White Patchouli
-- Toskovot | Inexcusable Evil
-- Toskovot | The whole line
-- Trena | Graffiti
-- Une Nuit Nomade | Chemin d'Amande
-- Une Nuit Nomade | Jardins de Misfah Extrait
-- Universal Flowering | Burst!
-- Universal Flowering | Daddy
-- Universal Flowering | Death of a Ladies' Man
-- Van Cleef & Arpels | Bois d’Amande
-- Versace | Roses des sables
-- Viktor & Rolf | Flowerbomb
-- Viktor & Rolf | Spicebomb
-- Vilhelm Parfumerie | Basilico & Fellini
-- Vilhelm Parfumerie | Fleur Burlesque
-- Vilhelm Parfumerie | Mango Skin
-- Vilhelm Parfumerie | Stockholm 1978
-- Villa Urbatium | Mossy Glen
-- Xerjoff | Don
-- Xerjoff | Naxos
-- Xin\u00fa | Monstera
-- Xyrena | American Psycho
-- Xyrena | Dark Ride
-- Xyrena | Graffiti
-- Xyrena | Pool Boy
-- Xyrena | Sleepaway Camp
-- Xyrena | Y2K
-- YSL | Babycat (bourbon)
-- YSL | Blouse (rose)
-- YSL | Capeline (Lily)
-- YSL | Jumpsuit (oud or leather)
-- YSL | Kouros
-- YSL | Lavalliere (fig)
-- YSL | Muse (ink)
-- YSL | Opium
-- YSL | Rive Gauche Pour Homme
-- YSL | Tuxedo (patchouli)
-- YSL | Velours (rose)
-- Yuma | Pernoire
-- Zoologist | Bee
-- Zoologist | Penguin
-- Zoologist | Portuguese Man of War
-- Zoologist | Sloth
-- Zoologist | Squid
