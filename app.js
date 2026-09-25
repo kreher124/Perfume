@@ -402,7 +402,7 @@ function init() {
 
   document.querySelectorAll("dialog").forEach((d) => d.addEventListener("click", (e) => { if (e.target === d || e.target.closest(".close")) d.close(); }));
 
-  document.getElementById("own").addEventListener("click", () => document.getElementById("setup").showModal());
+  document.getElementById("own").addEventListener("click", () => { showMenu(false); document.getElementById("setup").showModal(); });
   document.getElementById("setup-form").addEventListener("submit", (e) => {
     e.preventDefault();
     const f = e.target;

@@ -7,7 +7,7 @@ Live page: https://kreher124.github.io/Perfume/
 ## How it works
 
 - Each time it opens, the page reads the Google Sheet and shows every perfume as a card with a bottle photo, house, name and score. Tap a card for your full notes and links.
-- The menu (☰, next to SMELLS) switches between three lists. **Ranked** shows everything with a score. **Owned** shows full bottles, meaning cells shaded green in the sheet. **Queue** shows everything without a score, from either tab.
+- The menu (☰, next to SMELLS) switches between three lists and holds **Smell Friends**. **Ranked** shows everything with a score. **Owned** shows full bottles, meaning cells shaded green in the sheet. **Queue** shows everything without a score, from either tab.
 - Scores of 90 and up are yellow; the rest are black. Lists start sorted by house, A–Z.
 - Every block on the page sits on one spreadsheet grid of fixed-height rows. `style.css` explains the layout, and `app.js` places the cards and draws the gridlines.
 - Bottle photos come from Fragrantica. The links between your perfumes and their Fragrantica pages are stored in `matches.json`. For perfumes that aren't on Fragrantica, `matches.json` names a product page or shop instead, and a GitHub Action copies the photo's address from there.
@@ -21,7 +21,7 @@ A perfume added later shows a letter tile instead of a photo. To give it a photo
 
 ## Friends
 
-A friend taps **Make your own** at the bottom of the page and follows the steps. Their page is this same site pointed at their own sheet, so they don't need to install anything.
+A friend opens the menu (☰), taps **Smell Friends**, and follows the steps. Their page is this same site pointed at their own sheet, so they don't need to install anything.
 
 ## Files
 

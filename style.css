@@ -55,18 +55,19 @@ h1 {
 }
 #menu-btn { grid-column: -3; }
 
-/* ---------- menu: three color blocks, like the home page ---------- */
+/* ---------- menu: four blocks, magenta, cyan, yellow, white ---------- */
 .menu {
   position: fixed; left: 0; right: 0; z-index: 6;
   top: calc(env(safe-area-inset-top) + 5 * var(--H));
-  grid-template-rows: repeat(13, var(--H));
+  grid-template-rows: repeat(17, var(--H));
   border-bottom: var(--line);
 }
 .menu[hidden] { display: none; }
 .m-band { grid-column: 2 / -2; outline: var(--line); outline-offset: -1px; }
-.m-band[data-for="ranked"] { grid-row: 2 / 5; background: var(--yellow); }
-.m-band[data-for="owned"] { grid-row: 6 / 9; background: var(--magenta); }
-.m-band[data-for="queue"] { grid-row: 10 / 13; background: var(--cyan); }
+.m-band[data-for="ranked"] { grid-row: 2 / 5; background: var(--magenta); }
+.m-band[data-for="owned"] { grid-row: 6 / 9; background: var(--cyan); }
+.m-band[data-for="queue"] { grid-row: 10 / 13; background: var(--yellow); }
+.m-band[data-for="own"] { grid-row: 14 / 17; background: var(--paper); }
 .menu button {
   grid-column: 3 / -3; z-index: 1; border: 0; background: var(--paper); outline: var(--line); outline-offset: -1px;
   font-weight: 700; font-size: 14px; letter-spacing: .1em; text-transform: uppercase;
@@ -74,6 +75,7 @@ h1 {
 .menu button[data-view="ranked"] { grid-row: 3; }
 .menu button[data-view="owned"] { grid-row: 7; }
 .menu button[data-view="queue"] { grid-row: 11; }
+.menu #own { grid-row: 15; }
 .menu button.on { background: var(--ink); color: var(--paper); }
 .menu small { font-weight: 400; margin-left: 6px; letter-spacing: .04em; }
 
@@ -130,8 +132,8 @@ h1 {
   font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
   outline: var(--line); outline-offset: -1px;
 }
-.foot.owned { background: var(--magenta); }
-.foot.tag { background: var(--cyan); grid-column: 3; }   /* D12 only: "Queue" needs one cell */
+.foot.owned { background: var(--cyan); }      /* tags match their menu block: Owned cyan, Queue yellow */
+.foot.tag { background: var(--yellow); grid-column: 3; }   /* D12 only: "Queue" needs one cell */
 
 /* letter tiles when there's no photo, in one of the three colors */
 .ph { width: 100%; height: 100%; display: grid; place-items: center; }
@@ -143,13 +145,6 @@ h1 {
 
 .empty.error { grid-row: 1 / 7; align-self: start; text-transform: none; letter-spacing: 0; font-size: 13px; }
 .empty { grid-column: 2 / -2; grid-row: 1; align-self: center; padding: 0 6px; text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
-
-/* ---------- footer ---------- */
-footer.sheet { grid-template-rows: repeat(2, var(--H)); }
-.link-btn {
-  grid-column: 2 / 5; grid-row: 1; border: 0; border-radius: 0; background: var(--paper); outline: var(--line); outline-offset: -1px;
-  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
-}
 
 /* ---------- detail and setup panels ---------- */
 dialog.panel {
@@ -178,8 +173,8 @@ dialog.panel::backdrop { background: rgb(0 0 0 / .5); }
   display: inline-block; flex: none; padding: 4px 8px 4px calc(8px + .06em); font-size: 10px; font-weight: 700; text-transform: uppercase;
   letter-spacing: .06em; border: 2px solid var(--ink); line-height: 1.2; text-align: center;
 }
-.tag.static { background: var(--cyan); }
-.owned.static { background: var(--magenta); }
+.tag.static { background: var(--yellow); }
+.owned.static { background: var(--cyan); }
 .d-notes { padding: 0 20px; font-size: 16px; line-height: 1.5; margin: 14px 0; }
 .sheet-body > .muted { padding: 0 20px; }
 .d-links { display: flex; flex-wrap: wrap; gap: 10px; padding: 6px 20px 0; }
@@ -191,6 +186,7 @@ dialog.panel::backdrop { background: rgb(0 0 0 / .5); }
 
 .setup { padding: 20px 20px calc(24px + env(safe-area-inset-bottom)); }
 .setup h2 { font: 700 22px Arial, Helvetica, sans-serif; text-transform: uppercase; margin: 0 44px 10px 0; }
+.setup .intro { margin: 0 0 12px; font-size: 16px; line-height: 1.4; }
 .setup ol { padding-left: 20px; line-height: 1.5; }
 .setup li { margin-bottom: 6px; }
 .setup label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin: 12px 0 0; }
