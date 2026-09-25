@@ -1,0 +1,27 @@
+# Keeps a backup copy of the Google Sheet in the repo, used only if the
+# app can't reach the live sheet. Runs every hour and on demand.
+name: Refresh sheet backup
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download sheet
+        run: |
+          curl -sSfL -o /tmp/sheet.xlsx "https://docs.google.com/spreadsheets/d/12AmGW9_MBxdZCXNwdcMNNCuvSB7K1oTWx1hCNo9raH8/export?format=xlsx"
+          head -c 2 /tmp/sheet.xlsx | grep -q PK
+          # Only replace the backup when the sheet's contents changed, not just its timestamps.
+          content() { unzip -p "$1" 'xl/worksheets/*' xl/sharedStrings.xml xl/styles.xml | sha256sum; }
+          [ "$(content /tmp/sheet.xlsx)" = "$(content data/FRAGRANCES.xlsx)" ] || cp /tmp/sheet.xlsx data/FRAGRANCES.xlsx
+      - name: Commit if changed
+        run: |
+          git config user.name "sheet-backup"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/FRAGRANCES.xlsx
+          git diff --cached --quiet || (git commit -m "Refresh sheet backup" && git push)
