@@ -1,11 +1,12 @@
 # Name corrections and photo status
 
-This file lists how the app cleans up names from your sheet. Your Google Sheet is never edited. Per-perfume corrections and Fragrantica links live in `matches.json`. House-name spelling fixes live in the `HOUSE_FIXES` list at the top of `app.js`.
+This file lists how the app cleans up names from your sheet. Your Google Sheet is never edited. Per-perfume corrections and photo sources live in `matches.json`. House-name spelling fixes live in the `HOUSE_FIXES` list at the top of `app.js`.
 
 - Perfumes in the sheet: 775
-- Matched to Fragrantica (bottle photo): 727
-- Looked up, not on Fragrantica: 40
-- Rows that name a whole line or a discovery set: 8
+- With a bottle photo: 733
+- Photo source found, waiting for the Find bottle photos action: 30
+- No photo found anywhere: 3
+- Rows that name a whole line or a discovery set: 9
 
 ## Guesses worth checking
 
@@ -42,13 +43,11 @@ If one of these is the wrong version, tell Claude which one you meant.
 - Trena | Graffiti: read as Xyrena Graffiti
 - YSL | Velours (rose): guessed Rouge Velours
 
-## Looked up, but not on Fragrantica
+## Waiting for the Find bottle photos action
 
-These show a letter tile. To give one a photo, add a column headed **Fragrantica** to your sheet and paste the perfume's page link into it.
+These aren't on Fragrantica. `matches.json` names a product page or shop for each, and the Find bottle photos GitHub Action copies the photo's address from there. If one still shows a letter tile after the action has run, the page may have moved.
 
 - American Perfumer: Rushlight
-- Andrea Maack: Zing
-- D&Scent Studios: Verdant Halo
 - DSH Perfumes: Au Crépuscule de Lavande
 - DSH Perfumes: Balls...Said The Queen
 - DSH Perfumes: Eclipse
@@ -63,19 +62,14 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 - DSH Perfumes: Vachi
 - DSH Perfumes: Warrior Queen
 - Ensar Oud: Japanese Red Rose oil
-- Fischersund: The Whole House
 - Jenny Glow: French Lime Leaves
 - Laurel Bath House: Not Vanilla
 - Laurel Bath House: Nudi
-- Loewe: Angus
 - Malka Sima: Beyond the Veil
 - Malka Sima: Lineage of Advice
 - Malka Sima: Thread the Light
 - Malka Sima: Tomato
 - Nose of Gatsby: Naive
-- Pearfat: 2030 Park Avenue
-- Pearfat: I'll Never Learn
-- Pearfat: Stomped on a Bed of Lettuce
 - September 28th: Bun
 - September 28th: Lake Tahoe Air
 - September 28th: Little Rosie
@@ -83,14 +77,20 @@ These show a letter tile. To give one a photo, add a column headed **Fragrantica
 - September 28th: Nothing Dramatic
 - September 28th: Silken Tofu
 - The Different Company: Crazy Tuberose
-- Tommy Bahama: Set Sail Martinique
+
+## No photo found
+
+These show a letter tile. To give one a photo, add a column headed **Fragrantica** to your sheet and paste the perfume's Fragrantica page link into it.
+
+- D&Scent Studios: Verdant Halo
+- Loewe: Angus
 - Versace: Roses des sables
-- Vilhelm Parfumerie: Morning Chess
 
 ## Rows that aren't a single perfume
 
 These show a letter tile. They name a whole line or a discovery set, so there is no one bottle to show.
 
+- Fischersund: The whole house
 - Initio: The whole line
 - Kenzo: The whole line
 - Parfums de Marly: The whole line
@@ -270,7 +270,6 @@ These show a letter tile. They name a whole line or a discovery set, so there is
 | Eris Parfums · Belle du Jour | Eris Parfums · Belle de Jour |
 | Eris · Green Spell | Eris Parfums · Green Spell |
 | Fenty · Fenty | Fenty · Fenty Eau de Parfum |
-| Fischersund · The whole house | Fischersund · The Whole House |
 | Floraiku | Floraïku |
 | Floraiku · Between 2 Trees | Floraïku · Between Two Trees |
 | Frederic Malle · Bigarade Concentree | Frédéric Malle · Bigarade Concentrée |

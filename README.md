@@ -8,7 +8,7 @@ Live page: https://kreher124.github.io/Perfume/
 
 - Each time it opens, the page reads the Google Sheet and shows every perfume as a card with a bottle photo, your score, and the first line of your notes.
 - **Ranked** shows everything with a score. **Owned** shows full bottles, meaning cells shaded green in the sheet. **Queue** shows unrated perfumes and the To Try tab.
-- Bottle photos come from Fragrantica. The links between your perfumes and their Fragrantica pages are stored in `matches.json`.
+- Bottle photos come from Fragrantica. The links between your perfumes and their Fragrantica pages are stored in `matches.json`. For perfumes that aren't on Fragrantica, `matches.json` names a product page or shop instead, and a GitHub Action copies the photo's address from there.
 - If the live sheet can't be reached, the page falls back to a backup copy in `data/`. A GitHub Action refreshes that copy every hour.
 
 ## Keeping it up to date
@@ -30,3 +30,4 @@ A friend taps **Make your own collection page** at the bottom of the page and fo
 | `CORRECTIONS.md` | Every name correction, guesses to check, and lookup progress |
 | `data/FRAGRANCES.xlsx` | Backup copy of the sheet |
 | `.github/workflows/refresh-snapshot.yml` | Hourly backup job |
+| `.github/workflows/find-photos.yml`, `scripts/find_photos.py` | Finds photos for perfumes that aren't on Fragrantica |

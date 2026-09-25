@@ -207,6 +207,7 @@ function sheetToItems(sheet, kind) {
     if (m && m.n) item.name = m.n;
     const id = item.path && item.path.match(/-(\d+)$/);
     if (id) item.img = IMG(id[1]);
+    else if (m && m.i) item.img = m.i; // photo found on a product page by the Find bottle photos action
     item.search = norm([item.house, item.name, house, name, item.notes, item.where].join(" "));
     out.push(item);
   });
