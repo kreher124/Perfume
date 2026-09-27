@@ -643,6 +643,63 @@
 "coqui coqui|rosas secas": {
 "p": "Coqui-Coqui/Rosas-Secas-37536"
 },
+"coty paris|apres l amour": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Apres-L-Amour-90609"
+},
+"coty paris|aristo chypre": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Aristo-Chypre-90587"
+},
+"coty paris|atomes crochus": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Atomes-Crochus-90582"
+},
+"coty paris|encore une fois": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Encore-Une-Fois-90588"
+},
+"coty paris|entre genres": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Entre-Genres-90580"
+},
+"coty paris|j ai trois amours": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/J-ai-Trois-Amours-90584"
+},
+"coty paris|l amour pourpre": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/L-Amour-Pourpre-90605"
+},
+"coty paris|les mots doux": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Les-Mots-Doux-90583"
+},
+"coty paris|matin de jade": {
+"h": "Infiniment Coty Paris",
+"n": "Matin de Jade",
+"p": "Infiniment-Coty-Paris/Matin-de-Jade-90581"
+},
+"coty paris|noir encens": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Noir-Encens-90589"
+},
+"coty paris|or de moi": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Or-de-Moi-90590"
+},
+"coty paris|santal a la vida": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Santal-A-La-Vida-90600"
+},
+"coty paris|soleil d ikosim": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Soleil-d-Ikosim-90585"
+},
+"coty paris|un parc de roses en alabama": {
+"h": "Infiniment Coty Paris",
+"p": "Infiniment-Coty-Paris/Un-Parc-de-Roses-en-Alabama-90602"
+},
 "coty|stetson cologne": {
 "n": "Stetson",
 "p": "Coty/Stetson-5506"
@@ -2400,6 +2457,9 @@
 },
 "syd botanica|wavey tulip": {
 "p": "SYD-Botanica/Wavey-Tulip-87401"
+},
+"tauer perfumes|geranium absolue": {
+"shop": "https://tauerperfumes.com"
 },
 "the 7 virtues|vetiver elemi": {
 "p": "The-7-Virtues/Vetiver-Elemi-52557"
