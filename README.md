@@ -23,10 +23,15 @@ A perfume added later shows a letter tile instead of a photo. To give it a photo
 
 A friend opens the menu (☰), taps **Smell Friends**, and follows the steps. Their page is this same site pointed at their own sheet, so they don't need to install anything.
 
+## Your own copy
+
+To run a separate copy of this app on your own GitHub account, follow [START-HERE.md](START-HERE.md). `CLAUDE.md` has the full method for Claude: how to point a copy at a new sheet, match its perfumes to Fragrantica, and keep to the design.
+
 ## Files
 
 | File | What it is |
 |---|---|
+| `config.js` | Which Google Sheet the app reads, and the owner's name |
 | `index.html`, `style.css`, `app.js` | The page |
 | `icon.svg`, `icon.png`, `icon-512.png`, `manifest.json` | Home-screen icon and name |
 | `matches.json` | Fragrantica links and name corrections |
@@ -34,3 +39,6 @@ A friend opens the menu (☰), taps **Smell Friends**, and follows the steps. Th
 | `data/FRAGRANCES.xlsx` | Backup copy of the sheet |
 | `.github/workflows/refresh-snapshot.yml` | Hourly backup job |
 | `.github/workflows/find-photos.yml`, `scripts/find_photos.py` | Finds photos for perfumes that aren't on Fragrantica |
+| `scripts/sheet_tools.py` | Lists perfumes still to match, and builds a corrected copy of the sheet |
+| `CLAUDE.md` | Instructions Claude reads when working on this app |
+| `START-HERE.md` | Steps for making your own copy |

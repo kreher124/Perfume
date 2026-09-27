@@ -14,11 +14,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Download sheet
         run: |
-          curl -sSfL -o /tmp/sheet.xlsx "https://docs.google.com/spreadsheets/d/12AmGW9_MBxdZCXNwdcMNNCuvSB7K1oTWx1hCNo9raH8/export?format=xlsx"
+          sheet=$(grep -o 'SHEET_ID = "[^"]*"' config.js | cut -d'"' -f2)
+          curl -sSfL -o /tmp/sheet.xlsx "https://docs.google.com/spreadsheets/d/$sheet/export?format=xlsx"
           head -c 2 /tmp/sheet.xlsx | grep -q PK
           # Only replace the backup when the sheet's contents changed, not just its timestamps.
           content() { unzip -p "$1" 'xl/worksheets/*' xl/sharedStrings.xml xl/styles.xml | sha256sum; }
-          [ "$(content /tmp/sheet.xlsx)" = "$(content data/FRAGRANCES.xlsx)" ] || cp /tmp/sheet.xlsx data/FRAGRANCES.xlsx
+          mkdir -p data
+          [ -f data/FRAGRANCES.xlsx ] && [ "$(content /tmp/sheet.xlsx)" = "$(content data/FRAGRANCES.xlsx)" ] || cp /tmp/sheet.xlsx data/FRAGRANCES.xlsx
       - name: Commit if changed
         run: |
           git config user.name "sheet-backup"

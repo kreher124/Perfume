@@ -2,8 +2,8 @@
 // Reads a Google Sheet (exported as .xlsx so cell colors survive) and shows it as cards.
 // Green-filled house/name cells = full bottle owned. Rows with no rating = queue.
 
-const DEFAULT_SHEET = "12AmGW9_MBxdZCXNwdcMNNCuvSB7K1oTWx1hCNo9raH8";
-const DEFAULT_NAME = "Jason";
+const DEFAULT_SHEET = SHEET_ID;  // set in config.js
+const DEFAULT_NAME = OWNER_NAME;
 const SNAPSHOT = "data/FRAGRANCES.xlsx";
 const IMG = (id) => `https://fimgs.net/mdimg/perfume/375x500.${id}.jpg`;
 
