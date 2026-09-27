@@ -60,6 +60,18 @@ An entry of `{}` means you looked and found nothing. The app shows a colored let
 
 Perfumes the owner adds later get a letter tile until they're matched. An owner who doesn't want to wait can add a **Fragrantica** column to the sheet and paste the perfume's Fragrantica link into it. The app reads that column directly.
 
+## Weekly photo check
+
+A scheduled Routine runs this with no one watching. Do only this:
+
+1. Run `python3 scripts/sheet_tools.py unmatched`. If it lists only rows that aren't a single perfume, stop and report that there was nothing new.
+2. Match the rest as described above. When you aren't sure about one, don't guess. Leave it out of `matches.json`, so next week's run tries it again, and name it in your final message.
+3. Commit, push, open a pull request, and merge it. Don't wait for approval, because the owner asked for these to publish on their own. Change only `matches.json`.
+4. If you added `src` or `shop` entries, wait for the Find bottle photos action to finish, and check whether it found each photo.
+5. End with a short plain summary: what got a photo, what you skipped, and why.
+
+To set up this Routine for a new owner, create it so each run starts a fresh session in the owner's environment, on a weekly schedule in their time zone. Give it a prompt that says to follow this section.
+
 ## Giving the owner a corrected spreadsheet
 
 The app shows corrected names, but the sheet keeps the owner's spelling until they choose to fix it. To give them a fixed copy:

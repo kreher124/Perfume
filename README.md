@@ -19,6 +19,16 @@ Edit the Google Sheet as usual. The page shows your changes the next time it's o
 
 A perfume added later shows a letter tile instead of a photo. To give it a photo, add a column headed **Fragrantica** to the sheet and paste the perfume's Fragrantica page link into it.
 
+## Weekly photo check
+
+A scheduled Claude task, called a Routine, runs every Sunday at about 6am Pacific. It finds perfumes in the sheet that have no photo yet, matches them to Fragrantica the way `CLAUDE.md` describes, and publishes the result. Nobody has to open Claude. If it isn't sure about a perfume, it skips it and lists it in its notification. Each run counts toward your Claude plan's usage.
+
+To set one up for your own copy, start a Claude Code session on your repository and paste this:
+
+> Set up a weekly Routine for this repo that runs every Sunday around 6am in my time zone (TIME-ZONE). Each run should start a fresh session, follow the "Weekly photo check" section of CLAUDE.md, and publish its changes without waiting for me.
+
+To change the schedule or turn it off, go to claude.ai/code, open Routines, and pick the routine.
+
 ## Friends
 
 A friend opens the menu (☰), taps **Smell Friends**, and follows the steps. Their page is this same site pointed at their own sheet, so they don't need to install anything.
