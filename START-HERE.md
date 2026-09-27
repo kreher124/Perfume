@@ -64,5 +64,5 @@ It opens like an app from then on.
 ## Afterward
 
 - **Editing:** edit your Google Sheet as usual. The app shows your changes the next time you open it.
-- **New perfumes:** a perfume you add later shows a colored letter until it has a photo. Either start a new Claude session and ask it to match your new perfumes, or add a column headed **Fragrantica** to your sheet and paste the perfume's Fragrantica link into it.
+- **New perfumes:** a perfume you add later shows a colored letter until it has a photo. To have Claude add photos every week on its own, start a Claude session on your repository and paste the message under "Weekly photo check" in README.md. Put your time zone in it. You can also ask Claude to match them any time, or add a column headed **Fragrantica** to your sheet and paste the perfume's Fragrantica link into it.
 - **Design:** to change the look, describe what you want in a Claude session. Ask for screenshots before you merge anything.
