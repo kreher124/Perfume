@@ -6,15 +6,53 @@
 "19 69|miami blue": {
 "p": "19-69/Miami-Blue-66722"
 },
+"acqua di parma|acqua nobile gelsomino": {
+"p": "Acqua-di-Parma/Acqua-Nobile-Gelsomino-17384"
+},
+"acqua di parma|cedro virtuoso": {
+"p": "Acqua-di-Parma/Cedro-Virtuoso-141394"
+},
+"acqua di parma|colonia": {
+"p": "Acqua-di-Parma/Acqua-di-Parma-Colonia-1681"
+},
+"acqua di parma|colonia club": {
+"p": "Acqua-di-Parma/Colonia-Club-31424"
+},
+"acqua di parma|colonia essenza": {
+"p": "Acqua-di-Parma/Essenza-di-Colonia-9829"
+},
+"acqua di parma|luce di rosa": {
+"n": "Luce di Rosa",
+"p": "Acqua-di-Parma/Luce-di-Rosa-95859"
+},
+"acqua di parma|magnolia infinita": {
+"p": "Acqua-di-Parma/Magnolia-Infinita-75188"
+},
+"acqua di parma|magnolia nobile": {
+"p": "Acqua-di-Parma/Acqua-di-Parma-Magnolia-Nobile-6483"
+},
 "acqua di parma|mandorlo di sicilia": {
 "p": "Acqua-di-Parma/Acqua-di-Parma-Blu-Mediterraneo-Mandorlo-di-Sicilia-1688"
+},
+"acqua di parma|mirto di panarea": {
+"n": "Mirto di Panarea",
+"p": "Acqua-di-Parma/Acqua-di-parma-Blue-Mediterraneo-Mirto-di-Panarea-3108"
 },
 "acqua di parma|oud and spice": {
 "n": "Oud & Spice",
 "p": "Acqua-di-Parma/Oud-Spice-68516"
 },
+"acqua di parma|peonia nobile": {
+"p": "Acqua-di-Parma/Peonia-Nobile-40154"
+},
+"acqua di parma|quercia": {
+"p": "Acqua-di-Parma/Quercia-Eau-de-Parfum-56001"
+},
 "acqua di parma|rosa nobile": {
 "p": "Acqua-di-Parma/Rosa-Nobile-26577"
+},
+"acqua di parma|zafferano": {
+"p": "Acqua-di-Parma/Zafferano-73365"
 },
 "aedes de venustas|cafe tabac": {
 "n": "Café Tabac",
@@ -51,6 +89,18 @@
 },
 "american perfumer|black walnut": {
 "p": "American-Perfumer/Black-Walnut-77266"
+},
+"american perfumer|call me": {
+"p": "American-Perfumer/Call-Me-92188"
+},
+"american perfumer|garden of the heart of heaven": {
+"p": "American-Perfumer/Garden-of-the-Heart-of-Heaven-126679"
+},
+"american perfumer|honeyed vetiver": {
+"p": "American-Perfumer/Honeyed-Vetiver-92189"
+},
+"american perfumer|madame chouteau": {
+"p": "American-Perfumer/Madame-Chouteau-126730"
 },
 "american perfumer|rushlight": {
 "i": "https://cdn.shopify.com/s/files/1/2191/1215/files/b686d209-a9ea-4574-a200-4f28f3b5f337.jpg?v=1785602291",
@@ -151,6 +201,9 @@
 "h": "Armani Privé",
 "n": "Orangerie Venise",
 "p": "Giorgio-Armani/Orangerie-Venise-55756"
+},
+"armani prive|oud nacre": {
+"p": "Giorgio-Armani/Oud-Nacre-121389"
 },
 "armani prive|pivoine suzhou": {
 "h": "Armani Privé",
@@ -460,6 +513,15 @@
 },
 "chasing scents|weeping rose": {
 "p": "Chasing-Scents/Weeping-Rose-73357"
+},
+"chloe atelier des fleurs|sous les pins": {
+"h": "Chloé",
+"n": "Sous les Pins",
+"p": "Chloe/Sous-les-Pins-122848"
+},
+"chloe atelier des fleurs|vanilla planifolia": {
+"h": "Chloé",
+"p": "Chloe/Vanilla-Planifolia-63118"
 },
 "chloe|chloe edp": {
 "h": "Chloé",
@@ -862,6 +924,149 @@
 },
 "ds durga|sweet do nothing": {
 "p": "DS-Durga/Sweet-Do-Nothing-68475"
+},
+"dsh perfumes|aoud blanc edp": {
+"h": "DSH Perfumes",
+"n": "Oud in Chiaroscuro: Aoud Blanc",
+"p": "DSH-Perfumes/OUD-in-Chiaroscuro-Aoud-Blanc-55211"
+},
+"dsh perfumes|au crepuscule de lavande edp": {
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/au-crepuscule-de-lavande-in-the-lavender-twilight-launch-april-2/",
+"n": "Au Crépuscule de Lavande"
+},
+"dsh perfumes|balls said the queen edp": {
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/3a/3a5886-balls-said-the-queen-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": [
+"https://www.dshperfumes.com/shop/balls-said-the-queen/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/balls-said-the-queen-eau-de-parfum"
+],
+"n": "Balls…Said the Queen"
+},
+"dsh perfumes|become the shaman edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Become-the-Shaman-44402",
+"n": "Become the Shaman"
+},
+"dsh perfumes|damasq edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Damasq-71621",
+"n": "Damasq"
+},
+"dsh perfumes|e clipse edp": {
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/eclipse-a-limited-edition-modern-patchouli/",
+"n": "E'clipse"
+},
+"dsh perfumes|electric summer edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Electric-Summer-75817",
+"n": "Electric Summer"
+},
+"dsh perfumes|giverny in bloom edt": {
+"h": "DSH Perfumes",
+"n": "Giverny in Bloom",
+"p": "DSH-Perfumes/Giverny-in-Bloom-31534"
+},
+"dsh perfumes|green queen edp": {
+"n": "Green Queen",
+"src": "https://cafleurebon.com/cafleurebon-x-dsh-perfumes-green-queen-dawn-spencer-hurwitz-2024-plus-earth-day-giveaway/"
+},
+"dsh perfumes|highland idyll edp": {
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/41/416e61-highland-idyll-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/heirloom-elixir-highland-idyll-eau-de-parfum",
+"n": "Highland Idyll"
+},
+"dsh perfumes|in the jungle groove edp": {
+"h": "DSH Perfumes",
+"src": "https://dshperfumes.com/shop/in-the-jungle-groove-limited-edition",
+"n": "In the Jungle Groove"
+},
+"dsh perfumes|joshua tree edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Joshua-Tree-131092",
+"n": "Joshua Tree"
+},
+"dsh perfumes|l or is edp": {
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/66/66335d-l-or-ris-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/l-or-ris-eau-de-parfum",
+"n": "L'Or(is)"
+},
+"dsh perfumes|la casa azul edp": {
+"h": "DSH Perfumes",
+"i": "https://www.cafleurebon.com/wp-content/uploads/2020/02/DSH-Perfumes-La-Casa-Azul-review.jpg",
+"src": "https://cafleurebon.com/dsh-perfumes-la-casa-azul-frida-stories-1-1-review-dawn-spencer-hurwitz-frida-kahlos-tango-draw/",
+"n": "La Casa Azul"
+},
+"dsh perfumes|le jade edp": {
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/le-jade/",
+"n": "Le Jade"
+},
+"dsh perfumes|manroot edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/ManRoot-64049",
+"n": "ManRoot"
+},
+"dsh perfumes|partners in crime edp": {
+"h": "DSH Perfumes",
+"i": "https://media.parfumo.com/perfume_social/fa/facb72_partners-in-crime-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"src": [
+"https://www.dshperfumes.com/shop/partners-in-crime-a-honeyed-labdanum-perfume/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/partners-in-crime-eau-de-parfum"
+],
+"n": "Partners in Crime"
+},
+"dsh perfumes|raisin d etre edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Raisin-d-Etre-71624",
+"n": "Raisin d'Être"
+},
+"dsh perfumes|re assess edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Re-Assess-71616",
+"n": "Re-Assess"
+},
+"dsh perfumes|soho boheme vdp": {
+"n": "Soho Bohème",
+"src": "https://cafleurebon.com/dsh-perfumes-soho-boheme-dawn-spencer-hurwitz-2024-plus-chelsea-hotel-giveaway/"
+},
+"dsh perfumes|soho cuir edp": {
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/soho-cuir/",
+"n": "Soho Cuir"
+},
+"dsh perfumes|sweet dreams edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Sweet-Dreams-14808",
+"n": "Sweet Dreams"
+},
+"dsh perfumes|tournesol noir edp": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Tournesol-Noir-133048",
+"n": "Tournesol Noir"
+},
+"dsh perfumes|vachi edt": {
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/vachi-a-limited-edition-sandalwood-perfume/",
+"n": "Vachi"
+},
+"dsh perfumes|veridian": {
+"h": "DSH Perfumes",
+"p": "DSH-Perfumes/Viridian-8455",
+"n": "Viridian"
+},
+"dsh perfumes|vert et noir edp": {
+"n": "Vert et Noir",
+"p": "DSH-Perfumes/Vert-et-Noir-41348"
+},
+"dsh perfumes|warrior queen edp": {
+"h": "DSH Perfumes",
+"src": "https://www.dshperfumes.com/shop/warrior-queen-dsh-perfumes-x-cafleurebon/",
+"n": "Warrior Queen"
 },
 "dsh|aoud blanc": {
 "h": "DSH Perfumes",
@@ -1609,6 +1814,10 @@
 "n": "Cédrat Céruse",
 "p": "L-Artisan-Parfumeur/Cedrat-Ceruse-73106"
 },
+"l atelier des fleurs chloe|vert soleil": {
+"h": "Chloé",
+"p": "Chloe/Vert-Soleil-122847"
+},
 "l entropiste|white blood": {
 "p": "L-Entropiste/White-Blood-133234"
 },
@@ -1832,11 +2041,20 @@
 "i": "https://malkasima.co/cdn/shop/files/MS_July_4.png?v=1785284363",
 "src": "https://malkasima.co/products/tomato"
 },
+"marc antoine barrois|b87 135": {
+"p": "Marc-Antoine-Barrois/B87-135-129505"
+},
 "marc antoine barrois|encelade": {
 "p": "Marc-Antoine-Barrois/Encelade-74121"
 },
 "marc antoine barrois|ganymede": {
 "p": "Marc-Antoine-Barrois/Ganymede-54720"
+},
+"marc antoine barrois|ganymede extrait": {
+"p": "Marc-Antoine-Barrois/Ganymede-Extrait-79632"
+},
+"marc antoine barrois|tilia": {
+"p": "Marc-Antoine-Barrois/Tilia-91688"
 },
 "marc jacobs|bang": {
 "p": "Marc-Jacobs/Bang-8968"
@@ -2208,6 +2426,11 @@
 "penhaligons|blenheim bouquet": {
 "p": "Penhaligon-s/Blenheim-Bouquet-3940"
 },
+"penhaligon|a london dandy": {
+"h": "Penhaligon's",
+"n": "The London Dandy",
+"p": "Penhaligon-s/The-Dandy-95396"
+},
 "penihaligons|tragedy of lord george": {
 "n": "The Tragedy of Lord George",
 "p": "Penhaligon-s/The-Tragedy-of-Lord-George-40716"
@@ -2423,6 +2646,9 @@
 },
 "sorce|english major": {
 "p": "Sorce/English-Major-105626"
+},
+"spiritica|atmayatra": {
+"p": "Spiritica/Atmayatra-90878"
 },
 "stardust stems|book fair": {
 "p": "Stardust-Stems/Book-Fair-126233"
