@@ -90,6 +90,11 @@
 "n": "Sueño Latino",
 "p": "Aedes-de-Venustas/Sueno-Latino-106806"
 },
+"aedus|iris something": {
+"h": "Aedes de Venustas",
+"n": "Iris Nazarena",
+"p": "Aedes-de-Venustas/Iris-Nazarena-18451"
+},
 "aesop|hwyl": {
 "p": "Aesop/Hwyl-46895"
 },
@@ -995,6 +1000,11 @@
 "https://www.parfumo.com/Perfumes/DSH_Perfumes/au-crepuscule-de-lavande-eau-de-parfum"
 ]
 },
+"dsh perfumes|axis mundi edp": {
+"h": "DSH Perfumes",
+"n": "Axis Mundi",
+"p": "DSH-Perfumes/Axis-Mundi-41349"
+},
 "dsh perfumes|balls said the queen edp": {
 "h": "DSH Perfumes",
 "i": "https://media.parfumo.com/perfume_social/3a/3a5886-balls-said-the-queen-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
@@ -1037,6 +1047,11 @@
 "i": "https://cafleurebon.com/wp-content/uploads/2024/04/DSH-Perfumes-Green-Queen-for-CaFleureBon.png",
 "n": "Green Queen",
 "src": "https://cafleurebon.com/cafleurebon-x-dsh-perfumes-green-queen-dawn-spencer-hurwitz-2024-plus-earth-day-giveaway/"
+},
+"dsh perfumes|heaven and earth edp": {
+"h": "DSH Perfumes",
+"n": "Axis Mundi",
+"p": "DSH-Perfumes/Axis-Mundi-41349"
 },
 "dsh perfumes|highland idyll edp": {
 "h": "DSH Perfumes",
@@ -1839,6 +1854,13 @@
 "initio|atomic rose": {
 "p": "Initio-Parfums-Prives/Atomic-Rose-57587"
 },
+"initio|the whole line": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.2260.jpg",
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Initio-Parfums-Prives.html"
+]
+},
 "isabelle larignon|le flocon de johann k": {
 "p": "Isabelle-Larignon/Le-Flocon-de-Johann-K-79208"
 },
@@ -1922,6 +1944,10 @@
 },
 "kenzo|flower ikebana indigo": {
 "p": "Kenzo/Flower-Ikebana-Indigo-101285"
+},
+"kenzo|the whole line": {
+"i": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenzo_logo_(2022%E2%80%93present).svg",
+"n": "The whole line"
 },
 "kerosene|copper skies": {
 "p": "Kerosene/Copper-Skies-14496"
@@ -2625,6 +2651,13 @@
 "parfums de marly|delina": {
 "p": "Parfums-de-Marly/Delina-43871"
 },
+"parfums de marly|the whole line": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.1188.jpg",
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Parfums-de-Marly.html"
+]
+},
 "particuliere|black tar": {
 "p": "Parfumerie-Particuliere/Black-Tar-43935"
 },
@@ -2639,6 +2672,10 @@
 },
 "pearfat|stomped on a bed of lettuce": {
 "p": "Pearfat-Parfum/Stomped-on-Bed-of-Lettuce-79994"
+},
+"penhaligon s|the whole line": {
+"i": "https://commons.wikimedia.org/wiki/Special:FilePath/Penhaligon's_logo.svg",
+"n": "The whole line"
 },
 "penhaligons|blenheim bouquet": {
 "p": "Penhaligon-s/Blenheim-Bouquet-3940"
@@ -2657,6 +2694,13 @@
 },
 "perfume who|at land": {
 "p": "Perfume-Who/At-Land-105096"
+},
+"perfumehead|the whole line": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.5092.jpg",
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Perfumehead.html"
+]
 },
 "perfumer h|rain wood": {
 "p": "Perfumer-H/Rain-Wood-84776"
@@ -3109,6 +3153,14 @@
 },
 "tom ford|white suede": {
 "p": "Tom-Ford/White-Suede-6386"
+},
+"toskovat|the whole line": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.4824.jpg",
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Toskovat.html",
+"https://www.parfumo.com/PerfumeBrand/toskovat"
+]
 },
 "toskovot|inexcusable evil": {
 "p": "Toskovat/Inexcusable-Evil-75421"
