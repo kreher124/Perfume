@@ -932,37 +932,37 @@
 },
 "dsh perfumes|au crepuscule de lavande edp": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/au-crepuscule-de-lavande-in-the-lavender-twilight-launch-april-2/",
-"n": "Au Crépuscule de Lavande"
+"n": "Au Crépuscule de Lavande",
+"src": "https://www.dshperfumes.com/shop/au-crepuscule-de-lavande-in-the-lavender-twilight-launch-april-2/"
 },
 "dsh perfumes|balls said the queen edp": {
 "h": "DSH Perfumes",
 "i": "https://media.parfumo.com/perfume_social/3a/3a5886-balls-said-the-queen-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"n": "Balls…Said the Queen",
 "src": [
 "https://www.dshperfumes.com/shop/balls-said-the-queen/",
 "https://www.parfumo.com/Perfumes/DSH_Perfumes/balls-said-the-queen-eau-de-parfum"
-],
-"n": "Balls…Said the Queen"
+]
 },
 "dsh perfumes|become the shaman edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Become-the-Shaman-44402",
-"n": "Become the Shaman"
+"n": "Become the Shaman",
+"p": "DSH-Perfumes/Become-the-Shaman-44402"
 },
 "dsh perfumes|damasq edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Damasq-71621",
-"n": "Damasq"
+"n": "Damasq",
+"p": "DSH-Perfumes/Damasq-71621"
 },
 "dsh perfumes|e clipse edp": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/eclipse-a-limited-edition-modern-patchouli/",
-"n": "E'clipse"
+"n": "E'clipse",
+"src": "https://www.dshperfumes.com/shop/eclipse-a-limited-edition-modern-patchouli/"
 },
 "dsh perfumes|electric summer edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Electric-Summer-75817",
-"n": "Electric Summer"
+"n": "Electric Summer",
+"p": "DSH-Perfumes/Electric-Summer-75817"
 },
 "dsh perfumes|giverny in bloom edt": {
 "h": "DSH Perfumes",
@@ -970,94 +970,96 @@
 "p": "DSH-Perfumes/Giverny-in-Bloom-31534"
 },
 "dsh perfumes|green queen edp": {
+"i": "https://cafleurebon.com/wp-content/uploads/2024/04/DSH-Perfumes-Green-Queen-for-CaFleureBon.png",
 "n": "Green Queen",
 "src": "https://cafleurebon.com/cafleurebon-x-dsh-perfumes-green-queen-dawn-spencer-hurwitz-2024-plus-earth-day-giveaway/"
 },
 "dsh perfumes|highland idyll edp": {
 "h": "DSH Perfumes",
 "i": "https://media.parfumo.com/perfume_social/41/416e61-highland-idyll-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
-"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/heirloom-elixir-highland-idyll-eau-de-parfum",
-"n": "Highland Idyll"
+"n": "Highland Idyll",
+"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/heirloom-elixir-highland-idyll-eau-de-parfum"
 },
 "dsh perfumes|in the jungle groove edp": {
 "h": "DSH Perfumes",
-"src": "https://dshperfumes.com/shop/in-the-jungle-groove-limited-edition",
-"n": "In the Jungle Groove"
+"n": "In the Jungle Groove",
+"src": "https://dshperfumes.com/shop/in-the-jungle-groove-limited-edition"
 },
 "dsh perfumes|joshua tree edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Joshua-Tree-131092",
-"n": "Joshua Tree"
+"n": "Joshua Tree",
+"p": "DSH-Perfumes/Joshua-Tree-131092"
 },
 "dsh perfumes|l or is edp": {
 "h": "DSH Perfumes",
 "i": "https://media.parfumo.com/perfume_social/66/66335d-l-or-ris-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
-"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/l-or-ris-eau-de-parfum",
-"n": "L'Or(is)"
+"n": "L'Or(is)",
+"src": "https://www.parfumo.com/Perfumes/DSH_Perfumes/l-or-ris-eau-de-parfum"
 },
 "dsh perfumes|la casa azul edp": {
 "h": "DSH Perfumes",
 "i": "https://www.cafleurebon.com/wp-content/uploads/2020/02/DSH-Perfumes-La-Casa-Azul-review.jpg",
-"src": "https://cafleurebon.com/dsh-perfumes-la-casa-azul-frida-stories-1-1-review-dawn-spencer-hurwitz-frida-kahlos-tango-draw/",
-"n": "La Casa Azul"
+"n": "La Casa Azul",
+"src": "https://cafleurebon.com/dsh-perfumes-la-casa-azul-frida-stories-1-1-review-dawn-spencer-hurwitz-frida-kahlos-tango-draw/"
 },
 "dsh perfumes|le jade edp": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/le-jade/",
-"n": "Le Jade"
+"n": "Le Jade",
+"src": "https://www.dshperfumes.com/shop/le-jade/"
 },
 "dsh perfumes|manroot edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/ManRoot-64049",
-"n": "ManRoot"
+"n": "ManRoot",
+"p": "DSH-Perfumes/ManRoot-64049"
 },
 "dsh perfumes|partners in crime edp": {
 "h": "DSH Perfumes",
 "i": "https://media.parfumo.com/perfume_social/fa/facb72_partners-in-crime-eau-de-parfum-dsh-perfumes_1200.jpg?format=jpg&quality=90",
+"n": "Partners in Crime",
 "src": [
 "https://www.dshperfumes.com/shop/partners-in-crime-a-honeyed-labdanum-perfume/",
 "https://www.parfumo.com/Perfumes/DSH_Perfumes/partners-in-crime-eau-de-parfum"
-],
-"n": "Partners in Crime"
+]
 },
 "dsh perfumes|raisin d etre edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Raisin-d-Etre-71624",
-"n": "Raisin d'Être"
+"n": "Raisin d'Être",
+"p": "DSH-Perfumes/Raisin-d-Etre-71624"
 },
 "dsh perfumes|re assess edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Re-Assess-71616",
-"n": "Re-Assess"
+"n": "Re-Assess",
+"p": "DSH-Perfumes/Re-Assess-71616"
 },
 "dsh perfumes|soho boheme vdp": {
+"i": "https://cafleurebon.com/wp-content/uploads/2024/10/DSH-Perfumes-Soho-Boheme-1.jpg",
 "n": "Soho Bohème",
 "src": "https://cafleurebon.com/dsh-perfumes-soho-boheme-dawn-spencer-hurwitz-2024-plus-chelsea-hotel-giveaway/"
 },
 "dsh perfumes|soho cuir edp": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/soho-cuir/",
-"n": "Soho Cuir"
+"n": "Soho Cuir",
+"src": "https://www.dshperfumes.com/shop/soho-cuir/"
 },
 "dsh perfumes|sweet dreams edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Sweet-Dreams-14808",
-"n": "Sweet Dreams"
+"n": "Sweet Dreams",
+"p": "DSH-Perfumes/Sweet-Dreams-14808"
 },
 "dsh perfumes|tournesol noir edp": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Tournesol-Noir-133048",
-"n": "Tournesol Noir"
+"n": "Tournesol Noir",
+"p": "DSH-Perfumes/Tournesol-Noir-133048"
 },
 "dsh perfumes|vachi edt": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/vachi-a-limited-edition-sandalwood-perfume/",
-"n": "Vachi"
+"n": "Vachi",
+"src": "https://www.dshperfumes.com/shop/vachi-a-limited-edition-sandalwood-perfume/"
 },
 "dsh perfumes|veridian": {
 "h": "DSH Perfumes",
-"p": "DSH-Perfumes/Viridian-8455",
-"n": "Viridian"
+"n": "Viridian",
+"p": "DSH-Perfumes/Viridian-8455"
 },
 "dsh perfumes|vert et noir edp": {
 "n": "Vert et Noir",
@@ -1065,8 +1067,8 @@
 },
 "dsh perfumes|warrior queen edp": {
 "h": "DSH Perfumes",
-"src": "https://www.dshperfumes.com/shop/warrior-queen-dsh-perfumes-x-cafleurebon/",
-"n": "Warrior Queen"
+"n": "Warrior Queen",
+"src": "https://www.dshperfumes.com/shop/warrior-queen-dsh-perfumes-x-cafleurebon/"
 },
 "dsh|aoud blanc": {
 "h": "DSH Perfumes",
