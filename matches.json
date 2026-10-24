@@ -989,7 +989,11 @@
 "dsh perfumes|au crepuscule de lavande edp": {
 "h": "DSH Perfumes",
 "n": "Au Crépuscule de Lavande",
-"src": "https://www.dshperfumes.com/shop/au-crepuscule-de-lavande-in-the-lavender-twilight-launch-april-2/"
+"src": [
+"https://www.dshperfumes.com/shop/au-crepuscule-de-lavande-in-the-lavender-twilight-launch-april-2/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/au-crepuscule-de-lavande",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/au-crepuscule-de-lavande-eau-de-parfum"
+]
 },
 "dsh perfumes|balls said the queen edp": {
 "h": "DSH Perfumes",
@@ -1013,7 +1017,10 @@
 "dsh perfumes|e clipse edp": {
 "h": "DSH Perfumes",
 "n": "E'clipse",
-"src": "https://www.dshperfumes.com/shop/eclipse-a-limited-edition-modern-patchouli/"
+"src": [
+"https://www.dshperfumes.com/shop/eclipse-a-limited-edition-modern-patchouli/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/e-clipse-eau-de-parfum"
+]
 },
 "dsh perfumes|electric summer edp": {
 "h": "DSH Perfumes",
@@ -1110,7 +1117,11 @@
 "dsh perfumes|vachi edt": {
 "h": "DSH Perfumes",
 "n": "Vachi",
-"src": "https://www.dshperfumes.com/shop/vachi-a-limited-edition-sandalwood-perfume/"
+"src": [
+"https://www.dshperfumes.com/shop/vachi-a-limited-edition-sandalwood-perfume/",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/vachi",
+"https://www.parfumo.com/Perfumes/DSH_Perfumes/vachi-eau-de-toilette"
+]
 },
 "dsh perfumes|veridian": {
 "h": "DSH Perfumes",
