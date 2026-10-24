@@ -373,6 +373,18 @@
 "bvlgari|gyan": {
 "p": "Bvlgari/Gyan-41221"
 },
+"bvlgari|the blanc": {
+"n": "Eau Parfumée au Thé Blanc",
+"p": "Bvlgari/Eau-Parfumee-au-The-Blanc-145"
+},
+"bvlgari|the imperial": {
+"n": "Eau Parfumée Thé Impérial",
+"p": "Bvlgari/Eau-Parfumee-The-Imperial-122733"
+},
+"bvlgari|the vert": {
+"n": "Eau Parfumée au Thé Vert",
+"p": "Bvlgari/Eau-Parfumee-au-The-Vert-144"
+},
 "by kilian|imperial tea": {
 "h": "Kilian",
 "p": "By-Kilian/Imperial-Tea-23896"
@@ -536,6 +548,9 @@
 },
 "chanel|sycomore": {
 "p": "Chanel/Sycomore-Eau-de-Parfum-41780"
+},
+"chapel factory|oud pagode": {
+"p": "Chapel-Factory/Oud-Pagode-87594"
 },
 "chasing scents|tea service": {
 "p": "Chasing-Scents/Tea-Service-73356"
@@ -867,8 +882,17 @@
 "diptyque|eau des sens": {
 "p": "Diptyque/Eau-des-Sens-Eau-de-Toilette-35678"
 },
+"diptyque|eau duelle": {
+"p": "Diptyque/Eau-Duelle-Eau-de-Toilette-9241"
+},
+"diptyque|eau moheli": {
+"p": "Diptyque/Eau-Moheli-18180"
+},
 "diptyque|fleur de peau": {
 "p": "Diptyque/Fleur-de-Peau-Eau-de-Parfum-48681"
+},
+"diptyque|ilio": {
+"p": "Diptyque/Ilio-67808"
 },
 "diptyque|l ombre dans l eau eau de parfum": {
 "p": "Diptyque/L-Ombre-Dans-L-Eau-Eau-de-Parfum-49099"
@@ -882,6 +906,9 @@
 },
 "diptyque|tam dao": {
 "p": "Diptyque/Tam-Dao-Eau-de-Toilette-3956"
+},
+"diptyque|tempo": {
+"p": "Diptyque/Tempo-Eau-de-Parfum-48680"
 },
 "dirty rice|borntostandout": {
 "h": "BORNTOSTANDOUT",
@@ -1468,6 +1495,30 @@
 "goutal|un matin d orage": {
 "p": "Goutal/Un-Matin-d-Orage-5586"
 },
+"granado|amazonico": {
+"p": "Granado/Amazonico-114258"
+},
+"granado|apotecario": {
+"p": "Granado/Apotecario-105936"
+},
+"granado|boemia": {
+"p": "Granado/Boemia-63484"
+},
+"granado|elixir 1870": {
+"p": "Granado/Elixir-1870-63482"
+},
+"granado|epoque tropical": {
+"p": "Granado/Epoque-Tropical-66998"
+},
+"granado|esplendor": {
+"p": "Granado/Esplendor-92932"
+},
+"granado|expedicao": {
+"p": "Granado/Expedicao-83539"
+},
+"granado|infusao botanica": {
+"p": "Granado/Infusao-Botanica-77487"
+},
 "granado|jardim real": {
 "p": "Granado/Jardim-Real-77488"
 },
@@ -1476,6 +1527,18 @@
 },
 "gucci|bloom": {
 "p": "Gucci/Gucci-Bloom-44894"
+},
+"gucci|guilty her": {
+"n": "Guilty Pour Femme Eau de Parfum",
+"p": "Gucci/Gucci-Guilty-Eau-de-Parfum-52481"
+},
+"gucci|guilty homme": {
+"n": "Guilty Pour Homme",
+"p": "Gucci/Guilty-Pour-Homme-11037"
+},
+"gucci|guilty homme elixir": {
+"n": "Guilty Elixir de Parfum pour Homme",
+"p": "Gucci/Guilty-Elixir-de-Parfum-pour-Homme-84547"
 },
 "gucci|the heart of leo": {
 "p": "Gucci/The-Heart-of-Leo-90835"
@@ -1889,6 +1952,10 @@
 "h": "Chloé",
 "p": "Chloe/Vert-Soleil-122847"
 },
+"l entropiste|encens noire": {
+"n": "Ensang Noir",
+"p": "L-Entropiste/Ensang-Noir-117253"
+},
 "l entropiste|white blood": {
 "p": "L-Entropiste/White-Blood-133234"
 },
@@ -2085,6 +2152,10 @@
 "maison francis k|gentle fluidity silver": {
 "p": "Maison-Francis-Kurkdjian/Gentle-Fluidity-Silver-53400"
 },
+"maison irfe|marshmallow musk": {
+"h": "Maison IRFÉ",
+"p": "Maison-IRFE/Marshmallow-Musk-99943"
+},
 "maison margiela|by the fireplace": {
 "p": "Maison-Martin-Margiela/By-the-Fireplace-31623"
 },
@@ -2165,6 +2236,48 @@
 "margiela|whispers at the library": {
 "n": "Whispers in the Library",
 "p": "Maison-Martin-Margiela/Whispers-in-the-Library-53537"
+},
+"marie jeanne|adele": {
+"p": "Marie-Jeanne/Adele-80633"
+},
+"marie jeanne|au pied du rosier": {
+"p": "Marie-Jeanne/Au-Pied-du-Rosier-100340"
+},
+"marie jeanne|brume d ete": {
+"p": "Marie-Jeanne/Brume-d-Ete-80635"
+},
+"marie jeanne|brume d hiver": {
+"p": "Marie-Jeanne/Brume-d-Hiver-72475"
+},
+"marie jeanne|brume d oreiller": {
+"p": "Marie-Jeanne/Brume-d-Oreiller-80634"
+},
+"marie jeanne|brume matcha": {
+"p": "Marie-Jeanne/Brume-Matcha-100231"
+},
+"marie jeanne|elisa": {
+"p": "Marie-Jeanne/Elisa-111347"
+},
+"marie jeanne|iris pallida": {
+"p": "Marie-Jeanne/Iris-Pallida-76771"
+},
+"marie jeanne|jasmin patchouli": {
+"p": "Marie-Jeanne/Jasmin-Patchouli-80632"
+},
+"marie jeanne|leon": {
+"p": "Marie-Jeanne/Leon-59559"
+},
+"marie jeanne|marcel": {
+"p": "Marie-Jeanne/Marcel-59560"
+},
+"marie jeanne|rose shiso": {
+"p": "Marie-Jeanne/rozu-shiso-97347"
+},
+"marie jeanne|tonka lavande": {
+"p": "Marie-Jeanne/Tonka-Lavande-80629"
+},
+"marie jeanne|vetiver santal": {
+"p": "Marie-Jeanne/Vetiver-Santal-59558"
 },
 "marlou|doliphor": {
 "p": "Marlou/Doliphor-103083"
@@ -2310,6 +2423,9 @@
 "n": "1001",
 "p": "Nobile-1942/1001-44132"
 },
+"nomenclature|adr ett": {
+"p": "Nomenclature/Adr-ett-32278"
+},
 "nonfiction|beige": {
 "n": "The Beige",
 "p": "Nonfiction/The-Beige-101250"
@@ -2442,6 +2558,9 @@
 "ormonde jayne|montabaco intensivo": {
 "p": "Ormonde-Jayne/4-Montabaco-Intensivo-67775"
 },
+"ormonde jayne|ormonde man": {
+"p": "Ormonde-Jayne/Ormonde-Man-4931"
+},
 "ormonde jayne|ormonde woman": {
 "p": "Ormonde-Jayne/Ormonde-Woman-4930"
 },
@@ -2523,6 +2642,9 @@
 "penilaligons|liquid love": {
 "p": "Penhaligon-s/Liquid-Love-84259"
 },
+"perfume who|at land": {
+"p": "Perfume-Who/At-Land-105096"
+},
 "perfumer h|rain wood": {
 "p": "Perfumer-H/Rain-Wood-84776"
 },
@@ -2592,6 +2714,10 @@
 },
 "regime des fleurs|glass blooms": {
 "p": "Regime-des-Fleurs/Glass-Blooms-42186"
+},
+"regime des fleurs|green vanille": {
+"h": "Régime des Fleurs",
+"p": "Regime-des-Fleurs/Green-Vanille-93280"
 },
 "regime des fleurs|jade vines": {
 "p": "Regime-des-Fleurs/Jade-Vines-80256"
@@ -2993,6 +3119,12 @@
 },
 "universal flowering|death of a ladies man": {
 "p": "Universal-Flowering/Death-Of-A-Ladies-Man-89469"
+},
+"universal flowering|fig leaf": {
+"p": "Universal-Flowering/Fig-Leaf-87777"
+},
+"universal flowering|poems one through twelve": {
+"p": "Universal-Flowering/Poems-One-Through-Twelve-81917"
 },
 "unn|chemin d amande": {
 "p": "Une-Nuit-Nomade/Chemin-D-Amande-104562"
