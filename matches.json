@@ -1854,6 +1854,12 @@
 "initio|atomic rose": {
 "p": "Initio-Parfums-Prives/Atomic-Rose-57587"
 },
+"initio|the whole line": {
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Initio-Parfums-Prives.html"
+]
+},
 "isabelle larignon|le flocon de johann k": {
 "p": "Isabelle-Larignon/Le-Flocon-de-Johann-K-79208"
 },
@@ -1937,6 +1943,10 @@
 },
 "kenzo|flower ikebana indigo": {
 "p": "Kenzo/Flower-Ikebana-Indigo-101285"
+},
+"kenzo|the whole line": {
+"i": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenzo_logo_(2022%E2%80%93present).svg",
+"n": "The whole line"
 },
 "kerosene|copper skies": {
 "p": "Kerosene/Copper-Skies-14496"
@@ -2640,6 +2650,12 @@
 "parfums de marly|delina": {
 "p": "Parfums-de-Marly/Delina-43871"
 },
+"parfums de marly|the whole line": {
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Parfums-de-Marly.html"
+]
+},
 "particuliere|black tar": {
 "p": "Parfumerie-Particuliere/Black-Tar-43935"
 },
@@ -2654,6 +2670,10 @@
 },
 "pearfat|stomped on a bed of lettuce": {
 "p": "Pearfat-Parfum/Stomped-on-Bed-of-Lettuce-79994"
+},
+"penhaligon s|the whole line": {
+"i": "https://commons.wikimedia.org/wiki/Special:FilePath/Penhaligon's_logo.svg",
+"n": "The whole line"
 },
 "penhaligons|blenheim bouquet": {
 "p": "Penhaligon-s/Blenheim-Bouquet-3940"
@@ -2672,6 +2692,12 @@
 },
 "perfume who|at land": {
 "p": "Perfume-Who/At-Land-105096"
+},
+"perfumehead|the whole line": {
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Perfumehead.html"
+]
 },
 "perfumer h|rain wood": {
 "p": "Perfumer-H/Rain-Wood-84776"
@@ -3124,6 +3150,13 @@
 },
 "tom ford|white suede": {
 "p": "Tom-Ford/White-Suede-6386"
+},
+"toskovat|the whole line": {
+"n": "The whole line",
+"src": [
+"https://www.fragrantica.com/designers/Toskovat.html",
+"https://www.parfumo.com/PerfumeBrand/toskovat"
+]
 },
 "toskovot|inexcusable evil": {
 "p": "Toskovat/Inexcusable-Evil-75421"
