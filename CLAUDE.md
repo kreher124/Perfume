@@ -51,7 +51,7 @@ An entry of `{}` means you looked and found nothing. The app shows a colored let
    - In Claude Code on the web, fragrantica.com and most shop sites refuse direct downloads. Use WebSearch, for example `fragrantica <house> <name>`, and read the path from the result's address.
    - When the sheet's spelling is clearly wrong, set `n` or `h` to the correct name.
    - When you aren't sure you found the right perfume, collect it in a list and ask the owner in chat. Don't leave the question in a file they'd have to find.
-3. **Rows for a whole house.** When the name says "The whole line" or "The whole house", or the row has only a house name, show the house's logo. Always do this, and never leave these rows as `{}`. Put the house's Fragrantica designer page in `src`, for example `https://www.fragrantica.com/designers/Floraiku.html`, and the Find bottle photos action copies its logo into `i`. If the action misses, try the house's Wikipedia page as `src`, or set `i` to a clean logo file such as one from Wikimedia Commons. Other rows that aren't a single perfume, like "(discovery set)", are skipped and show a letter tile.
+3. **Rows for a whole house.** When the name says "The whole line", "The whole house" or "(discovery set)", or the row has only a house name, show the house's logo. Always do this, and never leave these rows as `{}`. Put the house's Fragrantica designer page in `src`, for example `https://www.fragrantica.com/designers/Floraiku.html`, and the Find bottle photos action copies its logo into `i`. If the action misses, try the house's Wikipedia page as `src`, or set `i` to a clean logo file such as one from Wikimedia Commons.
 4. **Perfumes that aren't on Fragrantica.**
    - Find the maker's product page and put it in `src`. If the maker's store runs on Shopify (its address answers `/products.json`), put the store in `shop` instead.
    - Parfumo pages work as a backup `src`.
@@ -64,7 +64,7 @@ Perfumes the owner adds later get a letter tile until they're matched. An owner 
 
 A scheduled Routine runs this with no one watching. Do only this:
 
-1. Run `python3 scripts/sheet_tools.py unmatched`. If it lists only skipped rows like discovery sets, stop and report that there was nothing new. Whole-house rows still get a logo, as described above.
+1. Run `python3 scripts/sheet_tools.py unmatched`. If it lists nothing, stop and report that there was nothing new. Whole-house rows and discovery sets get a logo, as described above.
 2. Match the rest as described above. When you aren't sure about one, don't guess. Leave it out of `matches.json`, so next week's run tries it again, and name it in your final message.
 3. Commit, push, open a pull request, and merge it. Don't wait for approval, because the owner asked for these to publish on their own. Change only `matches.json`.
 4. If you added `src` or `shop` entries, wait for the Find bottle photos action to finish, and check whether it found each photo.
