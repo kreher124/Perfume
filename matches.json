@@ -276,6 +276,12 @@
 "h": "Armani Privé",
 "p": "Giorgio-Armani/Armani-Prive-Vert-Malachite-34588"
 },
+"arpa studios|": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.5593.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Arpa-Studios.html"
+]
+},
 "arquiste|a grove by the sea": {
 "p": "Arquiste/A-Grove-by-The-Sea-94584"
 },
@@ -865,6 +871,14 @@
 "der duft|match": {
 "p": "Der-Duft/Match-68841"
 },
+"dior|": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.160.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Dior.html",
+"https://www.fragrantica.com/designers/Christian-Dior.html",
+"https://en.wikipedia.org/wiki/Dior"
+]
+},
 "dior|addict edt": {
 "n": "Dior Addict Eau de Toilette",
 "p": "Dior/Dior-Addict-Eau-de-Toilette-25159"
@@ -1443,6 +1457,18 @@
 "n": "Fenty Eau de Parfum",
 "p": "Fenty/Fenty-68677"
 },
+"fischersund|the whole house": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.5898.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Fischersund.html"
+]
+},
+"floraiku|": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.3133.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Floraiku.html"
+]
+},
 "floraiku|between 2 trees": {
 "h": "Floraïku",
 "n": "Between Two Trees",
@@ -1546,6 +1572,10 @@
 },
 "granado|elixir 1870": {
 "p": "Granado/Elixir-1870-63482"
+},
+"granado|encanto tropical": {
+"n": "Époque Tropical",
+"p": "Granado/Epoque-Tropical-66998"
 },
 "granado|epoque tropical": {
 "p": "Granado/Epoque-Tropical-66998"
