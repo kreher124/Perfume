@@ -63,8 +63,22 @@ def from_page(url):
     p.feed(html)
     for key in ("og:image:secure_url", "og:image", "twitter:image"):
         if key in p.found:
-            return plain_bottle(absolute(p.found[key], url), html)
+            img = absolute(p.found[key], url)
+            if not same_perfume(url, img):
+                raise ValueError(f"page answered with another perfume's photo: {img}")
+            return plain_bottle(img, html)
     return None
+
+
+def same_perfume(url, img):
+    """After several quick visits Parfumo can answer with a different perfume's page.
+    Its photo names carry the perfume's name, so check they share most of the page's words."""
+    if "parfumo.com" not in url:
+        return True
+    common = {"eau", "de", "parfum", "toilette", "cologne", "extrait", "edp", "edt"}
+    want = set(norm(url.rstrip("/").rsplit("/", 1)[-1]).split()) - common
+    have = set(norm(img.split("?")[0].rsplit("/", 1)[-1]).split()) - common
+    return not want or len(want & have) * 2 >= len(want)
 
 
 def plain_bottle(img, html):
