@@ -58,12 +58,28 @@ class MetaImage(HTMLParser):
 
 def from_page(url):
     _, body = get(url)
+    html = body.decode("utf-8", "replace")
     p = MetaImage()
-    p.feed(body.decode("utf-8", "replace"))
+    p.feed(html)
     for key in ("og:image:secure_url", "og:image", "twitter:image"):
         if key in p.found:
-            return absolute(p.found[key], url)
+            return plain_bottle(absolute(p.found[key], url), html)
     return None
+
+
+def plain_bottle(img, html):
+    """Parfumo's share image is a wide banner with its logo, which leaves the bottle
+    small on the card. Use the plain bottle photo from the same page when there is one."""
+    m = re.search(r"media\.parfumo\.com/perfume_social/([0-9a-f]{2})/([0-9a-f]{6})", img)
+    if not m:
+        return img
+    # The page shows the same photo, named by the same id, under /perfumes/.
+    shown = re.findall(rf"https://media\.parfumo\.com/perfumes/{m[1]}/{m[2]}[^\"'\s)]*", html)
+    guess = img.split("?")[0].replace("/perfume_social/", "/perfumes/")
+    for cand in sorted(set(shown), key=lambda c: ("1200" in c, len(c)), reverse=True) + [guess]:
+        if is_image(cand):
+            return cand
+    return img
 
 
 def from_shop(shop, name):
