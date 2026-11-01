@@ -58,12 +58,42 @@ class MetaImage(HTMLParser):
 
 def from_page(url):
     _, body = get(url)
+    html = body.decode("utf-8", "replace")
     p = MetaImage()
-    p.feed(body.decode("utf-8", "replace"))
+    p.feed(html)
     for key in ("og:image:secure_url", "og:image", "twitter:image"):
         if key in p.found:
-            return absolute(p.found[key], url)
+            img = absolute(p.found[key], url)
+            if not same_perfume(url, img):
+                raise ValueError(f"page answered with another perfume's photo: {img}")
+            return plain_bottle(img, html)
     return None
+
+
+def same_perfume(url, img):
+    """After several quick visits Parfumo can answer with a different perfume's page.
+    Its photo names carry the perfume's name, so check they share most of the page's words."""
+    if "parfumo.com" not in url:
+        return True
+    common = {"eau", "de", "parfum", "toilette", "cologne", "extrait", "edp", "edt"}
+    want = set(norm(url.rstrip("/").rsplit("/", 1)[-1]).split()) - common
+    have = set(norm(img.split("?")[0].rsplit("/", 1)[-1]).split()) - common
+    return not want or len(want & have) * 2 >= len(want)
+
+
+def plain_bottle(img, html):
+    """Parfumo's share image is a wide banner with its logo, which leaves the bottle
+    small on the card. Use the plain bottle photo from the same page when there is one."""
+    m = re.search(r"media\.parfumo\.com/perfume_social/([0-9a-f]{2})/([0-9a-f]{6})", img)
+    if not m:
+        return img
+    # The page shows the same photo, named by the same id, under /perfumes/.
+    shown = re.findall(rf"https://media\.parfumo\.com/perfumes/{m[1]}/{m[2]}[^\"'\s)]*", html)
+    guess = img.split("?")[0].replace("/perfume_social/", "/perfumes/")
+    for cand in sorted(set(shown), key=lambda c: ("1200" in c, len(c)), reverse=True) + [guess]:
+        if is_image(cand):
+            return cand
+    return img
 
 
 def from_shop(shop, name):
