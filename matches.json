@@ -234,6 +234,7 @@
 "p": "Tauer-Perfumes/Sundowner-70275"
 },
 "angelos creations olfactives|discovery set 18 creations discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.4584.jpg",
 "src": [
 "https://www.fragrantica.com/designers/Angelos-Creations-Olfactives.html"
 ]
@@ -362,6 +363,7 @@
 "p": "Avon/Roses-Roses-40169"
 },
 "azman|oh my shisha": {
+"i": "https://media.parfumo.com/perfumes/65/65ab13_oh-my-shisha-azman_1200.jpg?width=720&aspect_ratio=1:1",
 "src": [
 "https://www.venbafragrance.com/products/azman-oh-my-shisha-extrait",
 "https://www.parfumo.com/Perfumes/azman/oh-my-shisha"
@@ -388,6 +390,7 @@
 "p": "Billie-Eilish/Eilish-No-2-76532"
 },
 "boadicea the victorious|bestsellers gift set 2ml discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.817.jpg",
 "src": [
 "https://www.fragrantica.com/designers/Boadicea-the-Victorious.html"
 ]
@@ -611,6 +614,7 @@
 "p": "cbcb-fragrances/COMRADE-132278"
 },
 "celine|discovery set eau de parfum 11x2ml": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.27.jpg",
 "src": [
 "https://www.fragrantica.com/designers/Celine.html",
 "https://en.wikipedia.org/wiki/Celine_(brand)"
@@ -2063,6 +2067,7 @@
 "p": "J-F-Schwarzlose-Berlin/Trance-18254"
 },
 "j scent|crisp dawn": {
+"i": "https://ministryofscent.com/cdn/shop/files/Crisp_Dawn_50ml_by_J-Scent.jpg?v=1793909395",
 "src": [
 "https://ministryofscent.com/products/crisp-dawn",
 "https://www.parfumo.com/Perfumes/J_Scent/crisp-dawn"
@@ -2260,6 +2265,7 @@
 "src": "https://www.laurelbathhouse.com/products/nudie-eau-de-parfum"
 },
 "le galion|bourrasque": {
+"i": "https://legalionparfums.com/cdn/shop/files/le-galion-parfums-product-BOURRASQUE.jpg?v=1741332943",
 "src": [
 "https://legalionparfums.com/products/le-galion-parfums-bourrasque",
 "https://mazzolari.com/en/products/le-galion-bourrasque",
@@ -2267,6 +2273,7 @@
 ]
 },
 "le galion|brumes": {
+"i": "https://mazzolari.com/cdn/shop/files/3760256291436.jpg?v=1733329016&width=1200",
 "src": [
 "https://mazzolari.com/en/products/le-galion-brumes",
 "https://www.parfumo.com/Perfumes/Le_Galion/brumes-2020"
@@ -2276,6 +2283,7 @@
 "p": "Le-Galion/Cuir-30982"
 },
 "le galion|iris": {
+"i": "https://mazzolari.com/cdn/shop/files/3760256291351.jpg?v=1733329017&width=1200",
 "src": [
 "https://www.luckyscent.com/products/iris-by-le-galion",
 "https://mazzolari.com/en/products/le-galion-iris"
@@ -2872,6 +2880,7 @@
 "p": "One-Day/Thailand-73838"
 },
 "ormaie|the collection 10 x 2ml discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.3518.jpg",
 "src": [
 "https://www.fragrantica.com/designers/Ormaie.html"
 ]
@@ -2894,6 +2903,7 @@
 "p": "Ormonde-Jayne/Ormonde-Woman-4930"
 },
 "ormonde jayne|the complete tasting menu discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.562.jpg",
 "src": [
 "https://www.fragrantica.com/designers/Ormonde-Jayne.html"
 ]
@@ -3090,12 +3100,14 @@
 },
 "reserve en afrique 1934|afrique en fleurs": {
 "h": "Réserve en Afrique 1934",
+"i": "https://bloomperfume.com/cdn/shop/files/1.Reserve_en_Afrique_Afrique_en_Fleurs_100ml_Bottle_medium.png?v=1754905382",
 "src": [
 "https://bloomperfume.com/products/afrique-en-fleurs",
 "https://www.parfumo.com/Perfumes/reserve-en-afrique/afrique-en-fleurs"
 ]
 },
 "reserve en afrique 1934|woodoo": {
+"i": "https://bloomperfume.com/cdn/shop/files/woodoo_medium.jpg?v=1783328394",
 "src": [
 "https://bloomperfume.com/products/woodoo"
 ]
@@ -3279,12 +3291,14 @@
 "p": "Andrea-Maack/Soft-Tension-39036"
 },
 "sorce|a dream of stars": {
+"i": "https://cdn.shopify.com/s/files/1/0644/7657/8040/files/A_Dream_Of_Stars_-_web_size.jpg?v=1794234602",
 "shop": "https://shopsorce.com"
 },
 "sorce|english major": {
 "p": "Sorce/English-Major-105626"
 },
 "sorce|this is just to say": {
+"i": "https://cdn.shopify.com/s/files/1/0644/7657/8040/files/This_Is_Just_To_Say_-_web_size.jpg?v=1794234600",
 "shop": "https://shopsorce.com"
 },
 "spiritica|atmayatra": {
