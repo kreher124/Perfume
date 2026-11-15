@@ -233,6 +233,12 @@
 "h": "Tauer Perfumes",
 "p": "Tauer-Perfumes/Sundowner-70275"
 },
+"angelos creations olfactives|discovery set 18 creations discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.4584.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Angelos-Creations-Olfactives.html"
+]
+},
 "angelos creations olfactives|pothos": {
 "p": "Angelos-Creations-Olfactives/Pothos-129966"
 },
@@ -356,6 +362,13 @@
 "avon|roses roses": {
 "p": "Avon/Roses-Roses-40169"
 },
+"azman|oh my shisha": {
+"i": "https://media.parfumo.com/perfumes/65/65ab13_oh-my-shisha-azman_1200.jpg?width=720&aspect_ratio=1:1",
+"src": [
+"https://www.venbafragrance.com/products/azman-oh-my-shisha-extrait",
+"https://www.parfumo.com/Perfumes/azman/oh-my-shisha"
+]
+},
 "azzaro|azzaro pour homme": {
 "p": "Azzaro/Azzaro-pour-Homme-829"
 },
@@ -375,6 +388,12 @@
 "billie eilish|no 2": {
 "n": "Eilish No. 2",
 "p": "Billie-Eilish/Eilish-No-2-76532"
+},
+"boadicea the victorious|bestsellers gift set 2ml discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.817.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Boadicea-the-Victorious.html"
+]
 },
 "bohoboco|mango yuzu gasoline": {
 "h": "Bohoboco",
@@ -593,6 +612,13 @@
 },
 "cbcb fragrances|comrade": {
 "p": "cbcb-fragrances/COMRADE-132278"
+},
+"celine|discovery set eau de parfum 11x2ml": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.27.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Celine.html",
+"https://en.wikipedia.org/wiki/Celine_(brand)"
+]
 },
 "chanel|1957 parfum": {
 "n": "1957",
@@ -2040,6 +2066,13 @@
 "h": "J.F. Schwarzlose Berlin",
 "p": "J-F-Schwarzlose-Berlin/Trance-18254"
 },
+"j scent|crisp dawn": {
+"i": "https://ministryofscent.com/cdn/shop/files/Crisp_Dawn_50ml_by_J-Scent.jpg?v=1793909395",
+"src": [
+"https://ministryofscent.com/products/crisp-dawn",
+"https://www.parfumo.com/Perfumes/J_Scent/crisp-dawn"
+]
+},
 "jacques fath|fath s discovery set discovery set": {
 "i": "https://www.fragrantica.com/mdimg/dizajneri/o.592.jpg",
 "src": "https://www.fragrantica.com/designers/Jacques-Fath.html"
@@ -2212,6 +2245,10 @@
 "n": "Absolue Rose or Die",
 "p": "Lancome/Absolue-Rose-Or-Die-94919"
 },
+"lanvin|arpege": {
+"n": "Arpège",
+"p": "Lanvin/Arpege-6"
+},
 "laurel bathhouse|cannoli": {
 "p": "Laurel-Bath-House/Cannoli-114446"
 },
@@ -2226,6 +2263,58 @@
 "laurel bathhouse|nudi": {
 "i": "https://cdn.shopify.com/s/files/1/0861/9432/3765/files/Artboard31_0c050931-7c28-40b6-bd54-83b624c1a8d0.png?v=1771018913",
 "src": "https://www.laurelbathhouse.com/products/nudie-eau-de-parfum"
+},
+"le galion|bourrasque": {
+"i": "https://legalionparfums.com/cdn/shop/files/le-galion-parfums-product-BOURRASQUE.jpg?v=1741332943",
+"src": [
+"https://legalionparfums.com/products/le-galion-parfums-bourrasque",
+"https://mazzolari.com/en/products/le-galion-bourrasque",
+"https://www.parfumo.com/Perfumes/Le_Galion/bourrasque-2020"
+]
+},
+"le galion|brumes": {
+"i": "https://mazzolari.com/cdn/shop/files/3760256291436.jpg?v=1733329016&width=1200",
+"src": [
+"https://mazzolari.com/en/products/le-galion-brumes",
+"https://www.parfumo.com/Perfumes/Le_Galion/brumes-2020"
+]
+},
+"le galion|cuir": {
+"p": "Le-Galion/Cuir-30982"
+},
+"le galion|iris": {
+"i": "https://mazzolari.com/cdn/shop/files/3760256291351.jpg?v=1733329017&width=1200",
+"src": [
+"https://www.luckyscent.com/products/iris-by-le-galion",
+"https://mazzolari.com/en/products/le-galion-iris"
+]
+},
+"le galion|l astre": {
+"p": "Le-Galion/L-Astre-80093"
+},
+"le galion|la rose": {
+"p": "Le-Galion/La-Rose-24538"
+},
+"le galion|sang bleu": {
+"p": "Le-Galion/Sang-Bleu-39674"
+},
+"le galion|snob": {
+"p": "Le-Galion/Snob-24539"
+},
+"le galion|sortilege": {
+"p": "Le-Galion/Sortilege-2022-83059"
+},
+"le galion|special for gentlemen": {
+"p": "Le-Galion/Special-for-Gentlemen-24537"
+},
+"le galion|tilleul": {
+"p": "Le-Galion/Tilleul-63453"
+},
+"le galion|vetyver": {
+"p": "Le-Galion/Vetyver-30981"
+},
+"le galion|whip": {
+"p": "Le-Galion/Whip-2014-24540"
 },
 "le labo|baie 19": {
 "p": "Le-Labo/Baie-19-57513"
@@ -2790,6 +2879,17 @@
 "one day|thailand": {
 "p": "One-Day/Thailand-73838"
 },
+"ormaie|the collection 10 x 2ml discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.3518.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Ormaie.html"
+]
+},
+"ormande jayne|ormande man": {
+"h": "Ormonde Jayne",
+"n": "Ormonde Man",
+"p": "Ormonde-Jayne/Ormonde-Man-4931"
+},
 "ormonde jayne|evernia": {
 "p": "Ormonde-Jayne/Evernia-69073"
 },
@@ -2801,6 +2901,12 @@
 },
 "ormonde jayne|ormonde woman": {
 "p": "Ormonde-Jayne/Ormonde-Woman-4930"
+},
+"ormonde jayne|the complete tasting menu discovery set": {
+"i": "https://www.fragrantica.com/mdimg/dizajneri/o.562.jpg",
+"src": [
+"https://www.fragrantica.com/designers/Ormonde-Jayne.html"
+]
 },
 "ormonde jayne|verano": {
 "p": "Ormonde-Jayne/Verano-113248"
@@ -2992,6 +3098,20 @@
 "n": "Tóor Tóor",
 "p": "Regime-des-Fleurs/Toor-Toor-86838"
 },
+"reserve en afrique 1934|afrique en fleurs": {
+"h": "Réserve en Afrique 1934",
+"i": "https://bloomperfume.com/cdn/shop/files/1.Reserve_en_Afrique_Afrique_en_Fleurs_100ml_Bottle_medium.png?v=1754905382",
+"src": [
+"https://bloomperfume.com/products/afrique-en-fleurs",
+"https://www.parfumo.com/Perfumes/reserve-en-afrique/afrique-en-fleurs"
+]
+},
+"reserve en afrique 1934|woodoo": {
+"i": "https://bloomperfume.com/cdn/shop/files/woodoo_medium.jpg?v=1783328394",
+"src": [
+"https://bloomperfume.com/products/woodoo"
+]
+},
 "rising sun|rite of way": {
 "h": "Rite of Way",
 "n": "Rising Sun",
@@ -3170,8 +3290,16 @@
 "n": "Soft Tension",
 "p": "Andrea-Maack/Soft-Tension-39036"
 },
+"sorce|a dream of stars": {
+"i": "https://cdn.shopify.com/s/files/1/0644/7657/8040/files/A_Dream_Of_Stars_-_web_size.jpg?v=1794234602",
+"shop": "https://shopsorce.com"
+},
 "sorce|english major": {
 "p": "Sorce/English-Major-105626"
+},
+"sorce|this is just to say": {
+"i": "https://cdn.shopify.com/s/files/1/0644/7657/8040/files/This_Is_Just_To_Say_-_web_size.jpg?v=1794234600",
+"shop": "https://shopsorce.com"
 },
 "spiritica|atmayatra": {
 "p": "Spiritica/Atmayatra-90878"
