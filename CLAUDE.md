@@ -50,6 +50,7 @@ An entry of `{}` means you looked and found nothing. The app shows a colored let
 2. Work through the list in batches of about 30, and commit and push after each batch so nothing is lost.
    - In Claude Code on the web, fragrantica.com and most shop sites refuse direct downloads. Use WebSearch, for example `fragrantica <house> <name>`, and read the path from the result's address.
    - When the sheet's spelling is clearly wrong, set `n` or `h` to the correct name.
+   - Keep a sub-line the owner lists as its own house under that name, even when Fragrantica files it under the parent brand. Fix only its spelling. For example, Chloé Atelier des Fleurs stays "Chloé Atelier des Fleurs", never plain "Chloé". If you aren't sure whether a house is a sub-line, ask.
    - When you aren't sure you found the right perfume, collect it in a list and ask the owner in chat. Don't leave the question in a file they'd have to find.
 3. **Rows for a whole house.** When the name says "The whole line", "The whole house" or "(discovery set)", or the row has only a house name, show the house's logo. Always do this, and never leave these rows as `{}`. Put the house's Fragrantica designer page in `src`, for example `https://www.fragrantica.com/designers/Floraiku.html`, and the Find bottle photos action copies its logo into `i`. If the action misses, try the house's Wikipedia page as `src`, or set `i` to a clean logo file such as one from Wikimedia Commons.
 4. **Perfumes that aren't on Fragrantica.**
