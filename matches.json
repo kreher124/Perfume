@@ -78,6 +78,9 @@
 "acqua di parma|acqua nobile gelsomino": {
 "p": "Acqua-di-Parma/Acqua-Nobile-Gelsomino-17384"
 },
+"acqua di parma|buongiorno buonanotte": {
+"p": "Acqua-di-Parma/Buongiorno-Buonanotte-128858"
+},
 "acqua di parma|cedro virtuoso": {
 "p": "Acqua-di-Parma/Cedro-Virtuoso-141394"
 },
@@ -250,6 +253,9 @@
 "n": "Rosa Antiqua",
 "p": "Anti/Rosa-Antiqua-113889"
 },
+"apoteker tepe|after the flood": {
+"p": "Apoteker-Tepe/After-the-Flood-33603"
+},
 "aqua di parma|buongiorno": {
 "p": "Acqua-di-Parma/Buongiorno-103426"
 },
@@ -375,6 +381,9 @@
 "balmain|vent vert": {
 "p": "Balmain-Beauty/Vent-Vert-96730"
 },
+"bare knuckles|a certain someone": {
+"src": "https://francesmay.com/collections/bare-knuckles/products/bare-knuckles-a-certain-someone-eau-de-parfum"
+},
 "baruti|hot cotton": {
 "p": "Baruti/Hot-Cotton-91870"
 },
@@ -388,6 +397,9 @@
 "billie eilish|no 2": {
 "n": "Eilish No. 2",
 "p": "Billie-Eilish/Eilish-No-2-76532"
+},
+"blocki|for walks": {
+"p": "Blocki/For-Walks-34688"
 },
 "boadicea the victorious|bestsellers gift set 2ml discovery set": {
 "i": "https://www.fragrantica.com/mdimg/dizajneri/o.817.jpg",
@@ -437,6 +449,10 @@
 "borntostandout|nanatopia": {
 "h": "BORNTOSTANDOUT",
 "p": "BORNTOSTANDOUT/Nanatopia-88766"
+},
+"borntostandout|purple stain": {
+"h": "BORNTOSTANDOUT",
+"p": "BORNTOSTANDOUT/Purple-Stain-102810"
 },
 "borntostandout|warm air": {
 "h": "BORNTOSTANDOUT",
@@ -583,6 +599,9 @@
 "caswell massey|jockey club": {
 "p": "Caswell-Massey/Jockey-Club-8517"
 },
+"caswell massey|lilac": {
+"p": "Caswell-Massey/Lilac-Eau-de-Toilette-81889"
+},
 "caswell massey|marem": {
 "p": "Caswell-Massey/Marem-Eau-de-Parfum-81887"
 },
@@ -652,14 +671,28 @@
 "chanel|sycomore": {
 "p": "Chanel/Sycomore-Eau-de-Parfum-41780"
 },
+"chapel factory|cornette": {
+"p": "Chapel-Factory/Cornette-134877"
+},
 "chapel factory|oud pagode": {
 "p": "Chapel-Factory/Oud-Pagode-87594"
+},
+"chasing scents|bitter melon lemon tea": {
+"p": "Chasing-Scents/Bitter-Melon-Lemon-Tea-107404"
 },
 "chasing scents|tea service": {
 "p": "Chasing-Scents/Tea-Service-73356"
 },
 "chasing scents|weeping rose": {
 "p": "Chasing-Scents/Weeping-Rose-73357"
+},
+"chloe atelier des fleurs|plage du figuier": {
+"h": "Chloé",
+"p": "Chloe/Plage-du-Figuier-122845"
+},
+"chloe atelier des fleurs|sable lavande": {
+"h": "Chloé",
+"p": "Chloe/Sable-Lavande-122846"
 },
 "chloe atelier des fleurs|sous les pins": {
 "h": "Chloé",
@@ -931,6 +964,10 @@
 },
 "creed|white flowers": {
 "p": "Creed/White-Flowers-13390"
+},
+"cyclar|sex musk": {
+"h": "Cyklar",
+"p": "Cyklar/Sex-Musk-121096"
 },
 "czech speake|no 88": {
 "n": "No. 88",
@@ -1495,6 +1532,12 @@
 "elisire|extrait blanc": {
 "p": "Elisire/Extrait-Blanc-96772"
 },
+"elisire|hautbois": {
+"p": "Elisire/Hautbois-96771"
+},
+"elisire|oderose": {
+"p": "Elisire/Oderose-44958"
+},
 "elizabeth and james|nirvana rose": {
 "p": "Elizabeth-and-James/Nirvana-Rose-40267"
 },
@@ -1512,6 +1555,10 @@
 "eris parfums|belle du jour": {
 "n": "Belle de Jour",
 "p": "Eris-Parfums/Belle-de-Jour-35814"
+},
+"eris parfums|mxxx extrait de parfum": {
+"n": "Mxxx.",
+"p": "Eris-Parfums/Mxxx-58649"
 },
 "eris parfums|night flower": {
 "p": "Eris-Parfums/Night-Flower-35816"
@@ -1610,6 +1657,9 @@
 },
 "frederic malle|heaven can wait": {
 "p": "Frederic-Malle/Heaven-Can-Wait-83297"
+},
+"frederic malle|iris poudre": {
+"p": "Frederic-Malle-Editions-de-Parfums/Iris-Poudre-4771"
 },
 "frederic malle|l eau d hiver": {
 "n": "L'Eau d'Hiver",
@@ -1871,6 +1921,10 @@
 "guerlain|vetiver parfum": {
 "p": "Guerlain/Vetiver-Parfum-90801"
 },
+"harmonist|sacred water": {
+"h": "The Harmonist",
+"p": "The-Harmonist/Sacred-Water-36737"
+},
 "henrik vibskov|ambient glare 5 o clock": {
 "p": "Henrik-Vibskov/Ambient-Glare-5-O-Clock-130458"
 },
@@ -2087,8 +2141,17 @@
 "i": "https://media.parfumo.com/perfumes/4b/4bf5e0_french-lime-leaves-jenny-glow_1200.jpg?width=720&aspect_ratio=1:1",
 "src": "https://www.parfumo.com/Perfumes/jenny-glow/french-lime-leaves"
 },
+"jijide|fuoco": {
+"n": "Fuoco",
+"p": "Jijide/Fuoco-98594"
+},
 "jijide|grano": {
 "p": "Jijide/Grano-82250"
+},
+"jo malone|amber labdanum cologne intense": {
+"h": "Jo Malone London",
+"n": "Amber Labdanum",
+"p": "Jo-Malone-London/Amber-Labdanum-Cologne-Intense-109925"
 },
 "jo malone|cypress grapevine cologne intense": {
 "p": "Jo-Malone-London/Cypress-Grapevine-Cologne-Intense-61928"
@@ -2455,6 +2518,9 @@
 "maison francis k|gentle fluidity silver": {
 "p": "Maison-Francis-Kurkdjian/Gentle-Fluidity-Silver-53400"
 },
+"maison incens|neroli animalis": {
+"p": "Maison-Incens/Neroli-Animalis-41029"
+},
 "maison irfe|marshmallow musk": {
 "h": "Maison IRFÉ",
 "p": "Maison-IRFE/Marshmallow-Musk-99943"
@@ -2476,6 +2542,12 @@
 "majda bekkali|fusion sacree claire": {
 "n": "Fusion Sacrée Clair",
 "p": "Majda-Bekkali/Fusion-Sacree-Clair-16289"
+},
+"malka sima|jasmine": {
+"shop": "https://malkasima.co"
+},
+"malka sima|lilac": {
+"shop": "https://malkasima.co"
 },
 "malka sina|beyond the veil": {
 "i": "https://malkasima.co/cdn/shop/files/MS_July_1.png?v=1785284430",
@@ -2839,6 +2911,10 @@
 "n": "Flash Back",
 "p": "Olfactive-Studio/Flash-Back-17695"
 },
+"olympic orchids|cafe v": {
+"n": "Café V",
+"p": "Olympic-Orchids-Artisan-Perfumes/Cafe-V-18388"
+},
 "olympic orchids|chevalier vert": {
 "p": "Olympic-Orchids-Artisan-Perfumes/Chevalier-Vert-45515"
 },
@@ -2944,6 +3020,9 @@
 "parfum d empire|corsica furiosa": {
 "p": "Parfum-d-Empire/Corsica-Furiosa-24803"
 },
+"parfumerie particuliere|borderline": {
+"p": "Parfumerie-Particuliere/Borderline-115246"
+},
 "parfumeur d empire|mal amie": {
 "n": "Mal-Aimé",
 "p": "Parfum-d-Empire/Mal-Aime-67708"
@@ -2978,6 +3057,9 @@
 },
 "pearfat|i ll never learn": {
 "p": "Pearfat-Parfum/I-ll-Never-Learn-94215"
+},
+"pearfat|knee high": {
+"p": "Pearfat-Parfum/Knee-High-132700"
 },
 "pearfat|stomped on a bed of lettuce": {
 "p": "Pearfat-Parfum/Stomped-on-Bed-of-Lettuce-79994"
@@ -3041,6 +3123,9 @@
 "n": "Soft Spot",
 "p": "Phlur/Soft-Spot-93322"
 },
+"phronema perfumes|the holy prophet elijah": {
+"p": "Phronema-Perfumes/The-Holy-Prophet-Elijah-98101"
+},
 "pineward|binderbole": {
 "n": "Bindebole",
 "p": "Pineward-Perfumes/Bindebole-66467"
@@ -3091,12 +3176,19 @@
 "regime des fleurs|leather petals": {
 "p": "Regime-des-Fleurs/Leather-Petals-85360"
 },
+"regime des fleurs|oud dukhan": {
+"h": "Régime des Fleurs",
+"p": "Regime-des-Fleurs/Oud-Dukhan-70979"
+},
 "regime des fleurs|tears": {
 "p": "Regime-des-Fleurs/Tears-74947"
 },
 "regime des fleurs|toor toor": {
 "n": "Tóor Tóor",
 "p": "Regime-des-Fleurs/Toor-Toor-86838"
+},
+"regime des fleurs|willows": {
+"p": "Regime-des-Fleurs/Willows-42183"
 },
 "reserve en afrique 1934|afrique en fleurs": {
 "h": "Réserve en Afrique 1934",
@@ -3126,6 +3218,9 @@
 "roger gallet|lavende royale": {
 "n": "Lavande Royale",
 "p": "Roger-Gallet/Lavande-Royale-6325"
+},
+"rogue perfumery|champs lunaires": {
+"p": "Rogue-Perfumery/Champs-Lunaires-53818"
 },
 "rogue perfumery|discovery set": {
 "i": "https://www.fragrantica.com/mdimg/dizajneri/o.3588.jpg",
@@ -3220,11 +3315,26 @@
 "i": "https://sep28thperfumeries.com/cdn/shop/files/SILKENTOFU2.png?v=1778197375",
 "src": "https://sep28thperfumeries.com/products/silken-tofu"
 },
+"september 28th|always online": {
+"shop": "https://sep28thperfumeries.com"
+},
+"september 28th|i m with you": {
+"shop": "https://sep28thperfumeries.com"
+},
+"september 28th|just a cat lady": {
+"shop": "https://sep28thperfumeries.com"
+},
+"september 28th|willow": {
+"shop": "https://sep28thperfumeries.com"
+},
 "serge lutens|ambre sultan": {
 "p": "Serge-Lutens/Ambre-Sultan-2760"
 },
 "serge lutens|daim blond": {
 "p": "Serge-Lutens/Daim-Blond-595"
+},
+"serge lutens|dent de lait": {
+"p": "Serge-Lutens/Dent-de-Lait-45668"
 },
 "serge lutens|fils de joie": {
 "n": "Fils de Joie",
@@ -3245,6 +3355,9 @@
 },
 "serge lutens|la fille de berlin": {
 "p": "Serge-Lutens/La-Fille-de-Berlin-17162"
+},
+"serge lutens|la religieuse": {
+"p": "Serge-Lutens/La-Religieuse-29636"
 },
 "serge lutens|poivre noir": {
 "p": "Serge-Lutens/Poivre-Noir-75836"
@@ -3306,6 +3419,9 @@
 },
 "stardust stems|book fair": {
 "p": "Stardust-Stems/Book-Fair-126233"
+},
+"stephane humbert lucas 777|rose de petra": {
+"p": "Stephane-Humbert-Lucas-777/Rose-de-Petra-18309"
 },
 "stephanie humbert lucas 777|black gemstone": {
 "p": "Stephane-Humbert-Lucas-777/Black-Gemstone-18312"
@@ -3677,6 +3793,10 @@
 "n": "Yuma",
 "p": "Pernoire/Yuma-125288"
 },
+"yves saint laurent|le vestiaire des parfums trench": {
+"n": "Trench",
+"p": "Yves-Saint-Laurent/Trench-32271"
+},
 "zing|andrea maack": {
 "h": "Andrea Maack",
 "n": "Zing",
@@ -3684,6 +3804,12 @@
 },
 "zoologist|bee": {
 "p": "Zoologist-Perfumes/Bee-58140"
+},
+"zoologist|chameleon": {
+"p": "Zoologist-Perfumes/Chameleon-53015"
+},
+"zoologist|civet": {
+"p": "Zoologist-Perfumes/Civet-42936"
 },
 "zoologist|hyrax": {
 "p": "Zoologist-Perfumes/Hyrax-49269"
