@@ -382,7 +382,10 @@
 "p": "Balmain-Beauty/Vent-Vert-96730"
 },
 "bare knuckles|a certain someone": {
-"src": "https://francesmay.com/collections/bare-knuckles/products/bare-knuckles-a-certain-someone-eau-de-parfum"
+"src": [
+"https://reach.dog/shop/bare-knuckles/products/a-certain-someone-eau-de-parfum"
+],
+"shop": "https://francesmay.com"
 },
 "baruti|hot cotton": {
 "p": "Baruti/Hot-Cotton-91870"
